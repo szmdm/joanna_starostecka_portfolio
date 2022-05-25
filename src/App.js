@@ -1,24 +1,78 @@
-import logo from './logo.svg';
 import './App.css';
+import React, { useRef, useState, useEffect } from 'react';
+import { BrowserRouter as Router, Routes, Route, } from 'react-router-dom';
+import { HomePage } from './HomePage';
+import { ProjectName } from './ProjectName';
+import { Navbar } from './Navbar';
+import Sidebar from './Sidebar';
+import FooterBar from './components/FooterBar/';
 
-function App() {
+
+let useClickOutside = (handler) => {
+  let domNode = useRef();
+
+  useEffect(() => {
+    let maybeHandler = (event) => {
+      if (!domNode.current.contains(event.target)) {
+        handler();
+      }
+    };
+
+    document.addEventListener("mousedown", maybeHandler);
+
+    return () => {
+      document.removeEventListener("mousedown", maybeHandler);
+    };
+  });
+
+  return domNode;
+};
+
+
+
+const App = () => {
+
+
+
+  const [isOpen, setIsOpen] = useState(false)
+  const toggle = () => { setIsOpen(!isOpen) }
+
+  
+  let domNode = useClickOutside(() => {
+    setIsOpen(false);
+  });
+
+
+
+  let project1 = "cola"
+  // let project2 = "pepsi"
+
+
+  
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Router>
+      <Navbar toggle={toggle} />
+      <Sidebar
+        ref={domNode}
+        isOpen={isOpen}
+        toggle={toggle}
+      />
+      <Routes>
+        <Route
+          path="/"
+          element={<HomePage />}
+        />
+        <Route
+          path="/project/CocaCola"
+          element={<ProjectName name={project1} />}
+        />
+        <Route
+          path="/project/Pepsi"
+          element={<ProjectName name={project1} />}
+        />
+      </Routes>
+      <FooterBar />
+    </Router>
   );
 }
 
