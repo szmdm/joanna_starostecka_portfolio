@@ -1,8 +1,8 @@
 import React from 'react';
-import { ProjectData } from './PojectNameData';
+import ProjectData from './PojectNameData'
 import { ProjectNameContainer, } from './projectNameStyle';
 
-export const ProjectName = ({name}) => {
+const ProjectName = ({ name }) => {
 
     const projectImage = ProjectData[name]
 
@@ -25,3 +25,5 @@ export const ProjectName = ({name}) => {
 
     )
 }
+
+export default ProjectName

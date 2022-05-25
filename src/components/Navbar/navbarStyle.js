@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 import { Link } from 'react-router-dom';
-import { mediaSize } from '../src/Mixins';
+import { mediaSize } from '../../variables/Mixins';
 
 export const Nav = styled.nav`
     background: white;

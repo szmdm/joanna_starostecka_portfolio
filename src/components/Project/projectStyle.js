@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import { mediaSize } from './Mixins';
+import { mediaSize } from '../../variables/Mixins';
 import { Link } from 'react-router-dom';
 
 export const ProjectContainer = styled.div`

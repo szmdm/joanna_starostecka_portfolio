@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import { mediaSize } from './Mixins';
+import { mediaSize } from '../../variables/Mixins';
 
 
 export const HeroContainer = styled.section`

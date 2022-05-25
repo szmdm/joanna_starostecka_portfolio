@@ -1,4 +1,4 @@
-export const ProjectData = 
+const ProjectData = 
     {
         cola: [
             {
@@ -31,6 +31,7 @@ export const ProjectData =
         ]
     }
 
+    export default ProjectData
 
 
 

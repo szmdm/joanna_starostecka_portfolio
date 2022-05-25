@@ -1,9 +1,9 @@
 import React from 'react';
-import HeroSection from './Hero';
-import Project from './Project';
-import Cola_01 from "./assets/Cola_01.jpg";
+import HeroSection from '../HeroPage/Hero';
+import Project from '../Project/Project';
+import Cola_01 from "../../assets/Cola_01.jpg";
 
-export const HomePage = () => {
+const HomePage = () => {
 
     return (
         <>
@@ -19,3 +19,5 @@ export const HomePage = () => {
         </>
     )
 }
+
+export default HomePage

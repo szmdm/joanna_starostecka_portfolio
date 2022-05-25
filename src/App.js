@@ -1,32 +1,32 @@
 import './App.css';
 import React, { useRef, useState, useEffect } from 'react';
 import { BrowserRouter as Router, Routes, Route, } from 'react-router-dom';
-import { HomePage } from './HomePage';
-import { ProjectName } from './ProjectName';
-import { Navbar } from './Navbar';
-import Sidebar from './Sidebar';
-import FooterBar from './components/FooterBar/';
+import HomePage from './components/HomePage';
+import ProjectName from './components/ProjectName/ProjectName';
+import { Navbar } from './components/Navbar/Navbar';
+import Sidebar from './components/Sidebar/Sidebar';
+import FooterBar from './components/FooterBar';
 
 
 let useClickOutside = (handler) => {
-  let domNode = useRef();
+  let domNode = useRef()
 
   useEffect(() => {
     let maybeHandler = (event) => {
       if (!domNode.current.contains(event.target)) {
-        handler();
+        handler()
       }
-    };
+    }
 
-    document.addEventListener("mousedown", maybeHandler);
+    document.addEventListener("mousedown", maybeHandler)
 
     return () => {
-      document.removeEventListener("mousedown", maybeHandler);
-    };
-  });
+      document.removeEventListener("mousedown", maybeHandler)
+    }
+  })
 
-  return domNode;
-};
+  return domNode
+}
 
 
 
@@ -37,7 +37,7 @@ const App = () => {
   const [isOpen, setIsOpen] = useState(false)
   const toggle = () => { setIsOpen(!isOpen) }
 
-  
+
   let domNode = useClickOutside(() => {
     setIsOpen(false);
   });
@@ -48,7 +48,7 @@ const App = () => {
   // let project2 = "pepsi"
 
 
-  
+
   return (
     <Router>
       <Navbar toggle={toggle} />
