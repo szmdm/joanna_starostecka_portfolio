@@ -23,6 +23,7 @@ let useClickOutside = (handler) => {
     return () => {
       document.removeEventListener("mousedown", maybeHandler)
     }
+
   })
 
   return domNode
@@ -44,8 +45,12 @@ const App = () => {
 
 
 
-  let project1 = "cola"
-  // let project2 = "pepsi"
+  let project1 = "Gilette"
+  let project2 = "Coca Cola"
+  let project3 = "Schwartz"
+  let project4 = "Sprite"
+  let project5 = "Soft"
+  let project6 = "Coca Cola stand"
 
 
 
@@ -63,12 +68,28 @@ const App = () => {
           element={<HomePage />}
         />
         <Route
-          path="/project/CocaCola"
+          path="/project/gilette"
           element={<ProjectName name={project1} />}
         />
         <Route
-          path="/project/Pepsi"
-          element={<ProjectName name={project1} />}
+          path="/project/cocacola"
+          element={<ProjectName name={project2} />}
+        />
+        <Route
+          path="/project/schwartz"
+          element={<ProjectName name={project3} />}
+        />
+        <Route
+          path="/project/sprite"
+          element={<ProjectName name={project4} />}
+        />
+        <Route
+          path="/project/soft"
+          element={<ProjectName name={project5} />}
+        />
+        <Route
+          path="/project/cocacolastand"
+          element={<ProjectName name={project6} />}
         />
       </Routes>
       <FooterBar />

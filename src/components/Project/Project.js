@@ -4,16 +4,16 @@ import { BsArrowRight } from 'react-icons/bs';
 
 
 
-const Project = ({name, projectImg}) => {
+const Project = ({ projectName, projectImg }) => {
 
 
   return (
     <>
-      <ProjectContainer >
+      <ProjectContainer name={projectName} >
         <ImgContainer style={{backgroundImage: `url(${projectImg})`}} />
         <InfoContainer>
-          <h1>{name}</h1>
-          <ProjectButton to={"/project/" + name} >
+          <h1>{projectName}</h1>
+          <ProjectButton to={"/project/" + projectName} >
             Landingpage and visuals
             <BsArrowRight style={{marginLeft: '20px'}} />
           </ProjectButton>

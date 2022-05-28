@@ -12,10 +12,20 @@ const Sidebar = forwardRef(( props, ref ) => {
         <CloseIcon size={80} />
       </Icon>
       <SidebarMenu>
-        <SidebarLink to='/project/CocaCola' >Coca Cola</SidebarLink>
-        <SidebarLink to='/' >Some Project Name 2</SidebarLink>
-        <SidebarLink to='/' >Some Project Name 3</SidebarLink>
-        <SidebarLink to='/' >Some Project Name 4</SidebarLink>
+        <SidebarLink
+         activeClass="active" to="gilette" spy={true} smooth={true} duration={500} 
+         >
+          Gilette
+        </SidebarLink>
+        <SidebarLink to="cocacola" >Coca Cola</SidebarLink>
+        <SidebarLink
+         activeClass="active" to="Schwartz" spy={true} smooth={true} duration={500}  
+         >
+         Shwartz
+        </SidebarLink>
+        <SidebarLink to="sprite" >Sprite</SidebarLink>
+        <SidebarLink to="soft" >Soft</SidebarLink>
+        <SidebarLink to="cocacolastand" >Coca Cola stand</SidebarLink>
       </SidebarMenu>
     </SidebarContainer>
 

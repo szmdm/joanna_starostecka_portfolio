@@ -13,7 +13,7 @@ const ProjectName = ({ name }) => {
                 return (
                     <div key={index}>
                         <img src={process.env.PUBLIC_URL + element.image}
-                            alt='/'
+                            alt=''
                             className='image'
                         />
                     </div>
