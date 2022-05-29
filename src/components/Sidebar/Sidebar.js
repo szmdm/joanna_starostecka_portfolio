@@ -13,19 +13,59 @@ const Sidebar = forwardRef(( props, ref ) => {
       </Icon>
       <SidebarMenu>
         <SidebarLink
-         activeClass="active" to="gilette" spy={true} smooth={true} duration={500} 
+         activeClass="active" 
+         to="Gilette" 
+         spy={true} 
+         smooth={true} 
+         duration={500} 
          >
           Gilette
         </SidebarLink>
-        <SidebarLink to="cocacola" >Coca Cola</SidebarLink>
         <SidebarLink
-         activeClass="active" to="Schwartz" spy={true} smooth={true} duration={500}  
+         activeClass="active" 
+         to="Coca Cola" 
+         spy={true} 
+         smooth={true} 
+         duration={500} 
+         >
+          Coca Cola
+        </SidebarLink>
+        <SidebarLink
+         activeClass="active" 
+         to="Schwartz" 
+         spy={true} 
+         smooth={true} 
+         duration={500}  
          >
          Shwartz
         </SidebarLink>
-        <SidebarLink to="sprite" >Sprite</SidebarLink>
-        <SidebarLink to="soft" >Soft</SidebarLink>
-        <SidebarLink to="cocacolastand" >Coca Cola stand</SidebarLink>
+        <SidebarLink
+         activeClass="active" 
+         to="Sprite" 
+         spy={true} 
+         smooth={true} 
+         duration={500}
+         >
+         Sprite
+        </SidebarLink>
+        <SidebarLink 
+         activeClass="active" 
+         to="Soft" 
+         spy={true} 
+         smooth={true} 
+         duration={500}
+        >
+         Soft
+        </SidebarLink>
+        <SidebarLink
+         activeClass="active" 
+         to="Coca Cola stand" 
+         spy={true} 
+         smooth={true} 
+         duration={500} 
+        >
+         Coca Cola stand
+        </SidebarLink>
       </SidebarMenu>
     </SidebarContainer>
 
