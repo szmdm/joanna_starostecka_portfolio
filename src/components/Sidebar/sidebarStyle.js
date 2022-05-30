@@ -61,7 +61,7 @@ export const SidebarLink = styled(LinkScroll)`
     display: flex;
     align-items: center;
     justify-content: center;
-    font-size: 1.5 rem;
+    font-size: 1.2rem;
     text-decoration: none;
     list-style: none;
     transition: 0.2s ease-in-out;
@@ -71,7 +71,7 @@ export const SidebarLink = styled(LinkScroll)`
 
     &:hover{
         color: gold;
-        transition: 0.3s ease-in-out;
+        transition: 0.2s ease-in-out;
     }
 `
 
