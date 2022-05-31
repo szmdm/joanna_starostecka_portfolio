@@ -9,8 +9,8 @@ export const ProjectContainer = styled.div`
 
     h1 {
         text-align: left;
-        margin: 40px 0 10px 100px;
-        font-size: clamp(3.5rem, 5vw, 3.5rem);
+        margin: 25px 0 10px 100px;
+        font-size: clamp(1.5rem, 0.4vw + 1.43rem, 1.75rem);
         text-align: center;
 
         @media screen and (max-width: ${mediaSize}) {
@@ -46,7 +46,7 @@ export const InfoContainer = styled.div`
 
 export const ProjectButton = styled(Link)`
     display: flex;
-    font-size: 1.4rem;
+    font-size: clamp(0.88rem, 0.4vw + 0.8rem, 1.13rem);
     border: none;
     color: black;
     /* transition: 0.2s ease-in; */

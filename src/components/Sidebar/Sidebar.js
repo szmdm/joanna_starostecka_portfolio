@@ -13,7 +13,7 @@ const Sidebar = forwardRef(( props, ref ) => {
       </Icon>
       <SidebarMenu>
         <SidebarLink
-        //  activeClass="active" 
+         activeClass="active"
          to="Gilette" 
          spy={true} 
          smooth={true} 
@@ -26,7 +26,7 @@ const Sidebar = forwardRef(( props, ref ) => {
          to="Coca Cola" 
          spy={true} 
          smooth={true} 
-         duration={500} 
+         duration={500}
          >
           Coca Cola
         </SidebarLink>

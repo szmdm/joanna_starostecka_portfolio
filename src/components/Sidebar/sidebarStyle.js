@@ -73,6 +73,11 @@ export const SidebarLink = styled(LinkScroll)`
         color: gold;
         transition: 0.2s ease-in-out;
     }
+
+    &.active {
+        color: gold;
+        font-weight: bold;
+    }
 `
 
 export const SidebrWrap = styled.div`

@@ -45,13 +45,13 @@ const App = () => {
 
 
 
-  let project1 = "Gilette"
-  let project2 = "Coca Cola"
-  let project3 = "Schwartz"
-  let project4 = "Sprite"
-  let project5 = "Soft"
-  let project6 = "Coca Cola stand"
-
+  const project1 = "Gilette"
+  const project2 = "Coca Cola"
+  const project3 = "Schwartz"
+  const project4 = "Sprite"
+  const project5 = "Soft"
+  const project6 = "Coca Cola stand"
+  
 
 
   return (
@@ -68,27 +68,27 @@ const App = () => {
           element={<HomePage />}
         />
         <Route
-          path="/project/gilette"
+          path="/project/"{...project1}
           element={<ProjectName name={project1} />}
         />
         <Route
-          path="/project/cocacola"
+          path="/project/"{...project2}
           element={<ProjectName name={project2} />}
         />
         <Route
-          path="/project/schwartz"
+          path="/project/"{...project3}
           element={<ProjectName name={project3} />}
         />
         <Route
-          path="/project/sprite"
+          path="/project/"{...project4}
           element={<ProjectName name={project4} />}
         />
         <Route
-          path="/project/soft"
+          path="/project/"{...project5}
           element={<ProjectName name={project5} />}
         />
         <Route
-          path="/project/cocacolastand"
+          path="/project/"{...project6}
           element={<ProjectName name={project6} />}
         />
       </Routes>

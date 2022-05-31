@@ -66,7 +66,7 @@ export const OpenContact = styled.div`
 `
 
 export const ProjectsTitle = styled.div`
-    font-size: 3rem;
+    font-size: 2.25rem;
     font-weight: bold;
     width: auto;
     padding: calc(100vh - 777px) 0 0 100px;
