@@ -14,7 +14,7 @@ const HomePage = () => {
         <>
             <HeroSection />
             <Project
-                projectName={'Gilette'} 
+                projectName={'Gillette'} 
                 projectImg={gilette_01} 
             />
             <Project 

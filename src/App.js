@@ -6,6 +6,7 @@ import ProjectName from './components/ProjectName/ProjectName';
 import { Navbar } from './components/Navbar/Navbar';
 import Sidebar from './components/Sidebar/Sidebar';
 import FooterBar from './components/FooterBar';
+import ProjectDoneGilette from './components/ProjectDone/ProjectDone';
 
 
 let useClickOutside = (handler) => {
@@ -45,7 +46,7 @@ const App = () => {
 
 
 
-  const project1 = "Gilette"
+  const project1 = "Gillette"
   const project2 = "Coca Cola"
   const project3 = "Schwartz"
   const project4 = "Sprite"
@@ -68,8 +69,8 @@ const App = () => {
           element={<HomePage />}
         />
         <Route
-          path="/project/"{...project1}
-          element={<ProjectName name={project1} />}
+          path="/project/Gillette"
+          element={<ProjectDoneGilette />}
         />
         <Route
           path="/project/"{...project2}
