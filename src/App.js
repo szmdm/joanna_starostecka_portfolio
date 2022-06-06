@@ -93,7 +93,7 @@ const App = () => {
           element={<ProjectName name={project6} />}
         />
       </Routes>
-      <FooterBar />
+      {/* <FooterBar /> */}
     </Router>
   );
 }
