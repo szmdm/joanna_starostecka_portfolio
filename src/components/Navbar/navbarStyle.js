@@ -35,7 +35,7 @@ export const NavLogo = styled(Link)`
 
     @media screen and (max-width: ${mediaSize}) {
         margin-left: 15px;
-        transition: 0.2s ease-in;
+        transition: 0.2s ease-in-out;
     }
 `
 
@@ -49,6 +49,7 @@ export const Navicon = styled.div`
 
     @media screen and (max-width: ${mediaSize}) {
         margin-right: 15px;
+        transition: 0.2s ease-in-out
     }
 
 `

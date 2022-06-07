@@ -5,7 +5,8 @@ export const BiggerContainerGilette = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
-  height: calc(100vh + 300px);
+  flex-wrap: wrap;
+  /* height: calc(100vh + 300px); */
   width: 100%;
   background: #10141f;
   /* background: #fff;    */
@@ -22,7 +23,7 @@ export const BCGOne = styled.div`
   width: 50%;
 
   .BCGOneContainer {
-    margin-left: 50px;
+    margin: 3rem 0.5rem 0 0.5rem;
     height: 50%;
   }
   img {
@@ -42,12 +43,13 @@ export const BCGTwo = styled.div`
   flex-direction: column;
   width: 50%;
   height: 100%;
-  padding-left: 20px;
+  padding: 0 20px 0 20px;
 
   @media screen and (max-width: ${mediaSize}) {
     width: auto;
   }
 `;
+
 export const BGHead = styled.div`
   display: flex;
   align-items: flex-start;
@@ -63,8 +65,13 @@ export const BGHeadDescription1 = styled.span`
   font-weight: 800;
   text-transform: uppercase;
   font-size: clamp(1rem, 1.75rem, 2.5rem);
+
+  @media screen and (max-width: ${mediaSize}) {
+    font-size: clamp(1rem, 2vw, 2rem);
+  }
 `;
-export const BGHeadDescription2 = styled.span`
+
+export const BGHeadDescription2 = styled.div`
   color: #fff;
   font-family: futura-pt, sans-serif;
   font-style: normal;
@@ -72,10 +79,11 @@ export const BGHeadDescription2 = styled.span`
   font-size: 1.25rem;
 
   @media screen and (max-width: ${mediaSize}) {
-    font-size: clamp(1rem, 2vw, 2rem);
+    font-size: clamp(1rem, 2.5vw, 2rem);
   }
 `;
-export const BGTitle = styled.p`
+
+export const BGTitle = styled.div`
   color: #fff;
   font-family: futura-pt, sans-serif;
   font-style: normal;
@@ -88,6 +96,7 @@ export const BGTitle = styled.p`
     font-size: clamp(1.5rem, 3vw, 3.5rem);
   }
 `;
+
 export const BGContent = styled.div`
   display: flex;
   align-items: flex-start;
@@ -95,6 +104,11 @@ export const BGContent = styled.div`
   flex-direction: column;
   margin-top: 50px;
   line-height: 1.6;
+
+  @media screen and (max-width: ${mediaSize}) {
+    display: block;
+    text-align: center;
+  }
 `;
 
 export const SmallerContainerGilette = styled.div`
