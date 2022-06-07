@@ -23,7 +23,7 @@ export const BCGOne = styled.div`
   width: 50%;
 
   .BCGOneContainer {
-    margin: 3rem 0.5rem 0 0.5rem;
+    margin: 3rem 0.5rem 0 1.5rem;
     height: 50%;
   }
   img {
@@ -38,15 +38,17 @@ export const BCGOne = styled.div`
 
 export const BCGTwo = styled.div`
   display: flex;
-  align-items: center;
-  justify-content: flex-start;
+  align-items: flex-start;
+  justify-content: center;
   flex-direction: column;
   width: 50%;
   height: 100%;
-  padding: 0 20px 0 20px;
+  padding: 0 1.2rem 0 1.1rem;
 
   @media screen and (max-width: ${mediaSize}) {
     width: auto;
+    align-items: center;
+    margin-bottom: 3rem;
   }
 `;
 
@@ -59,7 +61,7 @@ export const BGHead = styled.div`
 `;
 
 export const BGHeadDescription1 = styled.span`
-  color: #fff;
+  color: ${(props) => props.textcolor};
   font-family: futura-pt, sans-serif;
   font-style: normal;
   font-weight: 800;
@@ -72,7 +74,7 @@ export const BGHeadDescription1 = styled.span`
 `;
 
 export const BGHeadDescription2 = styled.div`
-  color: #fff;
+  color: ${(props) => props.textcolor};
   font-family: futura-pt, sans-serif;
   font-style: normal;
   font-weight: 300;
@@ -84,7 +86,7 @@ export const BGHeadDescription2 = styled.div`
 `;
 
 export const BGTitle = styled.div`
-  color: #fff;
+  color: ${(props) => props.textcolor};
   font-family: futura-pt, sans-serif;
   font-style: normal;
   font-weight: 800;
@@ -117,7 +119,7 @@ export const SmallerContainerGilette = styled.div`
   justify-content: center;
   height: calc(100vh + 300px);
   width: 100%;
-  background: #10141f;
+  background: #fff;
 `;
 
 export const SCGOne = styled.div`

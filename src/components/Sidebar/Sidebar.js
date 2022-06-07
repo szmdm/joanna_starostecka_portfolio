@@ -14,12 +14,12 @@ const Sidebar = forwardRef(( props, ref ) => {
       <SidebarMenu>
         <SidebarLink
          activeClass="active"
-         to="Gilette" 
+         to="Gillette" 
          spy={true} 
          smooth={true} 
          duration={500} 
          >
-          Gilette
+          Gillette
         </SidebarLink>
         <SidebarLink
          activeClass="active" 

@@ -48,8 +48,8 @@ export const Navicon = styled.div`
     margin-right: 100px;
 
     @media screen and (max-width: ${mediaSize}) {
-        margin-right: 15px;
-        transition: 0.2s ease-in-out
+        margin-right: 20px;
+        transition: 0.2s ease-in-out;
     }
 
 `
