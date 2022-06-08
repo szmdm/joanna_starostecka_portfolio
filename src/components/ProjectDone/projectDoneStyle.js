@@ -43,12 +43,12 @@ export const BCGTwo = styled.div`
   flex-direction: column;
   width: 50%;
   height: 100%;
-  padding: 0 1.2rem 0 1.1rem;
+  margin: 100px 0 100px 0;
 
   @media screen and (max-width: ${mediaSize}) {
     width: auto;
     align-items: center;
-    margin-bottom: 3rem;
+    margin: 10px 0 3rem 0;
   }
 `;
 
@@ -95,7 +95,7 @@ export const BGTitle = styled.div`
   max-width: 435px;
 
   @media screen and (max-width: ${mediaSize}) {
-    font-size: clamp(1.5rem, 3vw, 3.5rem);
+    font-size: clamp(1.5rem, 2vw, 2.5rem);
   }
 `;
 
@@ -117,19 +117,46 @@ export const SmallerContainerGilette = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
-  height: calc(100vh + 300px);
+  max-height: 500px;
   width: 100%;
   background: #fff;
+
+  @media screen and (max-width: ${mediaSize}) {
+    flex-direction: column;
+    justify-content: flex-start;
+  }
 `;
 
 export const SCGOne = styled.div`
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   justify-content: center;
+  flex-direction: column;
+  width: 40%;
+  margin: 10px 50px 10px 10px;
+
+  @media screen and (max-width: ${mediaSize}) {
+  
+  }
 `;
 
 export const SCGTwo = styled.div`
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  
+  /* top: -400px; */
+  z-index: 99;
+
+  img {
+    position: relative;
+    width: 85%;
+    max-height: auto;
+  }
 `;
+
+export const SCGImg = styled.div`
+  display: flex;
+  flex-direction: column;
+
+  img {
+    margin-bottom: 30px;
+  }
+`
