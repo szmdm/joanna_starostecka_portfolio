@@ -23,8 +23,7 @@ export const BCGOne = styled.div`
   width: 50%;
 
   .BCGOneContainer {
-    margin: 3rem 0.5rem 0 1.5rem;
-    height: 50%;
+    margin: 3rem 0.5rem 0 3rem;
   }
   img {
     max-width: 100%;
@@ -58,6 +57,15 @@ export const BGHead = styled.div`
   justify-content: flex-end;
   flex-direction: column;
   height: 30%;
+  width: ${(props) => props.width};
+
+  @media screen and (max-width: ${mediaSize}) {
+    display: ${(props) => props.display};
+    text-align: center;
+    justify-content: center;
+    width: ${(props) => props.mediaWidth};
+    align-items: center;
+  }
 `;
 
 export const BGHeadDescription1 = styled.span`
@@ -116,7 +124,7 @@ export const BGContent = styled.div`
 export const SmallerContainerGilette = styled.div`
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: flex-start;
   max-height: 500px;
   width: 100%;
   background: #fff;
@@ -133,22 +141,25 @@ export const SCGOne = styled.div`
   justify-content: center;
   flex-direction: column;
   width: 40%;
-  margin: 10px 50px 10px 10px;
+  margin: 0.6rem 3rem 0.6rem 8rem;
 
   @media screen and (max-width: ${mediaSize}) {
-  
+    margin: 0.6rem 1rem 0.6rem 1rem;
   }
 `;
 
 export const SCGTwo = styled.div`
   
-  /* top: -400px; */
   z-index: 99;
 
   img {
     position: relative;
     width: 85%;
     max-height: auto;
+  }
+
+  @media screen and (max-width: ${mediaSize}) {
+    margin-left: 70px;
   }
 `;
 
@@ -158,5 +169,11 @@ export const SCGImg = styled.div`
 
   img {
     margin-bottom: 30px;
+    max-width: 100%;
+    height: auto;
+  }
+
+  @media screen and (max-width: ${mediaSize}) {
+  align-items: center;
   }
 `

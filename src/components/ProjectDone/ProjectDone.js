@@ -29,7 +29,7 @@ const ProjectDoneGilette = () => {
           </div>
         </BCGOne>
         <BCGTwo>
-          <BGHead>
+          <BGHead width="auto" display="flex">
             <img src={BCGTwo_1} alt="gillette logo" />
             <BGHeadDescription1 textcolor="#fff">
                 The Best a man can get
@@ -48,7 +48,7 @@ const ProjectDoneGilette = () => {
       </BiggerContainerGilette>
       <SmallerContainerGilette>
         <SCGOne>
-          <BGHead>
+          <BGHead width="380px" mediaWidth="100%">
             <BGTitle textcolor="#1A316D">
               Campain gap
             </BGTitle>
