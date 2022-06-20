@@ -87,6 +87,7 @@ export const BGHeadDescription2 = styled.div`
   font-style: normal;
   font-weight: 300;
   font-size: 1.25rem;
+  position: ${(props) => props.position};
 
   @media screen and (max-width: ${mediaSize}) {
     font-size: clamp(1rem, 2.5vw, 2rem);
@@ -118,20 +119,24 @@ export const BGContent = styled.div`
   @media screen and (max-width: ${mediaSize}) {
     display: block;
     text-align: center;
+    align-items: center;
+    max-height: 200px;
   }
 `;
 
 export const SmallerContainerGilette = styled.div`
   display: flex;
-  align-items: center;
+  align-items: ${(props) => props.alignItems};
   justify-content: flex-start;
   max-height: 500px;
   width: 100%;
-  background: #fff;
+  background: #DDDFE4;
 
   @media screen and (max-width: ${mediaSize}) {
     flex-direction: column;
     justify-content: flex-start;
+    align-items: center;
+    max-height: none;
   }
 `;
 
@@ -145,6 +150,8 @@ export const SCGOne = styled.div`
 
   @media screen and (max-width: ${mediaSize}) {
     margin: 0.6rem 1rem 0.6rem 1rem;
+    width: auto;
+    align-items: center;
   }
 `;
 
@@ -160,12 +167,28 @@ export const SCGTwo = styled.div`
 
   @media screen and (max-width: ${mediaSize}) {
     margin-left: 70px;
+    display: none;
+  }
+`;
+
+export const SCGThree = styled.div`
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  flex-direction: column;
+  margin: 0.6rem 3rem 0.6rem 0rem;
+
+  @media screen and (max-width: ${mediaSize}) {
+    margin: 0.6rem 1rem 0.6rem 1rem;
+    width: auto;
+
   }
 `;
 
 export const SCGImg = styled.div`
   display: flex;
   flex-direction: column;
+  position: ${(props) => props.position};
 
   img {
     margin-bottom: 30px;
@@ -176,4 +199,19 @@ export const SCGImg = styled.div`
   @media screen and (max-width: ${mediaSize}) {
   align-items: center;
   }
-`
+`;
+
+export const BGHeadDescription3 = styled.div`
+  color: ${(props) => props.textcolor};
+  font-family: futura-pt, sans-serif;
+  font-weight: ${(props) => props.fontWeight};
+  font-size: 2rem;
+  position: ${(props) => props.position};
+  margin-left: 10px;
+
+  @media screen and (max-width: ${mediaSize}) {
+    font-size: clamp(1.5rem, 2.5vw, 2rem);
+    position: relative;
+    top: -130px;
+  }
+`;
