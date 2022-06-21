@@ -4,6 +4,7 @@ import {
   InsideBiggerContainerGilette,
   BCGOne,
   BCGTwo,
+  BCGOneContainer,
   SmallerContainerGilette,
   SCGOne,
   SCGTwo,
@@ -18,6 +19,7 @@ import {
   ColorContainer,
   ColorBox,
   TextBox,
+  IPadContainer,
 } from "./projectDoneStyle";
 import BCGOne_1 from "../../assets/projectsDone/pDGillette/IPad_01-1.png";
 import BCGTwo_1 from "../../assets/projectsDone/pDGillette/Gillette_logo_02-1.png";
@@ -27,6 +29,7 @@ import SCGImg_3 from "../../assets/projectsDone/pDGillette/gillette_image_02.png
 import SCGImg_4 from "../../assets/projectsDone/pDGillette/font_01.png";
 import SCGImg_5 from "../../assets/projectsDone/pDGillette/font_02.png";
 import BCGImg_1 from "../../assets/projectsDone/pDGillette/Image_03.png";
+import BCGImg_2 from "../../assets/projectsDone/pDGillette/IPad_view_1.png";
 
 
 const ProjectDoneGilette = () => {
@@ -34,9 +37,9 @@ const ProjectDoneGilette = () => {
     <>
       <BiggerContainerGilette>
         <BCGOne>
-          <div className="BCGOneContainer">
+          <BCGOneContainer>
             <img src={BCGOne_1} alt="content presented on tablet" />
-          </div>
+          </BCGOneContainer>
         </BCGOne>
         <BCGTwo margin="100px 0 100px 0">
           <BGHead width="auto" display="flex">
@@ -56,8 +59,8 @@ const ProjectDoneGilette = () => {
           </BGContent>
         </BCGTwo>
       </BiggerContainerGilette>
-      <SmallerContainerGilette alignItems="center">
-        <SCGOne>
+      <SmallerContainerGilette alignItems="center" maxHeight="500px">
+        <SCGOne margin="0.6rem 3rem 0.6rem 8rem">
           <BGHead width="380px" mediaWidth="100%">
             <BGTitle textcolor="#1A316D">
               Campain gap
@@ -84,9 +87,9 @@ const ProjectDoneGilette = () => {
       </SmallerContainerGilette>
       <BiggerContainerGilette>
         <BCGOne>
-          <div className="BCGOneContainer">
+        <BCGOneContainer>
             <img src={BCGImg_1} alt="young couple on a smartphone screen" />
-          </div>
+        </BCGOneContainer>
         </BCGOne>
         <BCGTwo margin="100px 0 100px 0">
           <BGContent>
@@ -100,8 +103,8 @@ const ProjectDoneGilette = () => {
           </BGContent>
         </BCGTwo>
       </BiggerContainerGilette>
-      <SmallerContainerGilette alignItems="flex-end">
-        <SCGOne>
+      <SmallerContainerGilette alignItems="flex-end" maxHeight="500px">
+        <SCGOne margin="0.6rem 3rem 0.6rem 8rem">
           <BGHead width="380px" mediaWidth="100%">
             <BGTitle textcolor="#1A316D">
               Typography
@@ -143,7 +146,7 @@ const ProjectDoneGilette = () => {
         <InsideBiggerContainerGilette>
           <BCGOne flexDirection="column">
             <ColorContainer>
-              <ColorBox backgroundColor="pink" />
+              <ColorBox backgroundColor="#10141f" />
               <TextBox textcolor="#fff">
                 Blue
                 <br /> Colour for buttons
@@ -174,6 +177,25 @@ const ProjectDoneGilette = () => {
             </ColorContainer>
           </BCGTwo>
         </InsideBiggerContainerGilette>
+      </BiggerContainerGilette>
+      <SmallerContainerGilette alignItems="flex-end">
+        <SCGOne margin="6.7rem 3rem 16.25rem 8rem">
+          <BGHead width="380px" mediaWidth="100%">
+            <BGTitle textcolor="#1A316D">
+              High fideity mockup
+            </BGTitle>
+            <BGHeadDescription2 textcolor="#1A316D">
+              Becoming the best doesn’t happen overnight.
+              <br /> There’s always room for improvement.
+            </BGHeadDescription2>
+          </BGHead>
+        </SCGOne>
+        <SCGThree />
+      </SmallerContainerGilette>
+      <BiggerContainerGilette>
+        <IPadContainer>
+          <img src={BCGImg_2} alt=""  />
+        </IPadContainer>
       </BiggerContainerGilette>
     </>
   );

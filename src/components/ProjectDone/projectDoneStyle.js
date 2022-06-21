@@ -23,18 +23,25 @@ export const BCGOne = styled.div`
   width: 50%;
   flex-direction: ${(props) => props.flexDirection};
 
-  .BCGOneContainer {
-    margin: 3rem 0.5rem 0 3rem;
-  }
-  img {
-    max-width: 100%;
-    height: auto;
-  }
-
   @media screen and (max-width: ${mediaSize}) {
     /* width: auto; */
   }
 `;
+
+export const BCGOneContainer = styled.div`
+  margin: 3rem 0.5rem 0 3rem;
+  width: 100%;
+
+  img {
+   max-width: 100%;
+   height: auto;
+  }
+
+  @media screen and (max-width: ${mediaSize}) {
+    margin: 1.5rem 0.5rem 0.5rem 0.5rem;
+  }
+`;
+
 
 export const BCGTwo = styled.div`
   display: flex;
@@ -128,7 +135,7 @@ export const SmallerContainerGilette = styled.div`
   display: flex;
   align-items: ${(props) => props.alignItems};
   justify-content: flex-start;
-  max-height: 500px;
+  max-height: ${(props) => props.maxHeight};
   width: 100%;
   background: #DDDFE4;
 
@@ -146,7 +153,7 @@ export const SCGOne = styled.div`
   justify-content: center;
   flex-direction: column;
   width: 40%;
-  margin: 0.6rem 3rem 0.6rem 8rem;
+  margin: ${(props) => props.margin};
 
   @media screen and (max-width: ${mediaSize}) {
     margin: 0.6rem 1rem 0.6rem 1rem;
@@ -167,7 +174,8 @@ export const SCGTwo = styled.div`
 
   @media screen and (max-width: ${mediaSize}) {
     margin-left: 70px;
-    display: none;
+    /* display: none; */
+    position: static;
   }
 `;
 
@@ -264,4 +272,28 @@ export const InsideBiggerContainerGilette = styled.div`
   @media screen and (max-width: ${mediaSize}) {
     flex-direction: column;
   }
+`;
+
+export const IPadContainer = styled.div`
+  z-index: 100;
+  display: flex;
+  justify-content: center;
+
+img {
+  position: relative;
+  width: 85%;
+  max-height: auto;
+  top: -165px;
+
+  @media screen and (max-width: ${mediaSize}) {
+    position: static;
+    margin-top: 30px;
+  }
+}
+
+@media screen and (max-width: ${mediaSize}) {
+  margin-left: 45px;
+  top: 30px;
+  /* display: none; */
+}
 `;
