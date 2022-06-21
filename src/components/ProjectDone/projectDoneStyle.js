@@ -21,6 +21,7 @@ export const BCGOne = styled.div`
   align-items: center;
   justify-content: center;
   width: 50%;
+  flex-direction: ${(props) => props.flexDirection};
 
   .BCGOneContainer {
     margin: 3rem 0.5rem 0 3rem;
@@ -31,7 +32,7 @@ export const BCGOne = styled.div`
   }
 
   @media screen and (max-width: ${mediaSize}) {
-    width: auto;
+    /* width: auto; */
   }
 `;
 
@@ -42,10 +43,9 @@ export const BCGTwo = styled.div`
   flex-direction: column;
   width: 50%;
   height: 100%;
-  margin: 100px 0 100px 0;
+  margin: ${(props) => props.margin};
 
   @media screen and (max-width: ${mediaSize}) {
-    width: auto;
     align-items: center;
     margin: 10px 0 3rem 0;
   }
@@ -115,12 +115,12 @@ export const BGContent = styled.div`
   flex-direction: column;
   margin-top: 50px;
   line-height: 1.6;
+  height: ${(props) => props.height};
 
   @media screen and (max-width: ${mediaSize}) {
     display: block;
     text-align: center;
     align-items: center;
-    max-height: 200px;
   }
 `;
 
@@ -213,5 +213,55 @@ export const BGHeadDescription3 = styled.div`
     font-size: clamp(1.5rem, 2.5vw, 2rem);
     position: relative;
     top: -130px;
+  }
+`;
+
+export const ColorContainer = styled.div`
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-end;
+  flex-direction: column;
+  height: auto;
+  width: 65%;
+  padding: 10px;
+
+  @media screen and (max-width: ${mediaSize}) {
+  width: 100%;
+  flex-direction: row;
+  align-items: center;
+
+  }
+
+`;
+
+export const ColorBox = styled.div`
+  width: 100%;
+  height: 110px;
+  background: ${(props) => props.backgroundColor};
+  border-radius: 7px;
+`
+
+export const TextBox = styled.div`
+  color: ${(props) => props.textcolor};
+  font-family: futura-pt, sans-serif;
+  font-size: 1.25rem;
+  line-height: 29px;
+  margin: 25px 0 25px 0;
+
+  @media screen and (max-width: ${mediaSize}) {
+    margin-left: 20px;
+  }
+`
+
+export const InsideBiggerContainerGilette = styled.div`
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  width: 100%;
+  background: #10141f;
+
+  @media screen and (max-width: ${mediaSize}) {
+    flex-direction: column;
   }
 `;

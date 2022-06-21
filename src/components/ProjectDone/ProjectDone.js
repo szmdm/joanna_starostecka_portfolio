@@ -1,6 +1,7 @@
 import React from "react";
 import {
   BiggerContainerGilette,
+  InsideBiggerContainerGilette,
   BCGOne,
   BCGTwo,
   SmallerContainerGilette,
@@ -14,6 +15,9 @@ import {
   BGTitle,
   BGContent,
   SCGImg,
+  ColorContainer,
+  ColorBox,
+  TextBox,
 } from "./projectDoneStyle";
 import BCGOne_1 from "../../assets/projectsDone/pDGillette/IPad_01-1.png";
 import BCGTwo_1 from "../../assets/projectsDone/pDGillette/Gillette_logo_02-1.png";
@@ -34,16 +38,16 @@ const ProjectDoneGilette = () => {
             <img src={BCGOne_1} alt="content presented on tablet" />
           </div>
         </BCGOne>
-        <BCGTwo>
+        <BCGTwo margin="100px 0 100px 0">
           <BGHead width="auto" display="flex">
             <img src={BCGTwo_1} alt="gillette logo" />
             <BGHeadDescription1 textcolor="#fff">
-                The Best a man can get
+              The Best a man can get
             </BGHeadDescription1>
           </BGHead>
           <BGContent>
             <BGTitle textcolor="#fff">
-                Landingpage for campagne
+              Landingpage for campagne
             </BGTitle>
             <BGHeadDescription2 textcolor="#fff">
               Becoming the best doesn’t happen overnight.
@@ -84,10 +88,10 @@ const ProjectDoneGilette = () => {
             <img src={BCGImg_1} alt="young couple on a smartphone screen" />
           </div>
         </BCGOne>
-        <BCGTwo>
+        <BCGTwo margin="100px 0 100px 0">
           <BGContent>
             <BGTitle textcolor="#fff">
-                User persona
+              User persona
             </BGTitle>
             <BGHeadDescription2 textcolor="#fff">
               Becoming the best doesn’t happen overnight.
@@ -107,45 +111,69 @@ const ProjectDoneGilette = () => {
               <br /> There’s always room for improvement.
             </BGHeadDescription2>
           </BGHead>
-          <BGContent>
+          <BGContent height="200px">
             <SCGImg>
               <img src={SCGImg_4} alt="" height="171px" width="311px" />
             </SCGImg>
             <BGHeadDescription3 textcolor="#1A316D" position="absolute" fontWeight="bold">
-            Futura STD Bold
+              Futura STD Bold
               <br /> Aa Bb Cc
             </BGHeadDescription3>
           </BGContent>
         </SCGOne>
         <SCGThree>
-          <BGContent>
+          <BGContent height="200px">
             <SCGImg>
               <img src={SCGImg_5} alt="" height="175px" width="248px" />
             </SCGImg >
             <BGHeadDescription3 textcolor="#1A316D" position="absolute" fontWeight="lighter">
-            Futura STD Bold
+              Futura STD Bold
               <br /> Aa Bb Cc
             </BGHeadDescription3>
           </BGContent>
         </SCGThree>
       </SmallerContainerGilette>
       <BiggerContainerGilette>
-        <BCGOne>
-          <div className="BCGOneContainer">
-            <img src={BCGImg_1} alt="young couple on a smartphone screen" />
-          </div>
-        </BCGOne>
-        <BCGTwo>
-          <BGContent>
-            <BGTitle textcolor="#fff">
-                User persona
-            </BGTitle>
-            <BGHeadDescription2 textcolor="#fff">
-              Becoming the best doesn’t happen overnight.
-              <br /> There’s always room for improvement.
-            </BGHeadDescription2>
-          </BGContent>
-        </BCGTwo>
+      <BCGOne />
+      <BCGTwo margin="40px 0 40px 0">
+        <BGTitle textcolor="#fff">
+          User persona
+        </BGTitle>   
+      </BCGTwo>
+        <InsideBiggerContainerGilette>
+          <BCGOne flexDirection="column">
+            <ColorContainer>
+              <ColorBox backgroundColor="pink" />
+              <TextBox textcolor="#fff">
+                Blue
+                <br /> Colour for buttons
+              </TextBox>
+            </ColorContainer>
+            <ColorContainer>
+              <ColorBox backgroundColor="#1a316d" />
+              <TextBox textcolor="#fff">
+                Blue
+                <br /> Colour for buttons
+              </TextBox>
+            </ColorContainer>
+          </BCGOne>
+          <BCGTwo margin="0">
+            <ColorContainer>
+              <ColorBox backgroundColor="#131524" />
+              <TextBox textcolor="#fff">
+                Blue
+                <br /> Colour for buttons
+              </TextBox>
+            </ColorContainer>
+            <ColorContainer>
+              <ColorBox backgroundColor="#fff" />
+              <TextBox textcolor="#fff">
+                Blue
+                <br /> Colour for buttons
+              </TextBox>
+            </ColorContainer>
+          </BCGTwo>
+        </InsideBiggerContainerGilette>
       </BiggerContainerGilette>
     </>
   );
