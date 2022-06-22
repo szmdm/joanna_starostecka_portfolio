@@ -1,6 +1,20 @@
 import styled from "styled-components";
 import { mediaSize } from "../../variables/Mixins";
 
+export const ProjectContainer = styled.div`
+  display: flex;
+  max-width: 1280px;
+  height: auto;
+  align-items: ${(props) => props.alignItems};
+  justify-content: center;
+  flex-direction: ${(props) => props.flexDirection};
+
+  @media screen and (max-width: ${mediaSize}) {
+    flex-direction: column;
+    align-items: center;
+  }
+`
+
 export const BiggerContainerGilette = styled.div`
   display: flex;
   align-items: center;
@@ -49,12 +63,11 @@ export const BCGTwo = styled.div`
   justify-content: center;
   flex-direction: column;
   width: 50%;
-  height: 100%;
   margin: ${(props) => props.margin};
 
   @media screen and (max-width: ${mediaSize}) {
     align-items: center;
-    margin: 10px 0 3rem 0;
+    margin: 10px 7rem 10px 7rem;
   }
 `;
 
@@ -134,7 +147,7 @@ export const BGContent = styled.div`
 export const SmallerContainerGilette = styled.div`
   display: flex;
   align-items: ${(props) => props.alignItems};
-  justify-content: flex-start;
+  justify-content: center;
   max-height: ${(props) => props.maxHeight};
   width: 100%;
   background: #DDDFE4;
@@ -152,7 +165,6 @@ export const SCGOne = styled.div`
   align-items: flex-start;
   justify-content: center;
   flex-direction: column;
-  width: 40%;
   margin: ${(props) => props.margin};
 
   @media screen and (max-width: ${mediaSize}) {
@@ -165,6 +177,7 @@ export const SCGOne = styled.div`
 export const SCGTwo = styled.div`
   
   z-index: 99;
+  margin-left: 25px;
 
   img {
     position: relative;
@@ -229,8 +242,8 @@ export const ColorContainer = styled.div`
   align-items: flex-start;
   justify-content: flex-end;
   flex-direction: column;
+  width: 100%;
   height: auto;
-  width: 65%;
   padding: 10px;
 
   @media screen and (max-width: ${mediaSize}) {

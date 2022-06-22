@@ -1,5 +1,6 @@
 import React from "react";
 import {
+  ProjectContainer,
   BiggerContainerGilette,
   InsideBiggerContainerGilette,
   BCGOne,
@@ -36,60 +37,65 @@ const ProjectDoneGilette = () => {
   return (
     <>
       <BiggerContainerGilette>
-        <BCGOne>
-          <BCGOneContainer>
-            <img src={BCGOne_1} alt="content presented on tablet" />
-          </BCGOneContainer>
-        </BCGOne>
-        <BCGTwo margin="100px 0 100px 0">
-          <BGHead width="auto" display="flex">
-            <img src={BCGTwo_1} alt="gillette logo" />
-            <BGHeadDescription1 textcolor="#fff">
-              The Best a man can get
-            </BGHeadDescription1>
-          </BGHead>
-          <BGContent>
-            <BGTitle textcolor="#fff">
-              Landingpage for campagne
-            </BGTitle>
-            <BGHeadDescription2 textcolor="#fff">
-              Becoming the best doesn’t happen overnight.
-              <br /> There’s always room for improvement.
-            </BGHeadDescription2>
-          </BGContent>
-        </BCGTwo>
+        <ProjectContainer alignItems="center">
+          <BCGOne>
+            <BCGOneContainer>
+              <img src={BCGOne_1} alt="content presented on tablet" />
+            </BCGOneContainer>
+          </BCGOne>
+          <BCGTwo margin="100px 0 100px 0">
+            <BGHead width="auto" display="flex">
+              <img src={BCGTwo_1} alt="gillette logo" />
+              <BGHeadDescription1 textcolor="#fff">
+                The Best a man can get
+              </BGHeadDescription1>
+            </BGHead>
+            <BGContent>
+              <BGTitle textcolor="#fff">
+                Landingpage for campagne
+              </BGTitle>
+              <BGHeadDescription2 textcolor="#fff">
+                Becoming the best doesn’t happen overnight.
+                <br /> There’s always room for improvement.
+              </BGHeadDescription2>
+            </BGContent>
+          </BCGTwo>
+        </ProjectContainer>
       </BiggerContainerGilette>
       <SmallerContainerGilette alignItems="center" maxHeight="500px">
-        <SCGOne margin="0.6rem 3rem 0.6rem 8rem">
-          <BGHead width="380px" mediaWidth="100%">
-            <BGTitle textcolor="#1A316D">
-              Campain gap
-            </BGTitle>
-            <BGHeadDescription2 textcolor="#1A316D">
-              Becoming the best doesn’t happen overnight.
-              <br /> There’s always room for improvement.
-            </BGHeadDescription2>
-          </BGHead>
-          <BGContent>
-            <SCGImg>
-              <img src={SCGImg_1} alt="gillette fusion logo" height="60px" width="209px" />
-              <img src={SCGImg_2} alt="gillette icons" />
-            </SCGImg>
-            <BGHeadDescription2 textcolor="#1A316D">
-              Becoming the best doesn’t happen overnight.
-              <br /> There’s always room for improvement.
-            </BGHeadDescription2>
-          </BGContent>
-        </SCGOne>
-        <SCGTwo>
-          <img src={SCGImg_3} alt="gillette exploded view" />
-        </SCGTwo>
+        <ProjectContainer alignItems="center">
+          <SCGOne margin="0.6rem 3rem 0.6rem 0rem">
+            <BGHead width="380px" mediaWidth="100%">
+              <BGTitle textcolor="#1A316D">
+                Campain gap
+              </BGTitle>
+              <BGHeadDescription2 textcolor="#1A316D">
+                Becoming the best doesn’t happen overnight.
+                <br /> There’s always room for improvement.
+              </BGHeadDescription2>
+            </BGHead>
+            <BGContent>
+              <SCGImg>
+                <img src={SCGImg_1} alt="gillette fusion logo" height="60px" width="209px" />
+                <img src={SCGImg_2} alt="gillette icons" />
+              </SCGImg>
+              <BGHeadDescription2 textcolor="#1A316D">
+                Becoming the best doesn’t happen overnight.
+                <br /> There’s always room for improvement.
+              </BGHeadDescription2>
+            </BGContent>
+          </SCGOne>
+          <SCGTwo>
+            <img src={SCGImg_3} alt="gillette exploded view" />
+          </SCGTwo>
+        </ProjectContainer>
       </SmallerContainerGilette>
       <BiggerContainerGilette>
+      <ProjectContainer alignItems="center">
         <BCGOne>
-        <BCGOneContainer>
+          <BCGOneContainer>
             <img src={BCGImg_1} alt="young couple on a smartphone screen" />
-        </BCGOneContainer>
+          </BCGOneContainer>
         </BCGOne>
         <BCGTwo margin="100px 0 100px 0">
           <BGContent>
@@ -102,9 +108,11 @@ const ProjectDoneGilette = () => {
             </BGHeadDescription2>
           </BGContent>
         </BCGTwo>
+        </ProjectContainer>
       </BiggerContainerGilette>
       <SmallerContainerGilette alignItems="flex-end" maxHeight="500px">
-        <SCGOne margin="0.6rem 3rem 0.6rem 8rem">
+      <ProjectContainer alignItems="flex-end">
+        <SCGOne margin="0.6rem 3rem 0.6rem 0rem">
           <BGHead width="380px" mediaWidth="100%">
             <BGTitle textcolor="#1A316D">
               Typography
@@ -135,14 +143,16 @@ const ProjectDoneGilette = () => {
             </BGHeadDescription3>
           </BGContent>
         </SCGThree>
+        </ProjectContainer>
       </SmallerContainerGilette>
       <BiggerContainerGilette>
-      <BCGOne />
-      <BCGTwo margin="40px 0 40px 0">
-        <BGTitle textcolor="#fff">
-          User persona
-        </BGTitle>   
-      </BCGTwo>
+      <ProjectContainer alignItems="flex-end" flexDirection="column">
+        <BCGOne />
+        <BCGTwo margin="40px 0px 40px 430px">
+          <BGTitle textcolor="#fff">
+            User persona
+          </BGTitle>
+        </BCGTwo>
         <InsideBiggerContainerGilette>
           <BCGOne flexDirection="column">
             <ColorContainer>
@@ -177,6 +187,7 @@ const ProjectDoneGilette = () => {
             </ColorContainer>
           </BCGTwo>
         </InsideBiggerContainerGilette>
+        </ProjectContainer>
       </BiggerContainerGilette>
       <SmallerContainerGilette alignItems="flex-end">
         <SCGOne margin="6.7rem 3rem 16.25rem 8rem">
@@ -194,9 +205,10 @@ const ProjectDoneGilette = () => {
       </SmallerContainerGilette>
       <BiggerContainerGilette>
         <IPadContainer>
-          <img src={BCGImg_2} alt=""  />
+          <img src={BCGImg_2} alt="" />
         </IPadContainer>
       </BiggerContainerGilette>
+
     </>
   );
 };
