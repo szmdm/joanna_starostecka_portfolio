@@ -67,7 +67,7 @@ export const BCGTwo = styled.div`
 
   @media screen and (max-width: ${mediaSize}) {
     align-items: center;
-    margin: 10px 7rem 10px 7rem;
+    margin: 10px 2.5rem 10px 2.5rem;
   }
 `;
 
@@ -271,6 +271,7 @@ export const TextBox = styled.div`
 
   @media screen and (max-width: ${mediaSize}) {
     margin-left: 20px;
+    width: 100px;
   }
 `
 
