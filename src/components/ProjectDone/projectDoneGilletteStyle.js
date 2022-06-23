@@ -20,10 +20,8 @@ export const BiggerContainerGilette = styled.div`
   align-items: center;
   justify-content: center;
   flex-wrap: wrap;
-  /* height: calc(100vh + 300px); */
   width: 100%;
   background: #10141f;
-  /* background: #fff;    */
 
   @media screen and (max-width: ${mediaSize}) {
     flex-direction: column;
@@ -308,6 +306,5 @@ img {
 @media screen and (max-width: ${mediaSize}) {
   margin-left: 45px;
   top: 30px;
-  /* display: none; */
 }
 `;

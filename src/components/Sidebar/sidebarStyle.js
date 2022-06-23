@@ -80,9 +80,3 @@ export const SidebarLink = styled(LinkScroll)`
     }
 `
 
-export const SidebrWrap = styled.div`
-    display: flex;
-    justify-content: center;
-    
-`
-

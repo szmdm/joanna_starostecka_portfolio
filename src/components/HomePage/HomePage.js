@@ -18,7 +18,7 @@ const HomePage = () => {
                 projectImg={gilette_01} 
             />
             <Project 
-                projectName={'Coca Cola'} 
+                projectName={'CocaCola'} 
                 projectImg={cola_01} 
             />
             <Project 

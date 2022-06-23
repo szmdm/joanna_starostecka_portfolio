@@ -21,7 +21,7 @@ import {
   ColorBox,
   TextBox,
   IPadContainer,
-} from "./projectDoneStyle";
+} from "./projectDoneGilletteStyle";
 import BCGOne_1 from "../../assets/projectsDone/pDGillette/IPad_01-1.png";
 import BCGTwo_1 from "../../assets/projectsDone/pDGillette/Gillette_logo_02-1.png";
 import SCGImg_1 from "../../assets/projectsDone/pDGillette/Fusion_Logo-1.png";
@@ -33,7 +33,7 @@ import BCGImg_1 from "../../assets/projectsDone/pDGillette/Image_03.png";
 import BCGImg_2 from "../../assets/projectsDone/pDGillette/IPad_view_1.png";
 
 
-const ProjectDoneGilette = () => {
+export const ProjectDoneGilette = () => {
   return (
     <>
       <BiggerContainerGilette>
@@ -212,5 +212,3 @@ const ProjectDoneGilette = () => {
     </>
   );
 };
-
-export default ProjectDoneGilette;
