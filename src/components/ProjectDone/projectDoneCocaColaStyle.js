@@ -57,18 +57,90 @@ export const FCCTitle = styled.span`
     color: #fff;
 
     @media screen and (max-width: ${mediaSize}) {
-        margin-top: 40px;
+        margin-top: 30px;
     }
 `;
 
 export const FCCContentBox = styled.div`
     display: flex;
+    flex-direction: column;
     max-width: 1220px;
     height: auto;
     margin: 20px 20px 70px 20px;
 
-    @media screen and (max-width: ${mediaSize}) {
-        margin: 10px 10px 0px 10px; 
+    p {
+        color: #fff;
+        text-align: center;
+        font-size: clamp(0.75rem, 1.25vw, 1rem);
+        position: relative;
+        bottom: 20px;
+
     }
-`
+
+    @media screen and (max-width: ${mediaSize}) {
+        margin: 0px 10px 0px 10px; 
+    }
+`;
+
+export const SecondContainerCola = styled.div`
+  display: flex;
+  max-width: 1280px;
+  height: 100%;
+  align-items: ${(props) => props.alignItems};
+  justify-content: space-between;
+  flex-direction: ${(props) => props.flexDirection};
+
+  @media screen and (max-width: ${mediaSize}) {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  p {
+        color: #fff;
+        text-align: center;
+        font-size: clamp(0.75rem, 1.25vw, 1rem);
+        position: relative;
+        bottom: 20px;
+
+        @media screen and (max-width: ${mediaSize}) {
+            bottom: 5px;
+        }
+    }
+`;
+
+export const SCCContentBox = styled.div`
+    display: flex;
+    flex-direction: column;
+    max-width: 1220px;
+    height: auto;
+    margin: 20px 20px 30px 20px;
+
+    p {
+        color: #fff;
+        text-align: center;
+        font-size: clamp(1.5rem,5vw,60px);
+        position: relative;
+        bottom: 60px;
+        font-family: futura-pt, sans-serif;
+        font-style: normal;
+        font-weight: bold;
+        text-transform: uppercase; 
+        
+        @media screen and (max-width: ${mediaSize}) {
+            bottom: 25px;
+        }
+
+    }
+    
+    img {
+     position: relative;
+     width: 100%;
+     height: auto;
+     object-fit: cover;
+    }
+
+    @media screen and (max-width: ${mediaSize}) {
+        margin: 0px 10px 0px 10px; 
+    }
+`;
 
