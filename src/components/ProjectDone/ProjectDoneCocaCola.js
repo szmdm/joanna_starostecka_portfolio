@@ -2,6 +2,7 @@ import React from 'react';
 import FCColaImg_01 from "../../assets/projectsDone/pDCocaCola/Background_Image_Cola_1.png";
 import FCColaImg_02 from "../../assets/projectsDone/pDCocaCola/Cola_Tablet_1.png";
 import FCColaImg_03 from "../../assets/projectsDone/pDCocaCola/Cola_Web_1.png";
+import FCColaImg_04 from "../../assets/projectsDone/pDCocaCola/Cola_IPhones_1.png";
 import {
     ProjectContainerCola,
     FirstContainerCola,
@@ -10,6 +11,14 @@ import {
     FCCContentBox,
     SecondContainerCola,
     SCCContentBox,
+    ThirdContainerCola,
+    ThirdContentContainer,
+    TCCTitle,
+    TCCFonts,
+    TCCFontsBox,
+    FourthContainerCola,
+    FourthCCTitle,
+    FourthCCBox,
 
 }
     from "./projectDoneCocaColaStyle";
@@ -42,14 +51,60 @@ export const ProjectDoneCocaCola = () => {
                 <SecondContainerCola flexDirection="column">
                     <SCCContentBox>
                         <img src={FCColaImg_03} alt="cola webpage screen" />
-                        <p>
+                        <h1>
                             User Persona
-                        </p>
+                        </h1>
                     </SCCContentBox>
                     <p>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt<br /> ut labore et dolore magna aliqua.
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt<br />
+                        ut labore et dolore magna aliqua.
                     </p>
                 </SecondContainerCola>
+            </ProjectContainerCola>
+            <ProjectContainerCola>
+                <ThirdContainerCola>
+                    <ThirdContentContainer>
+                        <TCCTitle>
+                            <h1>typography</h1>
+                            <p>
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt<br />
+                                ut labore et dolore magna aliqua.
+                            </p>
+                        </TCCTitle>
+                        <TCCFonts>
+                            <TCCFontsBox>
+                                <span>for headline</span>
+                                <p1>
+                                    TCCC
+                                </p1>
+                                <p2>
+                                    TCCC UnityHeadline Bold
+                                </p2>
+                            </TCCFontsBox>
+                            <TCCFontsBox>
+                                <span>for headline</span>
+                                <p1>
+                                    TCCC
+                                </p1>
+                                <p2>
+                                    TCCC UnityHeadline Bold
+                                </p2>
+                            </TCCFontsBox>
+                        </TCCFonts>
+                    </ThirdContentContainer>
+                </ThirdContainerCola>
+            </ProjectContainerCola>
+            <ProjectContainerCola>
+                <FourthContainerCola>
+                    <ThirdContentContainer>
+                        <FourthCCTitle>
+                            <h1>colors</h1>
+                        </FourthCCTitle>
+                        <FourthCCBox>   
+                         <img src={FCColaImg_04} alt="cola font presented in 3 colors white red black on mobile phone" />
+                        </FourthCCBox>
+                    </ThirdContentContainer>
+                </FourthContainerCola>
             </ProjectContainerCola>
         </>
     )
