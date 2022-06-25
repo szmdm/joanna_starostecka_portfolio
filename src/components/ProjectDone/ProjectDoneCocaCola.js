@@ -17,6 +17,7 @@ import {
     TCCFonts,
     TCCFontsBox,
     FourthContainerCola,
+    FourthContentContainer,
     FourthCCTitle,
     FourthCCBox,
 
@@ -96,14 +97,14 @@ export const ProjectDoneCocaCola = () => {
             </ProjectContainerCola>
             <ProjectContainerCola>
                 <FourthContainerCola>
-                    <ThirdContentContainer>
+                    <FourthContentContainer>
                         <FourthCCTitle>
                             <h1>colors</h1>
                         </FourthCCTitle>
                         <FourthCCBox>   
                          <img src={FCColaImg_04} alt="cola font presented in 3 colors white red black on mobile phone" />
                         </FourthCCBox>
-                    </ThirdContentContainer>
+                    </FourthContentContainer>
                 </FourthContainerCola>
             </ProjectContainerCola>
         </>

@@ -119,16 +119,16 @@ export const SCCContentBox = styled.div`
     h1 {
         color: #fff;
         text-align: center;
-        font-size: clamp(1.5rem,5vw,60px);
+        font-size: clamp(1rem,5vw,60px);
         position: relative;
-        bottom: 60px;
+        bottom: 80px;
         font-family: futura-pt, sans-serif;
         font-style: normal;
         font-weight: bold;
         text-transform: uppercase; 
         
         @media screen and (max-width: ${mediaSize}) {
-            bottom: 25px;
+            bottom: 30px;
         }
 
     }
@@ -283,11 +283,22 @@ export const FourthContainerCola = styled.div`
   }
 `;
 
+export const FourthContentContainer = styled.div`
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 20px;
+    width: 100%;
+    height: auto;
+    
+`
+
 export const FourthCCTitle = styled.div`
     width: 100%;
     height: auto;
     text-align: center;
-    margin-bottom: 95px;
+    margin-bottom: 300px;
     background-color: black;
 
     h1 {
@@ -298,7 +309,10 @@ export const FourthCCTitle = styled.div`
         font-style: normal;
         font-weight: bold;
         text-transform: uppercase; 
-        margin: 88px 0 342px 0;
+    }
+
+    @media screen and (max-width: ${mediaSize}) {
+        margin-bottom: 50px;
     }
 `;
 
@@ -308,12 +322,22 @@ export const FourthCCBox = styled.div`
     align-items: center;
     flex-wrap: wrap;
     flex-direction: row;
+    background-color: #C1001D;
+    width: 100%;
+    height: 60%;
 
     img {
      position: relative;
      width: 80%;
      height: auto;
      object-fit: cover;
-     bottom: 200px;
+     bottom: 30%;
+
+     @media screen and (max-width: ${mediaSize}) {
+        top: 7px;
+        bottom: 0;
     }
+    }
+
+    
 `;
