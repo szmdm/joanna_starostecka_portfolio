@@ -3,6 +3,8 @@ import FCColaImg_01 from "../../assets/projectsDone/pDCocaCola/Background_Image_
 import FCColaImg_02 from "../../assets/projectsDone/pDCocaCola/Cola_Tablet_1.png";
 import FCColaImg_03 from "../../assets/projectsDone/pDCocaCola/Cola_Web_1.png";
 import FCColaImg_04 from "../../assets/projectsDone/pDCocaCola/Cola_IPhones_1.png";
+import FCColaImg_05 from "../../assets/projectsDone/pDCocaCola/Cola_Tablet_2.png";
+import FCColaImg_06 from "../../assets/projectsDone/pDCocaCola/Cola_Tablet_3.png";
 import {
     ProjectContainerCola,
     FirstContainerCola,
@@ -20,6 +22,13 @@ import {
     FourthContentContainer,
     FourthCCTitle,
     FourthCCBox,
+    FifthContainerCola,
+    FifthCCTitle,
+    FifthCCBox,
+    SixthContainerCola,
+    SixthContentContainerOne,
+    SixthContentContainerTwo,
+    SixthCCBox,
 
 }
     from "./projectDoneCocaColaStyle";
@@ -32,7 +41,6 @@ export const ProjectDoneCocaCola = () => {
             <ProjectContainerCola >
                 <ImageContainerCola>
                     <img src={FCColaImg_01} alt="" />
-
                     <FirstContainerCola alignItems="center" flexDirection="column" >
                         <FCCTitle>
                             Together<br />
@@ -101,11 +109,30 @@ export const ProjectDoneCocaCola = () => {
                         <FourthCCTitle>
                             <h1>colors</h1>
                         </FourthCCTitle>
-                        <FourthCCBox>   
-                         <img src={FCColaImg_04} alt="cola font presented in 3 colors white red black on mobile phone" />
+                        <FourthCCBox>
+                            <img src={FCColaImg_04} alt="cola font presented in 3 colors white red black on mobile phone" />
                         </FourthCCBox>
                     </FourthContentContainer>
                 </FourthContainerCola>
+            </ProjectContainerCola>
+            <ProjectContainerCola>
+                <FifthContainerCola flexDirection="column" alignItems="center">
+                    <FifthCCTitle>
+                        <h1>shopping path</h1>
+                    </FifthCCTitle>
+                    <FifthCCBox>
+                        <img src={FCColaImg_05} alt="cola can in cold cold ice presented on a tablet" />
+                    </FifthCCBox>
+                </FifthContainerCola>
+            </ProjectContainerCola>
+            <ProjectContainerCola>
+                <SixthContainerCola flexDirection="column" alignItems="center">
+                    <SixthContentContainerOne />
+                    <SixthContentContainerTwo />
+                    <SixthCCBox>
+                        <img src={FCColaImg_06} alt="cola application" />
+                    </SixthCCBox>
+                </SixthContainerCola>
             </ProjectContainerCola>
         </>
     )

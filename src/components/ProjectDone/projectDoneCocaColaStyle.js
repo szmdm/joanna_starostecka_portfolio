@@ -338,6 +338,103 @@ export const FourthCCBox = styled.div`
         bottom: 0;
     }
     }
+`;
 
+export const FifthContainerCola = styled.div`
+    display: flex;
+    max-width: 1280px;
+    width: 100%;
+    height: 100%;
+    align-items: ${(props) => props.alignItems};
+    justify-content: space-between;
+    flex-direction: ${(props) => props.flexDirection};
+    margin-bottom: 20px;
+
+  @media screen and (max-width: ${mediaSize}) {
+    flex-direction: column;
+    align-items: center;
+  }
+`;
+
+export const FifthCCTitle = styled.div`
+    width: 100%;
+    height: auto;
+    text-align: center;
+    margin: 80px 0 100px 0;
+    background-color: black;
+
+    h1 {
+        color: #fff;
+        text-align: center;
+        font-size: clamp(1.2rem,5vw,60px);
+        line-height: clamp(1.2rem, 4vw, 4.8rem);
+        font-family: "TCCC-UnityHeadline-Bold";
+        font-style: normal;
+        font-weight: bold;
+        text-transform: uppercase; 
+    }
+
+    @media screen and (max-width: ${mediaSize}) {
+        margin-bottom: 50px;
+    }
+`;
+
+export const FifthCCBox = styled.div`
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    max-width: 650px;
+
+    img {
+     position: relative;
+     width: 80%;
+     height: auto;
+     object-fit: cover;
+    }
+`;
+
+
+export const SixthContainerCola = styled.div`
+    position: relative;
+    display: flex;
+    max-width: 1280px;
+    width: 100%;
+    height: 1200px;
+    align-items: ${(props) => props.alignItems};
+    justify-content: space-between;
+    flex-direction: ${(props) => props.flexDirection};
+    margin-bottom: 20px;
+
+  @media screen and (max-width: ${mediaSize}) {
+    flex-direction: column;
+    align-items: center;
+  }
+`;
+
+export const SixthContentContainerOne = styled.div`
+    height: 50%;
+    width: 100%;
+    background-color: black;
+
+`;
+
+export const SixthContentContainerTwo = styled.div`
+    height: 50%;
+    width: 100%;
+    background-color: #C1001D;
     
+`;
+
+export const SixthCCBox = styled.div`
+    max-width: 640px;
+    height: auto;
+    position: absolute;
+    bottom: 10px;
+
+    img {
+     width: 100%;
+     height: auto;
+     object-fit: cover;
+    }
 `;
