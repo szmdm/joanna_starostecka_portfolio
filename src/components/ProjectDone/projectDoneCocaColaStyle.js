@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { mediaSize } from "../../variables/Mixins";
+import { mediaSize, mobileLMediaSize } from "../../variables/Mixins";
 
 
 export const ProjectContainerCola = styled.div`
@@ -404,11 +404,16 @@ export const SixthContainerCola = styled.div`
     align-items: ${(props) => props.alignItems};
     justify-content: space-between;
     flex-direction: ${(props) => props.flexDirection};
-    margin-bottom: 20px;
 
   @media screen and (max-width: ${mediaSize}) {
     flex-direction: column;
     align-items: center;
+    height: 600px;
+  }
+  @media screen and (min-width: ${mobileLMediaSize}) and (max-width: ${mediaSize}) {
+    flex-direction: column;
+    align-items: center;
+    height: 1100px;
   }
 `;
 

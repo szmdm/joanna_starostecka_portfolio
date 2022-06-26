@@ -11,4 +11,5 @@
 
 
 export const mediaSize = '768px';
+export const mobileLMediaSize = '425px';
 
