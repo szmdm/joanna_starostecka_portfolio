@@ -1,5 +1,12 @@
 import React, { forwardRef } from 'react'
-import { SidebarContainer, Icon, CloseIcon, SidebarMenu, SidebarLink, } from './sidebarStyle'
+import { 
+  SidebarContainer, 
+  Icon, 
+  CloseIcon, 
+  SidebarMenu, 
+  SidebarLink, 
+  SimpleLink,
+} from './sidebarStyle'
 
 const Sidebar = forwardRef(( props, ref ) => {
   
@@ -22,6 +29,7 @@ const Sidebar = forwardRef(( props, ref ) => {
           Gillette
         </SidebarLink>
         <SidebarLink
+         className='cocacola'
          activeClass="active" 
          to="CocaCola" 
          spy={true} 

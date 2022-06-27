@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import FCColaImg_01 from "../../assets/projectsDone/pDCocaCola/Background_Image_Cola_1.png";
 import FCColaImg_02 from "../../assets/projectsDone/pDCocaCola/Cola_Tablet_1.png";
 import FCColaImg_03 from "../../assets/projectsDone/pDCocaCola/Cola_Web_1.png";
@@ -32,10 +32,24 @@ import {
 
 }
     from "./projectDoneCocaColaStyle";
-
+import { useLocation } from 'react-router-dom';
 
 
 export const ProjectDoneCocaCola = () => {
+
+    const location = useLocation();
+
+  useEffect(()=> {
+    if (location.hash) {
+        let elem = document.getElementById(location.hash.slice(1))
+        if (elem) {
+            elem.scrollIntoView({behavior: "smooth"})
+        }
+    } else {
+    window.scrollTo({top:0,left:0, behavior: "smooth"})
+    }
+}, [location,])
+
     return (
         <>
             <ProjectContainerCola >

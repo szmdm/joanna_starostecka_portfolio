@@ -31,11 +31,13 @@ import SCGImg_4 from "../../assets/projectsDone/pDGillette/font_01.png";
 import SCGImg_5 from "../../assets/projectsDone/pDGillette/font_02.png";
 import BCGImg_1 from "../../assets/projectsDone/pDGillette/Image_03.png";
 import BCGImg_2 from "../../assets/projectsDone/pDGillette/IPad_view_1.png";
+import ScrollToTop from "../ScrollToTop";
 
 
 export const ProjectDoneGilette = () => {
   return (
     <>
+    <ScrollToTop />
       <BiggerContainerGilette>
         <ProjectContainer alignItems="center">
           <BCGOne>

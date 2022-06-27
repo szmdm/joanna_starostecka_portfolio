@@ -79,4 +79,27 @@ export const SidebarLink = styled(LinkScroll)`
         font-weight: bold;
     }
 `
+export const SimpleLink = styled.link`
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.2rem;
+    text-decoration: none;
+    list-style: none;
+    transition: 0.2s ease-in-out;
+    text-decoration: none;
+    color: #000;
+    cursor: pointer;
+
+    &:hover{
+        color: gold;
+        transition: 0.2s ease-in-out;
+    }
+
+    &.active {
+        color: gold;
+        font-weight: bold;
+    }
+`
+
 
