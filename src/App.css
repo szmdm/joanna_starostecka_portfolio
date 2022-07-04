@@ -19,3 +19,11 @@
          url('../src/fonts/TCCC-UnityHeadline-Regular/TCCC-UnityHeadline\ Regular.ttf') format('truetype');
 }
 
+@font-face {
+    font-family: "FuturaStd";
+    src: url('../src/fonts/FuturaStd/FuturaStd-Bold.ttf') format('truetype'),
+         url('../src/fonts/FuturaStd/FuturaStd-Light.ttf') format('truetype'),
+         url('../src/fonts/FuturaStd/FuturaStd-Book.otf') format('opentype'),
+         url('../src/fonts/FuturaStd/FuturaStd-Heavy.otf') format('opentype'),
+         url('../src/fonts/FuturaStd/FuturaStd-Medium.otf') format('opentype'),
+}

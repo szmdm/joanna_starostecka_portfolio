@@ -56,6 +56,7 @@ export const SidebarMenu = styled.div`
         transition: 0.3s ease-in-out;
     }
 `
+// react scroll version
 
 // export const SidebarLink = styled(LinkScroll)`
 //     display: flex;

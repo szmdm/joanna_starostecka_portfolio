@@ -7,6 +7,7 @@ import { Navbar } from './components/Navbar/Navbar';
 import Sidebar from './components/Sidebar/Sidebar';
 import { ProjectDoneGilette } from './components/ProjectDone/ProjectDoneGillette';
 import { ProjectDoneCocaCola } from './components/ProjectDone/ProjectDoneCocaCola';
+import { ProjectDoneSoft } from './components/ProjectDone/ProjectDoneSoft';
 
 
 let useClickOutside = (handler) => {
@@ -85,8 +86,8 @@ const App = () => {
           element={<ProjectName name={project4} />}
         />
         <Route
-          path="/project/"{...project5}
-          element={<ProjectName name={project5} />}
+          path="/project/Soft"
+          element={<ProjectDoneSoft />}
         />
         <Route
           path="/project/"{...project6}

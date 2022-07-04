@@ -31,6 +31,8 @@ const Sidebar = forwardRef((props, ref) => {
           <SimpleLink to="/#cocacolastand">Coca Cola stand</SimpleLink>
 
 
+   {/* react scroll version  */}
+
           {/* <SidebarLink
          activeClass="active"
          to="Gillette" 
@@ -86,6 +88,7 @@ const Sidebar = forwardRef((props, ref) => {
         >
          Coca Cola stand
         </SidebarLink> */}
+
         </SidebarMenu>
       </SidebarWrapper>
     </SidebarContainer>
