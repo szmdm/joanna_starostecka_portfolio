@@ -6,8 +6,6 @@ export const ProjectContainerSoft = styled.div`
     justify-content: center;
     align-items: center;
     width: 100%;
-    
-    background: black;
 
     @media screen and (max-width: ${mediaSize}) {
         flex-direction: column;
@@ -41,6 +39,7 @@ export const FirstContainerSoft = styled.div`
   @media screen and (max-width: ${mediaSize}) {
     flex-direction: column;
     align-items: center;
+    margin: 0 105px 0 105px;
   }
 `;
 
@@ -53,6 +52,7 @@ export const FirstCSoftTitle = styled.span`
     height: auto;
 
     @media screen and (max-width: ${mediaSize}) {
+        top: -20px;
     }
 `;
 
@@ -63,16 +63,78 @@ export const FirstCSoftContentBox = styled.div`
     height: auto;
     margin: 134px 20px 0px 20px;
 
-    p {
-        color: #fff;
-        text-align: center;
-        font-size: clamp(0.75rem, 1.25vw, 1rem);
-        position: relative;
-        bottom: 20px;
-
-    }
-
     @media screen and (max-width: ${mediaSize}) {
-        margin: 25px 10px 0px 10px; 
+        margin: 5px 10px 0px 10px;
+        max-width: 180px; 
     }
 `;
+
+export const SecondContainerSoft = styled.div`
+  display: flex;
+  max-width: 1280px;
+  min-height: 670px;
+  align-items: ${(props) => props.alignItems};
+  justify-content: center;
+  flex-direction: ${(props) => props.flexDirection};
+  
+    span {
+        position:relative;
+        bottom: -300px;
+    }
+
+  @media screen and (max-width: ${mediaSize}) {
+    flex-direction: column;
+    align-items: center;
+  }
+`;
+
+export const PackshotModul = styled.div`
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 100%;
+    max-height: 670px;
+    overflow: auto;
+
+    @media screen and (max-width: ${mediaSize}) {
+    }
+`;
+
+export const Packshot = styled.div`
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    max-width: 182px;
+    height: auto;
+    margin-top: 5px;
+
+        img {
+
+            @media screen and (max-width: ${mediaSize}) {
+                width: 100%;
+                height: auto;
+            }
+        }
+    
+
+    @media screen and (max-width: ${mediaSize}) {
+        flex-direction: column;
+    }
+
+`;
+
+export const PackshotButton = styled.div`
+    height: 20px;
+    width: 20px;
+    border-radius: 100%;
+    background-color: black;
+    position: relative;
+    bottom: 50px;
+    left: 20px;
+
+`
