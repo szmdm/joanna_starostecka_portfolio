@@ -51,7 +51,7 @@ const App = () => {
   // const project2 = "Coca Cola"
   const project3 = "Schwartz"
   const project4 = "Sprite"
-  const project5 = "Soft"
+  // const project5 = "Soft"
   const project6 = "Coca Cola stand"
   
 

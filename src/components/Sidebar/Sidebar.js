@@ -1,10 +1,10 @@
-import React, { forwardRef, useEffect } from 'react'
+import React, { forwardRef, } from 'react'
 import {
   SidebarContainer,
   Icon,
   CloseIcon,
   SidebarMenu,
-  SidebarLink,
+  // SidebarLink,
   SimpleLink,
   SidebarWrapper,
 } from './sidebarStyle';

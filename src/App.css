@@ -20,10 +20,26 @@
 }
 
 @font-face {
-    font-family: "FuturaStd";
+    font-family: "FuturaStd-Light";
+        src: url('../src/fonts/FuturaStd/FuturaStd-Light.ttf') format('truetype'),
+}
+
+@font-face {
+    font-family: "FuturaStd-Bold";
     src: url('../src/fonts/FuturaStd/FuturaStd-Bold.ttf') format('truetype'),
-         url('../src/fonts/FuturaStd/FuturaStd-Light.ttf') format('truetype'),
-         url('../src/fonts/FuturaStd/FuturaStd-Book.otf') format('opentype'),
-         url('../src/fonts/FuturaStd/FuturaStd-Heavy.otf') format('opentype'),
-         url('../src/fonts/FuturaStd/FuturaStd-Medium.otf') format('opentype'),
+}
+
+@font-face {
+    font-family: "FuturaStd-Book";
+    src: url('../src/fonts/FuturaStd/FuturaStd-Book.otf') format('opentype'),
+}
+
+@font-face {
+    font-family: "FuturaStd-Medium";
+    src: url('../src/fonts/FuturaStd/FuturaStd-Medium.otf') format('opentype'),
+}
+
+@font-face {
+    font-family: "FuturaStd-Heavy";
+    src: url('../src/fonts/FuturaStd/FuturaStd-Heavy.otf') format('opentype'),
 }

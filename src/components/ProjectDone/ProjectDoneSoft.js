@@ -1,5 +1,9 @@
 import React from 'react'
 import { BrowserRouter as Router, Routes, Route, } from 'react-router-dom';
+
+import PackshotModulComponent from '../Packshot/PackshotModul';
+import PackshotItemOneComponent from '../PackshotItemsComponent/PackshotItemOneComponent';
+
 import {
     ProjectContainerSoft,
     FirstImageContainerSoft,
@@ -7,20 +11,14 @@ import {
     FirstCSoftContentBox,
     FirstCSoftTitle,
     SecondContainerSoft,
-    PackshotModul,
-    Packshot,
-    PackshotButton,
 
 }
-    from "./projectDoneSoftStyle"
+from "./projectDoneSoftStyle"
+
 import PDSoftImg_01 from "../../assets/projectsDone/pDSoft/point_module02_view_01_circle_1.png"
 import PDSoftImg_02 from "../../assets/projectsDone/pDSoft/Hypo_allergenic_1.png"
 import PDSoftImg_03 from "../../assets/projectsDone/pDSoft/Image_Module_01.png"
-import PDSoftImg_04 from "../../assets/projectsDone/pDSoft/packshot_module02_01.png"
-import PDSoftImg_05 from "../../assets/projectsDone/pDSoft/packshot_module02_02.png"
-import PDSoftImg_06 from "../../assets/projectsDone/pDSoft/packshot_module02_03.png"
-import PDSoftImg_07 from "../../assets/projectsDone/pDSoft/packshot_module02_04.png"
-import PDSoftImg_08 from "../../assets/projectsDone/pDSoft/packshot_module02_05.png"
+
 
 export const ProjectDoneSoft = () => {
 
@@ -43,29 +41,9 @@ export const ProjectDoneSoft = () => {
             {/* <Routes> */}
             <ProjectContainerSoft>
                 <SecondContainerSoft alignItems="center" flexDirection="row">
-                    <PackshotModul>
-                        <Packshot >
-                            <img src={PDSoftImg_04} alt="/" />
-                            <PackshotButton />
-                        </Packshot>
-                        <Packshot >
-                            <img src={PDSoftImg_05} alt="/" />
-                            <PackshotButton />
-                        </Packshot>
-                        <Packshot >
-                            <img src={PDSoftImg_06} alt="/" />
-                            <PackshotButton />
-                        </Packshot>
-                        <Packshot >
-                            <img src={PDSoftImg_07} alt="/" />
-                            <PackshotButton />
-                        </Packshot>
-                        <Packshot >
-                            <img src={PDSoftImg_08} alt="/" />
-                            <PackshotButton />
-                        </Packshot>
-                    </PackshotModul>
-                    <span>hide shades</span>
+                    {/* <PackshotModulComponent /> */}
+                    {/* <span>hide shades</span> */}
+                    <PackshotItemOneComponent />
                 </SecondContainerSoft>
             </ProjectContainerSoft>
             {/* </Routes> */}
