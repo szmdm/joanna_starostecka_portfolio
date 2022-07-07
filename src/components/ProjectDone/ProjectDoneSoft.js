@@ -19,8 +19,15 @@ import PDSoftImg_01 from "../../assets/projectsDone/pDSoft/point_module02_view_0
 import PDSoftImg_02 from "../../assets/projectsDone/pDSoft/Hypo_allergenic_1.png"
 import PDSoftImg_03 from "../../assets/projectsDone/pDSoft/Image_Module_01.png"
 
+let displayStyle = {
+    display: "none;"
+}
+
 
 export const ProjectDoneSoft = () => {
+
+    // const [isSoftActive, setIsSoftActive] = useState(false)
+    // const softActive = () => { setIsSoftSwitch(!isSoftActive) }
 
     return (
         <>
@@ -41,9 +48,9 @@ export const ProjectDoneSoft = () => {
             {/* <Routes> */}
             <ProjectContainerSoft>
                 <SecondContainerSoft alignItems="center" flexDirection="row">
-                    {/* <PackshotModulComponent /> */}
+                    <PackshotModulComponent />
+                    <PackshotItemOneComponent style={displayStyle} />
                     {/* <span>hide shades</span> */}
-                    <PackshotItemOneComponent />
                 </SecondContainerSoft>
             </ProjectContainerSoft>
             {/* </Routes> */}

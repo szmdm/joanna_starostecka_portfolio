@@ -4,7 +4,7 @@ import { mediaSize } from "../../variables/Mixins";
 export const PackshotItemOne = styled.div`
     width: 100%;
     height: auto;
-    display: flex;
+    ${(props) => props.display};
     align-items: flex-start;
     justify-content: center;
     flex-wrap: wrap;
@@ -49,7 +49,7 @@ export const ItemOneContentTitle = styled.text`
 export const ItemOneContentText = styled.text`
     font-family: "FuturaStd-Light";
     font-size: 1rem; 
-    font-size: clamp(0.8rem, 1rem, 8vw);
+    font-size: clamp(0.7rem, 1rem, 4vw);
     line-height: 1.125rem;
 
     div {
@@ -69,12 +69,22 @@ export const ItemOneRank = styled.div`
     width: 73px;
     height: auto;
     margin: 5px 0 25px 0;
+
+    @media screen and (max-width: ${mediaSize}) {
+        margin: 5px 0 10px 0;
+    }
 `
 
 export const ItemOnePages = styled.div`
     height: auto;
     margin: 5px 0 25px 0;
     white-space: pre;
+    font-family: "FuturaStd-Book";
+    font-size: clamp(0.6rem, 0.8rem, 2vw);
+
+    @media screen and (max-width: ${mediaSize}) {
+        margin: 5px 0 15px 0;
+    }
 `
 
 export const ItemOneShopButtons = styled.div`
