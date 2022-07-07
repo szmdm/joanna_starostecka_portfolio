@@ -6,18 +6,23 @@ export const PackshotItemOne = styled.div`
     height: auto;
     display: flex;
     align-items: flex-start;
+    justify-content: center;
     flex-wrap: wrap;
 `
 
 export const ItemOneViewBox = styled.div`
     width: auto;
     height: auto;
+    margin: 5px;
 
     img {
         max-width: 214px;
         height: auto;
     }
 
+    @media screen and (max-width: ${mediaSize}) {
+        margin: 15px 0 0 0;
+    }
 `
 export const ItemOneContentBox = styled.div`
     width: auto;
@@ -27,12 +32,13 @@ export const ItemOneContentBox = styled.div`
     align-items: center;
     flex-direction: column;
     text-align: center;
-    margin: 20px 0 0 20px;
+    margin: 20px 10px 0 10px;
+     flex-basis: 400px;
 
 `
 
-export const ItemOneContentTitle = styled.h1`
-    font-family: "FuturaStd-Book";
+export const ItemOneContentTitle = styled.text`
+    font-family: "FuturaStd-Light";
     font-size: 1.875rem; 
     font-size: clamp(1rem, 1.875rem, 2rem);
     text-transform: capitalize;
@@ -43,13 +49,13 @@ export const ItemOneContentTitle = styled.h1`
 export const ItemOneContentText = styled.text`
     font-family: "FuturaStd-Light";
     font-size: 1rem; 
-    font-size: clamp(0.8rem, 1rem, 1.2rem);
+    font-size: clamp(0.8rem, 1rem, 8vw);
     line-height: 1.125rem;
 
     div {
         font-family: "FuturaStd-Light";
         font-size: 1rem; 
-        font-size: clamp(0.8rem, 1rem, 1.2rem);
+        font-size: clamp(0.7rem, 1rem, 1.2rem);
         line-height: 1.125rem; 
         margin: 20px 0 25px 0;
         text-decoration-line: underline;
@@ -77,7 +83,7 @@ export const ItemOneShopButtons = styled.div`
     display: flex;
     justify-content: space-evenly;
     align-items: center;
-    margin: 0 30px;
+    margin: 0 30px 0 10px;
     
 `
 
@@ -85,4 +91,5 @@ export const ItemOneButton = styled.div`
     text-align: center;
     border: 2px solid ${(props) => props.borderColor};
     padding: 3px 10px;
+    font-size: clamp(0.6rem, 0.8rem, 2vw);
 `

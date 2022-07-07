@@ -28,17 +28,17 @@ const PackshotItemOneComponent = () => {
                         Soft Foundation 01 Ivory
                     </ItemOneContentTitle>
                     <ItemOneContentText>
-                        Soft Makeup Foundation with Broad Spectrum SPF 20<br />
-                        to provide flawless, beautiful coverage across an array of<br />
+                        Soft Makeup Foundation with Broad Spectrum SPF 20
+                        to provide flawless, beautiful coverage across an array of
                         skin types and tones so your skin instantly looks its best.<p />
                         <br />
-                        This lightweight, non-greasy liquid makeup glides on<br />
-                        smoothly for flawless application with a silky formula that<br />
-                        helps visibly improve skin's luminosity, tone & texture while<br />
+                        This lightweight, non-greasy liquid makeup glides on
+                        smoothly for flawless application with a silky formula that
+                        helps visibly improve skin's luminosity, tone & texture while
                         keeping it looking young and healthy<p />
                         <br />
-                        Formulated with a unique blend of antioxidants including<br />
-                        vitamin E, the natural extract feverfew which is known for<br />
+                        Formulated with a unique blend of antioxidants including
+                        vitamin E, the natural extract feverfew which is known for
                         its calming properties, and skin-enhancing natural soy
 
                         <div>see all shades</div>
