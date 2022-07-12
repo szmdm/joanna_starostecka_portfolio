@@ -3,7 +3,7 @@ import { mediaSize } from "../../variables/Mixins";
 
 export const PackshotModul = styled.div`
 position: absolute;
-display: flex;
+display: ${({ displayStatus }) => ( displayStatus ? 'none' : 'flex')};
 flex-direction: row;
 align-items: center;
 justify-content: center;

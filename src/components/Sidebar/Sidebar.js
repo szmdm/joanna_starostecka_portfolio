@@ -13,7 +13,6 @@ import {
 
 const Sidebar = forwardRef((props, ref) => {
 
-
   return (
 
     <SidebarContainer isOpen={props.isOpen} ref={ref} >
