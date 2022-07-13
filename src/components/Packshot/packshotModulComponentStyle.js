@@ -3,7 +3,8 @@ import { mediaSize } from "../../variables/Mixins";
 
 export const PackshotModul = styled.div`
 position: absolute;
-display: ${({ displayStatus }) => ( displayStatus ? 'none' : 'flex')};
+/* display: ${({ displayStatus }) => ( displayStatus ? 'none' : 'flex')}; */
+display: flex;
 flex-direction: row;
 align-items: center;
 justify-content: center;
@@ -49,5 +50,4 @@ background-color: black;
 position: relative;
 bottom: 50px;
 left: 20px;
-
-`
+`;

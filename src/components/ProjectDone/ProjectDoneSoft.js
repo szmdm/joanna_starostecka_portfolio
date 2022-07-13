@@ -30,10 +30,20 @@ let displayStyle = {
 
 export const ProjectDoneSoft = () => {
 
-    const [packshotStatus, setPackshotStatus] = useState()
-    const packshotTrigger = () => {setPackshotStatus(!packshotStatus)}
+    const [packshotStatus, setPackshotStatus] = useState(0)
+    const packshotTrigger = () => {setPackshotStatus(1)}
+    const packshotTriggerTwo = () => {setPackshotStatus(2)}
 
     console.log(packshotStatus)
+
+    const DisplayComponent = () => {
+        if (packshotStatus === 1) {
+            return <PackshotItemOneComponent />
+        }
+        else {
+            return <PackshotModulComponent />
+        } 
+    }
 
 
     return (
@@ -53,7 +63,10 @@ export const ProjectDoneSoft = () => {
                 </ProjectContainerSoft>
                 <ProjectContainerSoft>
                     <SecondContainerSoft alignItems="center" flexDirection="row">
-                        <PackshotModulComponent packshotTrigger={packshotTrigger} displayStatus={packshotStatus} />
+                        <PackshotModulComponent 
+                            packshotTrigger={packshotTrigger} 
+                            packshotTriggerTwo={packshotTriggerTwo} 
+                            displayStatus={packshotStatus} />
                         <PackshotItemOneComponent style={displayStyle} />
                         {/* <span>hide shades</span> */}
                     </SecondContainerSoft>

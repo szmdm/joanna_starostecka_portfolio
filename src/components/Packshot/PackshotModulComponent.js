@@ -12,7 +12,7 @@ import PDSoftImg_07 from '../../assets/projectsDone/pDSoft/packshot_module02_04.
 import PDSoftImg_08 from '../../assets/projectsDone/pDSoft/packshot_module02_05.png'
 
 
-const PackshotModulComponent = ({ packshotTrigger, displayStatus }) => {
+const PackshotModulComponent = ({ packshotTrigger, packshotTriggerTwo, displayStatus }) => {
 
     
 
@@ -27,7 +27,7 @@ const PackshotModulComponent = ({ packshotTrigger, displayStatus }) => {
                 </Packshot>
                 <Packshot >
                     <img src={PDSoftImg_05} alt="/" />
-                    <PackshotButton />
+                    <PackshotButton onClick={packshotTriggerTwo}/>
                 </Packshot>
                 <Packshot >
                     <img src={PDSoftImg_06} alt="/" />
