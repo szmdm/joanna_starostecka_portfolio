@@ -2,6 +2,7 @@ import styled from "styled-components"
 import { mediaSize } from "../../variables/Mixins";
 
 export const PackshotItemOne = styled.div`
+    display: flex;
     width: 100%;
     height: auto;
     ${(props) => props.display};
