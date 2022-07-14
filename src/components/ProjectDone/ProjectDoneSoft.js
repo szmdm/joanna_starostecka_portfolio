@@ -2,6 +2,7 @@ import React, { useState } from 'react'
 
 import PackshotModulComponent from '../Packshot/PackshotModulComponent';
 import PackshotItemOneComponent from '../PackshotItemsComponent/PackshotItemOneComponent';
+import PackshotItemTwoComponent from '../PackshotItemsComponent/PackshotItemTwoComponent';
 
 import {
     ProjectContainerSoft,
@@ -23,26 +24,21 @@ import PDSoftImg_03 from "../../assets/projectsDone/pDSoft/Image_Module_01.png"
 
 //COMPONENT CODE
 
-let displayStyle = {
-    display: "none;"
-}
-
 
 export const ProjectDoneSoft = () => {
 
     const [packshotStatus, setPackshotStatus] = useState(3)
-    const packshotTrigger = () => {setPackshotStatus(1)}
-    const packshotTriggerTwo = () => {setPackshotStatus(2)}
-
-    console.log(packshotStatus)
 
     const DisplayComponent = () => {
-        if (packshotStatus === 3) {
+        if (packshotStatus === 1) {
+            return <PackshotModulComponent setPackshotStatus={setPackshotStatus}/>
+        }
+        if (packshotStatus === 2) {
             return <PackshotItemOneComponent />
         }
-        else {
-            return <PackshotModulComponent />
-        } 
+        if (packshotStatus === 3) {
+            return <PackshotItemTwoComponent />
+        }
     }
 
 
@@ -64,17 +60,6 @@ export const ProjectDoneSoft = () => {
                 <ProjectContainerSoft>
                     <SecondContainerSoft alignItems="center" flexDirection="row">
                         {DisplayComponent()}
-
-
-
-
-
-                        {/* <PackshotModulComponent 
-                            packshotTrigger={packshotTrigger} 
-                            packshotTriggerTwo={packshotTriggerTwo} 
-                            displayStatus={packshotStatus} />
-                        <PackshotItemOneComponent style={displayStyle} /> */}
-                        {/* <span>hide shades</span> */}
                     </SecondContainerSoft>
                 </ProjectContainerSoft>
         </>

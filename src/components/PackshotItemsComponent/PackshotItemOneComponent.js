@@ -16,10 +16,10 @@ import {
 }
 from '../PackshotItemsComponent/PackshotItemOneComponentStyle'
 
-const PackshotItemOneComponent = ({ style }) => {
+const PackshotItemOneComponent = () => {
     return (
         <>
-            <PackshotItemOne display={style}>
+            <PackshotItemOne>
                 <ItemOneViewBox>
                     <img src={PDSoftImg_04} alt='product front view'/>
                 </ItemOneViewBox>

@@ -1,4 +1,4 @@
-import React, { useState, useContext } from 'react'
+import React from 'react'
 import {
     PackshotModul,
     Packshot,
@@ -12,7 +12,7 @@ import PDSoftImg_07 from '../../assets/projectsDone/pDSoft/packshot_module02_04.
 import PDSoftImg_08 from '../../assets/projectsDone/pDSoft/packshot_module02_05.png'
 
 
-const PackshotModulComponent = ({ packshotTrigger, packshotTriggerTwo, displayStatus }) => {
+const PackshotModulComponent = ({ setPackshotStatus }) => {
 
     
 
@@ -20,26 +20,26 @@ const PackshotModulComponent = ({ packshotTrigger, packshotTriggerTwo, displaySt
 
     return (
         <>
-            <PackshotModul displayStatus={displayStatus}>
+            <PackshotModul>
                 <Packshot >
                     <img src={PDSoftImg_04} alt="/" />
-                    <PackshotButton onClick={packshotTrigger} />
+                    <PackshotButton onClick={() => setPackshotStatus(2)} />
                 </Packshot>
                 <Packshot >
                     <img src={PDSoftImg_05} alt="/" />
-                    <PackshotButton onClick={packshotTriggerTwo}/>
+                    <PackshotButton onClick={() => setPackshotStatus(2)} />
                 </Packshot>
                 <Packshot >
                     <img src={PDSoftImg_06} alt="/" />
-                    <PackshotButton />
+                    <PackshotButton onClick={() => setPackshotStatus(2)} />
                 </Packshot>
                 <Packshot >
                     <img src={PDSoftImg_07} alt="/" />
-                    <PackshotButton />
+                    <PackshotButton onClick={() => setPackshotStatus(2)} />
                 </Packshot>
                 <Packshot >
                     <img src={PDSoftImg_08} alt="/" />
-                    <PackshotButton />
+                    <PackshotButton onClick={() => setPackshotStatus(2)} />
                 </Packshot>
             </PackshotModul>
         </>

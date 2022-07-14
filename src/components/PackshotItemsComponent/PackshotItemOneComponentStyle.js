@@ -5,7 +5,6 @@ export const PackshotItemOne = styled.div`
     display: flex;
     width: 100%;
     height: auto;
-    ${(props) => props.display};
     align-items: flex-start;
     justify-content: center;
     flex-wrap: wrap;
