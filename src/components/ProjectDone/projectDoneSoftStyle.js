@@ -88,4 +88,52 @@ export const SecondContainerSoft = styled.div`
   }
 `;
 
+export const ThirdContainerSoft = styled.div`
+    display: flex;
+    justify-content: center;
+    max-height: 693px;
+    width: 100%;
+
+    img {
+     width: 100%;
+     height: auto;
+     object-fit: cover;
+    }
+`;
+export const ThirdCSoftContent = styled.div`
+    position: absolute; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+`;
+
+export const ThirdCSoftText = styled.div`
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-family: "FuturaStd-Light";
+    font-size: 1.875rem; 
+    font-size: clamp(1rem, 1.875rem, 2rem);
+    text-transform: capitalize;
+    line-height: 2.25rem;
+    margin: 0px 0 25px 0;
+
+      .number {
+          font-family: "FuturaStd-Light";
+          font-size: 9.375rem;
+          font-size: clamp(3rem, 9.375rem, 9.375rem);
+          margin-bottom: 10px;
+      }
+
+      .under-number {
+          font-family: "FuturaStd-Light";
+          font-size: 1.875rem;
+          font-size: clamp(1rem, 1.875rem, 2.5rem);
+          top: 1px;
+          text-align: center;
+      }
+`;
+
 

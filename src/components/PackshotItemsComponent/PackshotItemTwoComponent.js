@@ -25,12 +25,11 @@ const PackshotItemTwoComponent = () => {
                     </PackshotItemTwoText>
                     <PackshotItemTwoImages>
                         <PackshotItemTwoImage>
-                            <img className='img PDSoftImg_10'src={PDSoftImg_10} alt="/" />
+                            <img className='img PDSoftImg_10' src={PDSoftImg_10} alt="/" />
                             <img className='img PDSoftImg_11' src={PDSoftImg_11} alt="/" />
                             <img className='img PDSoftImg_12' src={PDSoftImg_12} alt="/" />
                             <img className='PDSoftImg_13' src={PDSoftImg_13} alt="/" />
                         </PackshotItemTwoImage>
-
                     </PackshotItemTwoImages>
                     <div className='shades'>see all shades</div>
                 </PackshotItemTwoContent>

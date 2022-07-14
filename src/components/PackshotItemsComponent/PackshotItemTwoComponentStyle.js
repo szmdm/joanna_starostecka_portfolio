@@ -97,9 +97,11 @@ export const PackshotItemTwoImage = styled.div`
         }
 
         @media screen and (max-width: ${mediaSize}) {
+            
             .PDSoftImg_13, .PDSoftImg_12 {
                 display: none;
         }
+
             .PDSoftImg_11 {
                 width: 90%;
                 right: 20px;
@@ -108,7 +110,6 @@ export const PackshotItemTwoImage = styled.div`
             }
             .PDSoftImg_10 {
                 width: 100%;
-
         }
         }
 `
