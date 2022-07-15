@@ -227,6 +227,10 @@ export const FourthContainerSoft = styled.div`
     width: 100%;
     position: relative;
     flex-direction: column;
+
+    @media screen and (max-width: ${mediaSize}) {
+        max-height: none;
+    }
 `
 
 export const FouthTitleBox = styled.div`
@@ -241,12 +245,13 @@ export const FouthTitleBox = styled.div`
 export const FourthContentContainer = styled.div`
     display: flex;
     flex-grow: 1;
-    max-width: 600px;
+    max-width: 900px;
     height: 100%;
     justify-content: center;
     align-items: center;
     margin-bottom: 120px;
     gap: 70px;
+    flex-wrap: wrap;
 `
 
 export const FCCLeft = styled.div`
@@ -273,6 +278,7 @@ export const FCCColors = styled.div`
     display: flex;
     flex-direction: row;
     gap: 15px;
+    flex-wrap: wrap;
 `
 
 export const FCCLeftColors = styled.div`
@@ -297,6 +303,12 @@ export const FCCFonts = styled.div`
     flex-direction: row;
     gap: 15px;
     margin: 48px 0 101px 0;
+    flex-wrap: wrap;
+
+    @media screen and (max-width: ${mediaSize}) {
+        margin: 0px 0 25px 0;
+        gap: 35px;
+    }
 `
 export const FCCRightFonts = styled.div`
     display: flex;

@@ -109,17 +109,17 @@ export const ProjectDoneSoft = () => {
                                 </FCCLeftColors>
                                 <FCCLeftColors>
                                     <img src={PDSoftImg_16} alt="" />
-                                    <span>Light Grey<br />#f6f6f6<br /></span>
+                                    <span>Light Grey<br />#e6e4e5<br /></span>
                                 </FCCLeftColors>
                                 <FCCLeftColors>
                                     <img src={PDSoftImg_17} alt="" />
-                                    <span>Light Grey<br />#f6f6f6<br /></span>
+                                    <span>Light Grey<br />#10141f<br /></span>
                                 </FCCLeftColors>
                             </FCCColors>
                         </FCCLeft>
                         <FCCRight>
                             <FCCTitle>
-                                Colors
+                                Fonts
                             </FCCTitle>
                             <FCCFonts>
                                 <FCCRightFonts fontFamily={"FuturaStd-Light"}>
