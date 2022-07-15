@@ -8,6 +8,7 @@ export const PackshotItemOne = styled.div`
     align-items: flex-start;
     justify-content: center;
     flex-wrap: wrap;
+    margin-bottom: 10px;
 `
 
 export const ItemOneViewBox = styled.div`
@@ -40,7 +41,7 @@ export const ItemOneContentBox = styled.div`
 export const ItemOneContentTitle = styled.text`
     font-family: "FuturaStd-Light";
     font-size: 1.875rem; 
-    font-size: clamp(1rem, 1.875rem, 2rem);
+    font-size: clamp(1rem, 1.875rem, 5vw);
     text-transform: capitalize;
     line-height: 2.25rem;
     margin: 0px 0 25px 0;

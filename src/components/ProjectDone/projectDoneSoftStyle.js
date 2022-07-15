@@ -121,6 +121,7 @@ export const SecondContainerSoft = styled.div`
   @media screen and (max-width: ${mediaSize}) {
     flex-direction: column;
     align-items: center;
+    min-height: 450px;
   }
 `;
 
@@ -330,4 +331,197 @@ export const FCCRightFonts = styled.div`
         font-size: 1rem;
         font-size: clamp(0.7rem, 1rem, 1.5rem);
     }
+`
+
+export const FifthContainerSoft = styled.div`
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    position: relative;
+
+        img {
+        width: 100%;
+        height: auto;
+        object-fit: cover;
+        }
+`
+
+export const FifthCSoftContent = styled.div`
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+    position: absolute;
+    flex-direction: column;
+    max-width: 355px;
+    padding: 10px;
+    text-align: center;
+
+    .user {
+        font-family: "FuturaStd-Light";
+        font-size: 1.875rem;
+        font-size: clamp(1rem, 1.875rem, 2vw);
+        margin-bottom: 30px;
+    }
+    span {
+        font-family: "FuturaStd-Light";
+        font-size: 1rem;
+        font-size: clamp(0.7rem, 1rem, 2vw);
+    }
+
+`
+export const SixthContainerSoft = styled.div`
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    flex-direction: column;
+    margin: 80px 0 130px 0;
+
+    @media screen and (max-width: ${mediaSize}) {
+        max-height: none;
+    }
+`
+
+export const SixthCSoftTitle = styled.div`
+    font-family: "FuturaStd-Light";
+    font-size: 1.875rem;
+    font-size: clamp(1rem, 1.875rem, 2vw);
+    margin-bottom: 30px;
+`
+export const SixthCContent = styled.div`
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 1;
+    flex-wrap: wrap;
+    margin: 50px 0 80px 0;
+    max-width: 940px;
+    gap: 25px;
+`
+export const SCCLeft = styled.div`
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+`
+export const SCCTitle = styled.div`
+    font-family: "FuturaStd-Light";
+    font-size: 1rem;
+    font-size: clamp(0.7rem, 1rem, 2vw);
+`
+export const SCCLeftContent = styled.div`
+    display: flex;
+    flex-direction: row;
+    margin: 65px 0 130px 0;
+    gap: 15px;
+    flex-wrap: wrap;
+    flex: 1;
+
+    .leftBox {
+        font-family: "FuturaStd-Book";
+        font-size: 1rem;
+        font-size: clamp(0.6rem, 0.9rem, 2vw); 
+        padding: 0.5px 10px;
+    }
+
+    .addCart {
+        border: 2px solid black;
+    }
+    .buyNow {
+        border: 2px solid black;
+    }
+    .seeAll {
+        text-decoration-line: underline;
+        text-decoration-thickness: 18%;
+        text-underline-offset: 4px;
+    }
+
+    @media screen and (max-width: ${mediaSize}) {
+        margin: 20px 0 10px 0;
+    }
+`
+export const SCCLeftFooter = styled.div`
+    height: auto;
+    margin: 5px 0 25px 0;
+    white-space: pre;
+    font-family: "FuturaStd-Book";
+    font-size: clamp(0.6rem, 0.8rem, 2vw);
+
+    span {
+        font-weight: bold;
+    }
+
+    @media screen and (max-width: ${mediaSize}) {
+        margin: 5px 0 15px 0;
+    }
+`
+export const SCCRight = styled.div`
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+`
+export const SCCRightTitle = styled.div`
+    font-family: "FuturaStd-Light";
+    font-size: 1rem;
+    font-size: clamp(0.7rem, 1rem, 2vw);
+`
+
+export const SCCRightContent = styled.div`
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 30px 0 40px 0;
+    flex: 1;
+    flex-wrap: wrap;
+    max-width: 470px;
+    gap: 15px;
+
+`
+export const FormButton = styled.div`
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    font-family: "FuturaStd-Light";
+    font-size: 1rem;
+    font-size: clamp(0.5rem, 0.75rem, 2vw); 
+    padding: 0.5px 10px;
+    border: ${(props) => props.border};
+    width: 224px;
+    height: 41px;
+
+    span {
+        white-space: pre;
+    }
+
+    @media screen and (max-width:${mediaSize}) {
+        display: ${(props) => props.display};
+    }
+`
+export const SCCRightFooter = styled.div`
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+        .sccRightTitle {
+            font-family: "FuturaStd-Light";
+            font-size: 1rem;
+            font-size: clamp(0.7rem, 1rem, 2vw);
+            margin-bottom: 15px;
+        }
+
+        .sccRightIcons {
+            display: flex;
+            gap: 5px;
+        }
+
+`
+export const SixthCSubtitle = styled.div`
+    font-family: "FuturaStd-Light";
+    font-size: 1rem;
+    font-size: clamp(0.7rem, 1rem, 2vw);
 `

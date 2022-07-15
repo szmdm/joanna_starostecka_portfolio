@@ -3,7 +3,6 @@ import { mediaSize } from "../../variables/Mixins";
 
 export const PackshotModul = styled.div`
 position: absolute;
-/* display: ${({ displayStatus }) => ( displayStatus ? 'none' : 'flex')}; */
 display: flex;
 flex-direction: row;
 align-items: center;
@@ -14,6 +13,8 @@ max-height: 670px;
 overflow: auto;
 
 @media screen and (max-width: ${mediaSize}) {
+    position: initial;
+    max-height: 450px;
 }
 `;
 

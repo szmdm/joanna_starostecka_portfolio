@@ -24,6 +24,21 @@ import {
     FCCFonts,
     FCCLeftColors,
     FCCRightFonts,
+    FifthContainerSoft,
+    FifthCSoftContent,
+    SixthContainerSoft,
+    SixthCSoftTitle,
+    SixthCContent,
+    SCCLeft,
+    SCCTitle,
+    SCCLeftContent,
+    SCCLeftFooter,
+    SCCRight,
+    SCCRightContent,
+    SCCRightTitle,
+    FormButton,
+    SCCRightFooter,
+    SixthCSubtitle,
 
 }
     from "./projectDoneSoftStyle"
@@ -34,6 +49,11 @@ import PDSoftImg_14 from "../../assets/projectsDone/pDSoft/Image_Module_03_view_
 import PDSoftImg_15 from "../../assets/projectsDone/pDSoft/color_module03_01.png"
 import PDSoftImg_16 from "../../assets/projectsDone/pDSoft/color_module03_02.png"
 import PDSoftImg_17 from "../../assets/projectsDone/pDSoft/color_module03_03.png"
+import PDSoftImg_18 from "../../assets/projectsDone/pDSoft/Image_Module_03_view_05.png"
+import PDSoftImg_19 from "../../assets/projectsDone/pDSoft/Mastercard.png"
+import PDSoftImg_20 from "../../assets/projectsDone/pDSoft/paypall.png"
+import PDSoftImg_21 from "../../assets/projectsDone/pDSoft/visa.png"
+import PDSoftImg_22 from "../../assets/projectsDone/pDSoft/Mastercard_big.png"
 
 
 
@@ -134,6 +154,73 @@ export const ProjectDoneSoft = () => {
                         </FCCRight>
                     </FourthContentContainer>
                 </FourthContainerSoft>
+            </ProjectContainerSoft>
+            <ProjectContainerSoft>
+                <FifthContainerSoft>
+                    <img src={PDSoftImg_18} alt="" />
+                    <FifthCSoftContent>
+                        <div className='user'>User Persona</div>
+                        <span>
+                            Made with broad spectrum SPF 15 sunscreen with titanium dioxide,
+                            the full coverage foundation helps to protect skin from dangerous
+                            UVA/UVB rays that can burn and prematurely age skin
+                        </span>
+                    </FifthCSoftContent>
+                </FifthContainerSoft>
+            </ProjectContainerSoft>
+            <ProjectContainerSoft>
+                <SixthContainerSoft>
+                    <SixthCSoftTitle>
+                        Design System
+                    </SixthCSoftTitle>
+                    <SixthCContent>
+                        <SCCLeft>
+                            <SCCTitle>
+                                Buttons&Tags
+                            </SCCTitle>
+                            <SCCLeftContent>
+                                <div className='leftBox addCart'>add to card</div>
+                                <div className='leftBox buyNow'>buy now</div>
+                                <div className='leftBox seeAll'>see all shades</div>
+                            </SCCLeftContent>
+                            <SCCLeftFooter>
+                            -        <span>2</span>        +
+                            </SCCLeftFooter>
+                        </SCCLeft>
+                        <SCCRight>
+                            <SCCRightTitle>
+                                Text Inputs
+                            </SCCRightTitle>
+                            <SCCRightContent>
+                                <FormButton border="2px solid #CCCBCB;" >
+                                    John Black
+                                </FormButton>
+                                <FormButton border="none" display="none">
+                                    <div className='empty'></div>
+                                </FormButton>
+                                <FormButton border="2px solid #CCCBCB;">
+                                    <span>+48  </span>
+                                    793 182 713
+                                </FormButton>
+                                <FormButton border="2px solid #CCCBCB;">
+                                    <img src={PDSoftImg_19} alt='/' />
+                                    &nbsp;0000 0000 0000 0000
+                                </FormButton>
+                            </SCCRightContent>
+                            <SCCRightFooter>
+                                <div className='sccRightTitle'>Payment</div>
+                                <div className='sccRightIcons'>
+                                    <img src={PDSoftImg_22} alt='/' />
+                                    <img src={PDSoftImg_21} alt='/' />
+                                    <img src={PDSoftImg_20} alt='/' />
+                                </div>
+                            </SCCRightFooter>
+                        </SCCRight>
+                    </SixthCContent>
+                    <SixthCSubtitle>
+                        Photos by Anna Shvets
+                    </SixthCSubtitle>
+                </SixthContainerSoft>
             </ProjectContainerSoft>
         </>
     )
