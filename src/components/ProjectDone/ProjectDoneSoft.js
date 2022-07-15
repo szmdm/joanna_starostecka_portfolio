@@ -70,12 +70,12 @@ export const ProjectDoneSoft = () => {
                 <ProjectContainerSoft>
                     <ThirdContainerSoft>
                     <img src={PDSoftImg_14} alt="" />
+                    <div className='footerText'>read more</div>
                         <ThirdCSoftContent>
                             <ThirdCSoftText>
                                 <div className='number'>15</div>
                                 <div className='under-number'>SPF<br />sun protection</div>
                             </ThirdCSoftText>
-                            <div>aafsdf</div>
                         </ThirdCSoftContent>
                     </ThirdContainerSoft>
                 </ProjectContainerSoft>

@@ -1,5 +1,5 @@
 import styled from "styled-components"
-import { mediaSize } from "../../variables/Mixins";
+import { laptop, mediaSize } from "../../variables/Mixins";
 
 export const ProjectContainerSoft = styled.div`
     display: flex;
@@ -76,6 +76,7 @@ export const SecondContainerSoft = styled.div`
   align-items: ${(props) => props.alignItems};
   justify-content: center;
   flex-direction: ${(props) => props.flexDirection};
+  margin-bottom: 15px;
   
     span {
         position:relative;
@@ -93,13 +94,37 @@ export const ThirdContainerSoft = styled.div`
     justify-content: center;
     max-height: 693px;
     width: 100%;
+    position: relative;
 
     img {
      width: 100%;
      height: auto;
      object-fit: cover;
     }
+    
+    .footerText {
+        position: absolute;
+        bottom: 5px;
+        font-family: "FuturaStd-Light";
+        font-size: 1rem; 
+        font-size: clamp(0.7rem, 1rem, 1.2rem);
+        line-height: 1.125rem; 
+        margin: 20px 0 25px 0;
+        text-decoration-line: underline;
+        text-decoration-thickness: 18%;
+        text-underline-offset: 1.5px;
+        margin-left: 25px;
+    }
+
+    @media screen and (max-width: ${mediaSize}) {
+
+        .footerText {
+            display: none;
+            margin-left: 0;
+        }
+    }
 `;
+
 export const ThirdCSoftContent = styled.div`
     position: absolute; 
     display: flex;
@@ -113,18 +138,17 @@ export const ThirdCSoftText = styled.div`
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    font-family: "FuturaStd-Light";
-    font-size: 1.875rem; 
-    font-size: clamp(1rem, 1.875rem, 2rem);
-    text-transform: capitalize;
     line-height: 2.25rem;
-    margin: 0px 0 25px 0;
+    margin: 30px 0 25px 0;
+    position: relative;
+    top: 325px;
 
       .number {
           font-family: "FuturaStd-Light";
           font-size: 9.375rem;
           font-size: clamp(3rem, 9.375rem, 9.375rem);
           margin-bottom: 10px;
+          letter-spacing: -25px;
       }
 
       .under-number {
@@ -133,7 +157,31 @@ export const ThirdCSoftText = styled.div`
           font-size: clamp(1rem, 1.875rem, 2.5rem);
           top: 1px;
           text-align: center;
+          margin-left: 25px;
+          position: relative;
+          top: 50px;
       }
+
+      @media screen and (max-width: ${mediaSize}) {
+        position: initial;
+
+        .number {
+            font-size: 80px;
+            margin-bottom: 0px;
+            margin-left: 0;
+            letter-spacing: 0;
+        }
+        .under-number {
+            font-size: 20px;
+            line-height: 22px;
+            top: 30px;
+            margin-left: 0;
+        }
+    }
+
+    @media screen and (min-width: ${mediaSize}) and (max-width: ${laptop}) {
+            top: 160px;
+    }
 `;
 
 
