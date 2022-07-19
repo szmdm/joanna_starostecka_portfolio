@@ -1,6 +1,7 @@
 import styled from 'styled-components';
 import { mediaSize } from '../../variables/Mixins';
 import { Link } from 'react-router-dom';
+import { keyframes } from 'styled-components';
 
 export const ProjectContainer = styled.div`
     
@@ -41,6 +42,14 @@ export const InfoContainer = styled.div`
     justify-content: center;
     flex-direction: column;
 
+    .goProject {
+        display: flex;
+        &:hover {
+        color: gold;
+        transition: ease-in;
+        cursor: pointer;
+    }
+    }
    
 `
 
@@ -54,18 +63,22 @@ export const ProjectButton = styled(Link)`
     margin: 0 0 20px 100px;
     text-decoration: none;
 
-    &:hover {
-        color: gold;
-        transition: ease-in;
-        cursor: pointer;
-    }
 
     @media screen and (max-width: ${mediaSize}) {
         margin-left: 15px;
         transition: 0.2s ease-in;
         width: auto;
     }
+`
 
+const move = keyframes` 
+    from { left: 0px;} 
+     to { left: 25px;}  
 
 `
 
+export const ArrowIcon = styled.div`
+    margin-left: 50px;
+    animation: ${move} 3s linear forwards;
+
+`

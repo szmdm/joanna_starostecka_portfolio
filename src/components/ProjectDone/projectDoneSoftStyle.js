@@ -474,7 +474,7 @@ export const SCCRightContent = styled.div`
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 30px 0 40px 0;
+    margin: 59px 0 40px 0;
     flex: 1;
     flex-wrap: wrap;
     max-width: 470px;

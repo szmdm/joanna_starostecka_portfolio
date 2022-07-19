@@ -58,7 +58,10 @@ const App = () => {
 
   return (
     <Router>
-      <Navbar toggle={toggle} />
+      <Navbar 
+        toggle={toggle}
+        isOpen={isOpen}
+      />
       <Sidebar
         ref={domNode}
         isOpen={isOpen}

@@ -1,5 +1,5 @@
 import React from 'react';
-import { ProjectContainer, ProjectButton, ImgContainer, InfoContainer } from './projectStyle';
+import { ProjectContainer, ProjectButton, ImgContainer, InfoContainer, ArrowIcon } from './projectStyle';
 import { BsArrowRight } from 'react-icons/bs';
 
 
@@ -10,13 +10,17 @@ const Project = ({ projectName, projectImg }) => {
   return (
     <>
       <ProjectContainer name={projectName} >
-        <ImgContainer style={{backgroundImage: `url(${projectImg})`}} />
+        <ImgContainer style={{ backgroundImage: `url(${projectImg})` }} />
         <InfoContainer>
           <h1>{projectName}</h1>
-          <ProjectButton to={"/project/" + projectName} >
-            Landingpage and visuals
-            <BsArrowRight style={{marginLeft: '20px'}} />
-          </ProjectButton>
+          <div className='goProject'>
+            <ProjectButton to={"/project/" + projectName} >
+              Landingpage and visuals
+            </ProjectButton>
+            <ArrowIcon>
+            <BsArrowRight />
+            </ArrowIcon>
+          </div>
         </InfoContainer>
       </ProjectContainer>
     </>

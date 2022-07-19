@@ -40,7 +40,7 @@ export const NavLogo = styled(Link)`
 `
 
 export const Navicon = styled.div`
-    display: flex;
+    display: ${({ isOpen }) => ( isOpen ? 'none' : 'flex')};
     justify-content: center;
     align-items: center;
     width: 50px;
