@@ -42,14 +42,6 @@ export const InfoContainer = styled.div`
     justify-content: center;
     flex-direction: column;
 
-    .goProject {
-        display: flex;
-        &:hover {
-        color: gold;
-        transition: ease-in;
-        cursor: pointer;
-    }
-    }
    
 `
 
@@ -63,6 +55,12 @@ export const ProjectButton = styled(Link)`
     margin: 0 0 20px 100px;
     text-decoration: none;
 
+    &:hover {
+        color: gold;
+        transition: ease-in;
+        cursor: pointer;
+    }
+
 
     @media screen and (max-width: ${mediaSize}) {
         margin-left: 15px;
@@ -72,13 +70,17 @@ export const ProjectButton = styled(Link)`
 `
 
 const move = keyframes` 
-    from { left: 0px;} 
-     to { left: 25px;}  
+    from { 
+        transform: translateX(0px);
+    }
+     to { 
+        transform: translateX(10px);
+     } 
 
 `
 
 export const ArrowIcon = styled.div`
-    margin-left: 50px;
-    animation: ${move} 3s linear forwards;
+    margin-left: 20px;
+    animation: ${move} 2s cubic-bezier(0, 0, 0.2, 1) infinite;
 
 `
