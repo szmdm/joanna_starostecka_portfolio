@@ -21,13 +21,13 @@ const Sidebar = forwardRef((props, ref) => {
           <CloseIcon size={80} />
         </Icon>
         <SidebarMenu>
-          <SimpleLink to="/#">HOME</SimpleLink>
+          <SimpleLink to="/#" style={{marginBottom: "40px"}}>HOME</SimpleLink>
           <SimpleLink to="/#gillette">Gillette</SimpleLink>
           <SimpleLink to="/#cocacola">Coca Cola</SimpleLink>
-          <SimpleLink to="/#schwartz">Schwartz</SimpleLink>
-          <SimpleLink to="/#sprite">Sprite</SimpleLink>
+          {/* <SimpleLink to="/#schwartz">Schwartz</SimpleLink> */}
+          {/* <SimpleLink to="/#sprite">Sprite</SimpleLink> */}
           <SimpleLink to="/#soft">Soft</SimpleLink>
-          <SimpleLink to="/#cocacolastand">Coca Cola stand</SimpleLink>
+          {/* <SimpleLink to="/#cocacolastand">Coca Cola stand</SimpleLink> */}
 
 
    {/* react scroll version  */}

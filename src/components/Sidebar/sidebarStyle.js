@@ -1,5 +1,4 @@
 import styled from 'styled-components';
-import { Link as LinkScroll } from 'react-scroll';
 import { FaTimes } from 'react-icons/fa';
 import{ Link } from "react-router-dom";
 
@@ -36,8 +35,8 @@ export const Icon = styled.div`
     outline: none;
 
     @media screen and (max-width: 400px) {
-        right: 4.8rem;
-        transition: 0.3s ease-in-out
+        transition: 0.3s ease-in-out;
+        display: flex;
     }
 `
 
@@ -47,12 +46,12 @@ export const SidebarMenu = styled.div`
     grid-template-rows: repeat(7, 40px);
     text-align: center;
     position: absolute;
-    top: 15rem;
-    right: 6rem;
+    top: 16rem;
+    right: 0rem;
+    width: 100%;
 
     @media screen and (max-width: 400px) {
         grid-template-rows: repeat(7, 30px);
-        right: 3rem;
         transition: 0.3s ease-in-out;
     }
 `
@@ -81,6 +80,7 @@ export const SidebarMenu = styled.div`
 //     }
 // `
 export const SimpleLink = styled(Link)`
+    font-family: arboria, sans-serif;
     display: flex;
     align-items: center;
     justify-content: center;
