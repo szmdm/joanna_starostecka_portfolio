@@ -21,6 +21,9 @@ import {
   ColorBox,
   TextBox,
   IPadContainer,
+  BCGTwoColor,
+  BGHeadFidelity,
+  BCGTwoColorTitle,
 } from "./projectDoneGilletteStyle";
 import BCGOne_1 from "../../assets/projectsDone/pDGillette/IPad_01-1.png";
 import BCGTwo_1 from "../../assets/projectsDone/pDGillette/Gillette_logo_02-1.png";
@@ -31,21 +34,25 @@ import SCGImg_4 from "../../assets/projectsDone/pDGillette/font_01.png";
 import SCGImg_5 from "../../assets/projectsDone/pDGillette/font_02.png";
 import BCGImg_1 from "../../assets/projectsDone/pDGillette/Image_03.png";
 import BCGImg_2 from "../../assets/projectsDone/pDGillette/IPad_view_1.png";
+import GilletteImg_01 from "../../assets/projectsDone/pDGillette/Gillette_02_background.png";
+import GilletteImg_02 from "../../assets/projectsDone/pDGillette/Gillette_03_background.png";
+import GilletteImg_03 from "../../assets/projectsDone/pDGillette/Gillette_04_background.png";
+import GilletteImg_04 from "../../assets/projectsDone/pDGillette/Gillette_03_background_2.png";
 import ScrollToTop from "../ScrollToTop";
 
 
 export const ProjectDoneGilette = () => {
   return (
     <>
-    <ScrollToTop />
+      <ScrollToTop />
       <BiggerContainerGilette>
         <ProjectContainer alignItems="center">
-          <BCGOne>
+          <BCGOne width="50%">
             <BCGOneContainer>
               <img src={BCGOne_1} alt="content presented on tablet" />
             </BCGOneContainer>
           </BCGOne>
-          <BCGTwo margin="100px 0 100px 0">
+          <BCGTwo margin="5px 0 100px 0">
             <BGHead width="auto" display="flex">
               <img src={BCGTwo_1} alt="gillette logo" />
               <BGHeadDescription1 textcolor="#fff">
@@ -57,16 +64,16 @@ export const ProjectDoneGilette = () => {
                 Landingpage for campagne
               </BGTitle>
               <BGHeadDescription2 textcolor="#fff">
-                Becoming the best doesn’t happen overnight.
-                <br /> There’s always room for improvement.
+                Becoming the best doesn’t happen overnight.<br />
+                There’s always room for improvement.
               </BGHeadDescription2>
             </BGContent>
           </BCGTwo>
         </ProjectContainer>
       </BiggerContainerGilette>
-      <SmallerContainerGilette alignItems="center" maxHeight="500px">
+      <SmallerContainerGilette alignItems="center" maxHeight="500px" backgroundImage={GilletteImg_01}>
         <ProjectContainer alignItems="center">
-          <SCGOne margin="0.6rem 3rem 0.6rem 0rem">
+          <SCGOne margin="6rem 3rem 0.6rem 0rem">
             <BGHead width="380px" mediaWidth="100%">
               <BGTitle textcolor="#1A316D">
                 Campain gap
@@ -81,10 +88,6 @@ export const ProjectDoneGilette = () => {
                 <img src={SCGImg_1} alt="gillette fusion logo" height="60px" width="209px" />
                 <img src={SCGImg_2} alt="gillette icons" />
               </SCGImg>
-              <BGHeadDescription2 textcolor="#1A316D">
-                Becoming the best doesn’t happen overnight.
-                <br /> There’s always room for improvement.
-              </BGHeadDescription2>
             </BGContent>
           </SCGOne>
           <SCGTwo>
@@ -92,116 +95,116 @@ export const ProjectDoneGilette = () => {
           </SCGTwo>
         </ProjectContainer>
       </SmallerContainerGilette>
-      <BiggerContainerGilette>
-      <ProjectContainer alignItems="center">
-        <BCGOne>
-          <BCGOneContainer>
-            <img src={BCGImg_1} alt="young couple on a smartphone screen" />
-          </BCGOneContainer>
-        </BCGOne>
-        <BCGTwo margin="100px 0 100px 0">
-          <BGContent>
+      <BiggerContainerGilette backgroundImage={GilletteImg_02}>
+        <ProjectContainer alignItems="center">
+          <BCGOne>
+            <BCGOneContainer>
+              <img src={BCGImg_1} alt="young couple on a smartphone screen" />
+            </BCGOneContainer>
+          </BCGOne>
+          <BCGTwo margin="100px 0 100px 80px">
+            <BGContent>
+              <BGTitle textcolor="#fff">
+                User persona
+              </BGTitle>
+              <BGHeadDescription2 textcolor="#fff">
+                Becoming the best doesn’t happen overnight.
+                <br /> There’s always room for improvement.
+              </BGHeadDescription2>
+            </BGContent>
+          </BCGTwo>
+        </ProjectContainer>
+      </BiggerContainerGilette>
+      <SmallerContainerGilette alignItems="flex-end" maxHeight="500px" backgroundImage={GilletteImg_03}>
+        <ProjectContainer alignItems="flex-end">
+          <SCGOne margin="0.6rem 7rem 0.6rem 0rem">
+            <BGHead width="380px" mediaWidth="100%">
+              <BGTitle textcolor="#1A316D">
+                Typography
+              </BGTitle>
+              <BGHeadDescription2 textcolor="#1A316D">
+                Becoming the best doesn’t happen overnight.
+                <br /> There’s always room for improvement.
+              </BGHeadDescription2>
+            </BGHead>
+            <BGContent height="200px">
+              <SCGImg>
+                <img src={SCGImg_4} alt="" height="171px" width="311px" />
+              </SCGImg>
+              <BGHeadDescription3 textcolor="#1A316D" position="absolute" fontWeight="bold">
+                Futura STD Bold
+                <br /> Aa Bb Cc
+              </BGHeadDescription3>
+            </BGContent>
+          </SCGOne>
+          <SCGThree>
+            <BGContent height="200px">
+              <SCGImg>
+                <img src={SCGImg_5} alt="" height="175px" width="248px" />
+              </SCGImg >
+              <BGHeadDescription3 textcolor="#1A316D" position="absolute" fontWeight="lighter">
+                Futura STD Bold
+                <br /> Aa Bb Cc
+              </BGHeadDescription3>
+            </BGContent>
+          </SCGThree>
+        </ProjectContainer>
+      </SmallerContainerGilette>
+      <BiggerContainerGilette backgroundImage={GilletteImg_04} >
+        <ProjectContainer alignItems="center" flexDirection="column">
+          <BCGOne />
+          <BCGTwoColorTitle margin="60px 10px 10px 10px">
             <BGTitle textcolor="#fff">
               User persona
             </BGTitle>
-            <BGHeadDescription2 textcolor="#fff">
-              Becoming the best doesn’t happen overnight.
-              <br /> There’s always room for improvement.
-            </BGHeadDescription2>
-          </BGContent>
-        </BCGTwo>
+          </BCGTwoColorTitle>
+          <InsideBiggerContainerGilette>
+            <BCGTwoColor>
+              <ColorContainer>
+                <ColorBox backgroundColor="#10141f" />
+                <TextBox textcolor="#fff">
+                  Blue
+                  <br /> Colour for buttons
+                </TextBox>
+              </ColorContainer>
+              <ColorContainer>
+                <ColorBox backgroundColor="#1a316d" />
+                <TextBox textcolor="#fff">
+                  Blue
+                  <br /> Colour for buttons
+                </TextBox>
+              </ColorContainer>
+            </BCGTwoColor>
+            <BCGTwoColor>
+              <ColorContainer>
+                <ColorBox backgroundColor="#131524" />
+                <TextBox textcolor="#fff">
+                  Blue
+                  <br /> Colour for buttons
+                </TextBox>
+              </ColorContainer>
+              <ColorContainer>
+                <ColorBox backgroundColor="#fff" />
+                <TextBox textcolor="#fff">
+                  Blue
+                  <br /> Colour for buttons
+                </TextBox>
+              </ColorContainer>
+            </BCGTwoColor>
+          </InsideBiggerContainerGilette>
         </ProjectContainer>
       </BiggerContainerGilette>
-      <SmallerContainerGilette alignItems="flex-end" maxHeight="500px">
-      <ProjectContainer alignItems="flex-end">
-        <SCGOne margin="0.6rem 3rem 0.6rem 0rem">
-          <BGHead width="380px" mediaWidth="100%">
+      <SmallerContainerGilette alignItems="flex-end" backgroundImage={GilletteImg_01}>
+        <SCGOne margin="6.7rem 3rem 0rem 1rem">
+          <BGHeadFidelity mediaWidth="100%">
             <BGTitle textcolor="#1A316D">
-              Typography
+              High fidelity mockup
             </BGTitle>
             <BGHeadDescription2 textcolor="#1A316D">
               Becoming the best doesn’t happen overnight.
               <br /> There’s always room for improvement.
             </BGHeadDescription2>
-          </BGHead>
-          <BGContent height="200px">
-            <SCGImg>
-              <img src={SCGImg_4} alt="" height="171px" width="311px" />
-            </SCGImg>
-            <BGHeadDescription3 textcolor="#1A316D" position="absolute" fontWeight="bold">
-              Futura STD Bold
-              <br /> Aa Bb Cc
-            </BGHeadDescription3>
-          </BGContent>
-        </SCGOne>
-        <SCGThree>
-          <BGContent height="200px">
-            <SCGImg>
-              <img src={SCGImg_5} alt="" height="175px" width="248px" />
-            </SCGImg >
-            <BGHeadDescription3 textcolor="#1A316D" position="absolute" fontWeight="lighter">
-              Futura STD Bold
-              <br /> Aa Bb Cc
-            </BGHeadDescription3>
-          </BGContent>
-        </SCGThree>
-        </ProjectContainer>
-      </SmallerContainerGilette>
-      <BiggerContainerGilette>
-      <ProjectContainer alignItems="flex-end" flexDirection="column">
-        <BCGOne />
-        <BCGTwo margin="40px 0px 40px 430px">
-          <BGTitle textcolor="#fff">
-            User persona
-          </BGTitle>
-        </BCGTwo>
-        <InsideBiggerContainerGilette>
-          <BCGOne flexDirection="column">
-            <ColorContainer>
-              <ColorBox backgroundColor="#10141f" />
-              <TextBox textcolor="#fff">
-                Blue
-                <br /> Colour for buttons
-              </TextBox>
-            </ColorContainer>
-            <ColorContainer>
-              <ColorBox backgroundColor="#1a316d" />
-              <TextBox textcolor="#fff">
-                Blue
-                <br /> Colour for buttons
-              </TextBox>
-            </ColorContainer>
-          </BCGOne>
-          <BCGTwo margin="0">
-            <ColorContainer>
-              <ColorBox backgroundColor="#131524" />
-              <TextBox textcolor="#fff">
-                Blue
-                <br /> Colour for buttons
-              </TextBox>
-            </ColorContainer>
-            <ColorContainer>
-              <ColorBox backgroundColor="#fff" />
-              <TextBox textcolor="#fff">
-                Blue
-                <br /> Colour for buttons
-              </TextBox>
-            </ColorContainer>
-          </BCGTwo>
-        </InsideBiggerContainerGilette>
-        </ProjectContainer>
-      </BiggerContainerGilette>
-      <SmallerContainerGilette alignItems="flex-end">
-        <SCGOne margin="6.7rem 3rem 16.25rem 8rem">
-          <BGHead width="380px" mediaWidth="100%">
-            <BGTitle textcolor="#1A316D">
-              High fideity mockup
-            </BGTitle>
-            <BGHeadDescription2 textcolor="#1A316D">
-              Becoming the best doesn’t happen overnight.
-              <br /> There’s always room for improvement.
-            </BGHeadDescription2>
-          </BGHead>
+          </BGHeadFidelity>
         </SCGOne>
         <SCGThree />
       </SmallerContainerGilette>

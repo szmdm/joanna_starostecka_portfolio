@@ -8,6 +8,7 @@ export const ProjectContainer = styled.div`
   align-items: ${(props) => props.alignItems};
   justify-content: center;
   flex-direction: ${(props) => props.flexDirection};
+  width: 100%;
 
   @media screen and (max-width: ${mediaSize}) {
     flex-direction: column;
@@ -22,6 +23,8 @@ export const BiggerContainerGilette = styled.div`
   flex-wrap: wrap;
   width: 100%;
   background: #10141f;
+  background-image: url(${(props) => props.backgroundImage});
+  background-size: cover;
 
   @media screen and (max-width: ${mediaSize}) {
     flex-direction: column;
@@ -32,21 +35,27 @@ export const BCGOne = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 50%;
+  width: ${(props) => props.width};
   flex-direction: ${(props) => props.flexDirection};
 
   @media screen and (max-width: ${mediaSize}) {
-    /* width: auto; */
+    
   }
 `;
 
 export const BCGOneContainer = styled.div`
-  margin: 3rem 0.5rem 0 3rem;
+  margin: 3rem 4.5rem 0 1rem;
   width: 100%;
 
   img {
    max-width: 100%;
    height: auto;
+   position: relative;
+   left: 65px;
+
+   @media screen and (max-width: ${mediaSize}) {
+    left: 0;
+  }
   }
 
   @media screen and (max-width: ${mediaSize}) {
@@ -69,6 +78,19 @@ export const BCGTwo = styled.div`
   }
 `;
 
+export const BCGTwoColorTitle = styled.div`
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  flex-direction: column;
+  width: 60%;
+  margin: ${(props) => props.margin};
+
+  @media screen and (max-width: ${mediaSize}) {
+    margin: 10px 2.5rem 10px 2.5rem;
+  }
+`;
+
 export const BGHead = styled.div`
   display: flex;
   align-items: flex-start;
@@ -85,10 +107,33 @@ export const BGHead = styled.div`
     align-items: center;
   }
 `;
+export const BGHeadFidelity = styled.div`
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-end;
+  flex-direction: column;
+  height: 30%;
+  width: 380px;
+  position: relative;
+  bottom: 240px;
+  left: -110px;
+  min-height: 560px;
+
+  @media screen and (max-width: ${mediaSize}) {
+    display: ${(props) => props.display};
+    text-align: center;
+    justify-content: center;
+    width: ${(props) => props.mediaWidth};
+    align-items: center;
+    bottom: 0px;
+    left: 0px;
+    min-height: 200px;
+  }
+`;
 
 export const BGHeadDescription1 = styled.span`
   color: ${(props) => props.textcolor};
-  font-family: futura-pt, sans-serif;
+  font-family: "FuturaStd-Bold";
   font-style: normal;
   font-weight: 800;
   text-transform: uppercase;
@@ -101,25 +146,30 @@ export const BGHeadDescription1 = styled.span`
 
 export const BGHeadDescription2 = styled.div`
   color: ${(props) => props.textcolor};
-  font-family: futura-pt, sans-serif;
+  font-family: "FuturaStd-Medium";
   font-style: normal;
   font-weight: 300;
   font-size: 1.25rem;
   position: ${(props) => props.position};
+  line-height: 30px;
+  margin: ${(props) => props.margin};
+  
 
   @media screen and (max-width: ${mediaSize}) {
-    font-size: clamp(1rem, 2.5vw, 2rem);
+    font-size: clamp(1rem, 1.25rem, 2vw);
   }
 `;
 
 export const BGTitle = styled.div`
   color: ${(props) => props.textcolor};
-  font-family: futura-pt, sans-serif;
+  font-family: "FuturaStd-Bold";
   font-style: normal;
   font-weight: 800;
   text-transform: uppercase;
   font-size: 3rem;
   max-width: 435px;
+  line-height: 4rem;
+  margin-bottom: 15px;
 
   @media screen and (max-width: ${mediaSize}) {
     font-size: clamp(1.5rem, 2vw, 2.5rem);
@@ -131,7 +181,7 @@ export const BGContent = styled.div`
   align-items: flex-start;
   justify-content: center;
   flex-direction: column;
-  margin-top: 50px;
+  margin-top: 80px;
   line-height: 1.6;
   height: ${(props) => props.height};
 
@@ -139,6 +189,7 @@ export const BGContent = styled.div`
     display: block;
     text-align: center;
     align-items: center;
+    margin-top: 0px;
   }
 `;
 
@@ -147,8 +198,11 @@ export const SmallerContainerGilette = styled.div`
   align-items: ${(props) => props.alignItems};
   justify-content: center;
   max-height: ${(props) => props.maxHeight};
+  min-height: ${(props) => props.minHeight};
   width: 100%;
   background: #DDDFE4;
+  background-image: url(${(props) => props.backgroundImage});
+  background-size: cover;
 
   @media screen and (max-width: ${mediaSize}) {
     flex-direction: column;
@@ -180,7 +234,12 @@ export const SCGTwo = styled.div`
   img {
     position: relative;
     width: 85%;
-    max-height: auto;
+    max-height: auto; 
+    left: 50px;
+
+    @media screen and (max-width: ${mediaSize}) {
+    left: 0;
+  }
   }
 
   @media screen and (max-width: ${mediaSize}) {
@@ -195,7 +254,7 @@ export const SCGThree = styled.div`
   align-items: flex-start;
   justify-content: center;
   flex-direction: column;
-  margin: 0.6rem 3rem 0.6rem 0rem;
+  margin: 0.6rem 3rem 0.6rem 7rem;
 
   @media screen and (max-width: ${mediaSize}) {
     margin: 0.6rem 1rem 0.6rem 1rem;
@@ -274,12 +333,14 @@ export const TextBox = styled.div`
 `
 
 export const InsideBiggerContainerGilette = styled.div`
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-wrap: wrap;
-  width: 100%;
-  background: #10141f;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 1;
+    flex-wrap: wrap;
+    margin: 50px 0 80px 0;
+    max-width: 940px;
+    gap: 25px;
 
   @media screen and (max-width: ${mediaSize}) {
     flex-direction: column;
@@ -296,6 +357,7 @@ img {
   width: 85%;
   max-height: auto;
   top: -165px;
+  right: -66px;
 
   @media screen and (max-width: ${mediaSize}) {
     position: static;
@@ -307,4 +369,19 @@ img {
   margin-left: 45px;
   top: 30px;
 }
+`;
+
+export const BCGTwoColor = styled.div`
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  flex-direction: column;
+  margin: ${(props) => props.margin};
+  width: 382px;
+
+  @media screen and (max-width: ${mediaSize}) {
+    align-items: center;
+    margin: 0;
+    width: 200px;
+  }
 `;

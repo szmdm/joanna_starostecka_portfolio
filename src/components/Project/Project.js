@@ -16,7 +16,6 @@ const Project = ({ projectName, projectImg }) => {
           <div className='goProject'>
             <ProjectButton to={"/project/" + projectName} >
               Landingpage and visuals
-            
             <ArrowIcon>
             <BsArrowRight />
             </ArrowIcon>

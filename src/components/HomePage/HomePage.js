@@ -39,27 +39,27 @@ const HomePage = () => {
                 projectName={'CocaCola'}
                 projectImg={cola_01}
             />
-            <div id="schwartz"></div>
+            {/* <div id="schwartz"></div>
             <Project
                 projectName={'Schwartz'}
                 projectImg={schwartz_01}
-            />
-            <div id="sprite"></div>
+            /> */}
+            {/* <div id="sprite"></div>
             <Project
                 projectName={'Sprite'}
                 projectImg={sprite_01}
-            />
+            /> */}
             <div id="soft"></div>
             <Project
                 projectName={'Soft'}
                 projectImg={soft_01}
             />
-            <div id="cocacolastand"></div>
+            {/* <div id="cocacolastand"></div>
             <Project
                 id="cocacolastand"
                 projectName={'Coca Cola stand'}
                 projectImg={cola_stand_01}
-            />
+            /> */}
         </>
     )
 }

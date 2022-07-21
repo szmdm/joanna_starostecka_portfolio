@@ -80,22 +80,22 @@ const App = () => {
           path="/project/CocaCola"
           element={<ProjectDoneCocaCola />}
         />
-        <Route
+        {/* <Route
           path="/project/"{...project3}
           element={<ProjectName name={project3} />}
-        />
-        <Route
+        /> */}
+        {/* <Route
           path="/project/"{...project4}
           element={<ProjectName name={project4} />}
-        />
+        /> */}
         <Route
           path="/project/Soft"
           element={<ProjectDoneSoft />}
         />
-        <Route
+        {/* <Route
           path="/project/"{...project6}
           element={<ProjectName name={project6} />}
-        />
+        /> */}
       </Routes>
       {/* <FooterBar /> */}
     </Router>
