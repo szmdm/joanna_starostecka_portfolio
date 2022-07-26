@@ -39,11 +39,11 @@ const HomePage = () => {
                 projectName={'CocaCola'}
                 projectImg={cola_01}
             />
-            {/* <div id="schwartz"></div>
+            <div id="schwartz"></div>
             <Project
-                projectName={'Schwartz'}
+                projectName={'CeramicStudio'}
                 projectImg={schwartz_01}
-            /> */}
+            />
             {/* <div id="sprite"></div>
             <Project
                 projectName={'Sprite'}

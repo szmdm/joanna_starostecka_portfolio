@@ -8,6 +8,7 @@ import Sidebar from './components/Sidebar/Sidebar';
 import { ProjectDoneGilette } from './components/ProjectDone/ProjectDoneGillette';
 import { ProjectDoneCocaCola } from './components/ProjectDone/ProjectDoneCocaCola';
 import { ProjectDoneSoft } from './components/ProjectDone/ProjectDoneSoft';
+import ProjectDoneCeramic from './components/ProjectDone/ProjectDoneCeramic';
 
 
 let useClickOutside = (handler) => {
@@ -49,7 +50,7 @@ const App = () => {
 
   // const project1 = "Gillette"
   // const project2 = "Coca Cola"
-  const project3 = "Schwartz"
+  // const project3 = "Schwartz"
   const project4 = "Sprite"
   // const project5 = "Soft"
   const project6 = "Coca Cola stand"
@@ -80,10 +81,10 @@ const App = () => {
           path="/project/CocaCola"
           element={<ProjectDoneCocaCola />}
         />
-        {/* <Route
-          path="/project/"{...project3}
-          element={<ProjectName name={project3} />}
-        /> */}
+        <Route
+          path="/project/CeramicStudio"
+          element={<ProjectDoneCeramic />}
+        />
         {/* <Route
           path="/project/"{...project4}
           element={<ProjectName name={project4} />}
