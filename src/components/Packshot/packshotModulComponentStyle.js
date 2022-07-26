@@ -52,3 +52,33 @@ position: relative;
 bottom: 50px;
 left: 20px;
 `;
+
+export const PackshotButtonClickable = styled.div`
+height: 20px;
+width: 20px;
+border-radius: 100%;
+background-color: black;
+position: relative;
+bottom: 50px;
+left: 20px;
+
+    ::before {
+        content: '';
+        height: 30px;
+        width: 30px;
+        border-radius: 100%;
+        background-color: rgba(255, 255, 255, 0);
+        position: absolute;
+        bottom: -6px;
+        left: -6px;
+        border: 1px solid black;
+        z-index: 10;
+        cursor: pointer;
+    }
+
+&:hover {
+    background-color: rgba(230,230,230, 5);
+    transition: background-color ease-in-out .2s;
+    /* border: 1px solid black; */
+    }
+`;

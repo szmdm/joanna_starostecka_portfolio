@@ -3,6 +3,7 @@ import {
     PackshotModul,
     Packshot,
     PackshotButton,
+    PackshotButtonClickable,
 } from './packshotModulComponentStyle'
 
 import PDSoftImg_04 from '../../assets/projectsDone/pDSoft/packshot_module02_01.png'
@@ -23,23 +24,23 @@ const PackshotModulComponent = ({ setPackshotStatus }) => {
             <PackshotModul>
                 <Packshot >
                     <img src={PDSoftImg_04} alt="/" />
-                    <PackshotButton onClick={() => setPackshotStatus(2)} />
+                    <PackshotButton />
                 </Packshot>
                 <Packshot >
                     <img src={PDSoftImg_05} alt="/" />
-                    <PackshotButton onClick={() => setPackshotStatus(2)} />
+                    <PackshotButton />
                 </Packshot>
                 <Packshot >
                     <img src={PDSoftImg_06} alt="/" />
-                    <PackshotButton onClick={() => setPackshotStatus(2)} />
+                    <PackshotButtonClickable onClick={() => setPackshotStatus(2)} />
                 </Packshot>
                 <Packshot >
                     <img src={PDSoftImg_07} alt="/" />
-                    <PackshotButton onClick={() => setPackshotStatus(2)} />
+                    <PackshotButton />
                 </Packshot>
                 <Packshot >
                     <img src={PDSoftImg_08} alt="/" />
-                    <PackshotButton onClick={() => setPackshotStatus(2)} />
+                    <PackshotButton />
                 </Packshot>
             </PackshotModul>
         </>
