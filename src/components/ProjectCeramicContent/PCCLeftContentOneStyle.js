@@ -33,6 +33,7 @@ background-size: cover;
 
 @media screen and (max-width: ${ceramicBasis}) {
     border-right: none;
+    height: auto;
 }
 `;
 

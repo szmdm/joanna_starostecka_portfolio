@@ -11,7 +11,7 @@ export const ProjectCeramicContainer = styled.div`
     flex: 1;
     flex-wrap: wrap;
 
-    @media screen and (max-width: ${mediaSize}) {
-        
+    @media screen and (max-width: ${ceramicBasis}) {
+        height: auto;
     }
 `;

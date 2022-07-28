@@ -27,14 +27,7 @@ export const PCCRight = styled.div`
     @media screen and (max-width: ${mediaSize}) {
         flex-direction: column;
     }
-`;
-
-export const PCCRightOne = styled.div`
-    display: flex;
-    justify-content: center;
-`;
-
-export const PCCRightTwo = styled.div`
-    display: flex;
-    justify-content: center;
+    @media screen and (max-width: ${ceramicBasis}) {
+        height: 630px;
+    }
 `;

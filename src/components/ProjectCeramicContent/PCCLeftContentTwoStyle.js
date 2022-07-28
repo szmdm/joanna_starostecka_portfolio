@@ -24,7 +24,6 @@ background-size: cover;
         right: 0;
         height: 100%;
         width: 91%;
-        /* width: 8px; */
     }
 
 @media screen and (max-width: ${mediaSize}) {
@@ -32,7 +31,10 @@ background-size: cover;
 }
 
 @media screen and (max-width: ${ceramicBasis}) {
-    border-right: none;
+    height: 630px;
+    &::after {
+        border-right: none;
+    }
 }
 `;
 

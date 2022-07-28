@@ -13,5 +13,5 @@
 export const mediaSize = '768px';
 export const mobileLMediaSize = '425px';
 export const laptop = '1024px';
-export const ceramicBasis = '1268px';
+export const ceramicBasis = '1260px';
 
