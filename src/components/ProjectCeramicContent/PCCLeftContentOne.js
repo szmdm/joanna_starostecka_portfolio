@@ -6,6 +6,8 @@ import {
     PCCLeftTwo,
  } from './PCCLeftContentOneStyle'
 
+ import PCCLeftOneImg_01 from '../../assets/projectsDone/pDCeramicStudio/Logo.png'
+
 const PCCLeftContentOne = ({...props}) => {
     return (
         <>
@@ -15,6 +17,12 @@ const PCCLeftContentOne = ({...props}) => {
                 padding={props.padding}
             >
                 <PCCLeftOne>
+                    <div className='menu'>
+                        <span />
+                        <span />
+                        <span />
+                    </div>
+                    <img src={PCCLeftOneImg_01} alt="logo dobro ceramics" />
                     <h1>{props.titlePCCLeftOne}</h1>
                     <p>{props.textPCCLeftOne}</p>
                 </PCCLeftOne>

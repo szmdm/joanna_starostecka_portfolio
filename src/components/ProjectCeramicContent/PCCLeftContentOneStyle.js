@@ -5,11 +5,11 @@ export const PCCLeft = styled.div`
 position: relative;
 display: flex;
 justify-content: center;
-align-items: center;
+align-items: flex-end;
 flex-basis: 634px;
 height: 100%;
 flex-wrap: wrap;
-gap: 60px;
+gap: 75px;
 background-color: ${(props) => props.backgroundColor};
 background-image: url(${(props) => props.imgPCCLeft});
 background-size: cover;
@@ -29,6 +29,7 @@ background-size: cover;
 
 @media screen and (max-width: ${mediaSize}) {
     border-right: none;
+    gap: 0px;
 }
 
 @media screen and (max-width: ${ceramicBasis}) {
@@ -40,20 +41,50 @@ background-size: cover;
 export const PCCLeftOne = styled.div`
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: flex-start;
     flex-direction: column;
-    flex-basis: 225px;
+    flex-basis: 211px;
+    margin: 0 0px 50px 0px;
+
+        .menu {
+            height: 27px;
+            width: 25px;
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 40px;
+            margin-top: 10px;
+
+            span {
+                height: 9px;
+                width: 25px;
+                border-bottom: 2px solid #E2E2D8;
+            }
+        }
+
+        img {
+            position: relative;
+            left: -17px;
+            margin-bottom: 20px;
+        }
 
         h1 {
-            font-family: "FuturaStd-Light";
-            font-size: 9.375rem;
-            font-size: clamp(3rem, 5.625rem, 9.375rem);
+            font-family: minion-pro, serif;
+            font-style: normal;
+            font-weight: 400;
+            font-size: 2.5rem;
+            font-size: clamp(2rem, 2.5rem, 3vw);
+            text-transform: uppercase;
+            color: #E2E2D8;
+            margin-bottom: 20px;
         }
 
         p {
-            font-family: "FuturaStd-Light";
-            font-size: 1.875rem;
-            font-size: clamp(1rem, 2.3rem, 2.5rem);
+            font-family: "Calibri";
+            font-weight: 400;
+            font-size: 1.06rem;
+            font-size: clamp(0.6rem, 0.94rem, 3vw);
+            color: #E2E2D8;
         }
 `;
 
@@ -62,17 +93,25 @@ export const PCCLeftTwo = styled.div`
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    flex-basis: 225px;
+    flex-basis: 211px;
+    margin: 0 0px 50px 0px;
 
     h1 {
-            font-family: "FuturaStd-Light";
-            font-size: 9.375rem;
-            font-size: clamp(3rem, 5.625rem, 9.375rem);
+            font-family: minion-pro, serif;
+            font-style: normal;
+            font-weight: 400;
+            font-size: 2.5rem;
+            font-size: clamp(2rem, 2.5rem, 3vw);
+            text-transform: uppercase;
+            color: #E2E2D8;
+            margin-bottom: 20px;
         }
 
         p {
-            font-family: "FuturaStd-Light";
-            font-size: 1.875rem;
-            font-size: clamp(1rem, 2.3rem, 2.5rem);
+            font-family: "Calibri";
+            font-weight: 400;
+            font-size: 1.06rem;
+            font-size: clamp(0.6rem, 0.94rem, 3vw);
+            color: #E2E2D8;
         }
 `;
