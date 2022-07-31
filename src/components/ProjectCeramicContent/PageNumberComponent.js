@@ -4,6 +4,7 @@ import styled from 'styled-components'
 const PageNumberComponent = ({...props}) => {
 
     let number = '<    1    >'
+    
   return (
     <>
         <PageNumber>

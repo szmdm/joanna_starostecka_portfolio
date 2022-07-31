@@ -6,7 +6,7 @@ position: relative;
 display: flex;
 justify-content: center;
 align-items: flex-end;
-flex-basis: 634px;
+flex-basis: 635px;
 height: 100%;
 flex-wrap: wrap;
 gap: 75px;
@@ -52,7 +52,7 @@ export const PCCLeftOne = styled.div`
             position: relative;
             display: flex;
             flex-direction: column;
-            margin-bottom: 40px;
+            margin-bottom: 77px;
             margin-top: 10px;
 
             span {
@@ -64,7 +64,7 @@ export const PCCLeftOne = styled.div`
 
         img {
             position: relative;
-            left: -17px;
+            left: 0;
             margin-bottom: 20px;
         }
 

@@ -18,12 +18,13 @@ background-size: cover;
 &::after {
         content: "";
         border-bottom: 1px solid #D19886;
-        border-right: 1px solid #D19886;
+        border-right: ${(props) => props.borderRight};
         position: absolute;
         bottom: 0;
         right: 0;
         height: 100%;
         width: 91%;
+        ${(props) => props.borderBottomDirection}
     }
 
 @media screen and (max-width: ${mediaSize}) {
@@ -40,8 +41,8 @@ background-size: cover;
 
 export const PCCLeftTwoInside = styled.div`
 background-image: url(${(props) => props.imgPCCLeft});
-width: 81%;
-height: 81%;
+width: ${(props) => props.width};
+height: ${(props) => props.height};
 background-size: cover;
 
 `

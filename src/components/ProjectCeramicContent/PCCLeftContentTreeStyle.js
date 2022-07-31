@@ -13,22 +13,23 @@ gap: 75px;
 background-color: ${(props) => props.backgroundColor};
 background-image: url(${(props) => props.imgPCCLeft});
 background-size: cover;
+border-right: ${(props) => props.borderRight};
 
 
 &::after {
         content: "";
         border-bottom: 1px solid #D19886;
-        border-right: 1px solid #D19886;
         position: absolute;
         bottom: 0;
         right: 0;
         height: 100%;
         width: 91%;
+        ${(props) => props.borderBottomDirection}
     }
 
 @media screen and (max-width: ${mediaSize}) {
     border-right: none;
-    gap: 0px;
+    gap: 15px;
 }
 
 @media screen and (max-width: ${ceramicBasis}) {
@@ -43,7 +44,7 @@ export const PCCLeftOne = styled.div`
     align-items: flex-start;
     flex-direction: column;
     flex-basis: 211px;
-    margin: 0 0px 50px 0px;
+    margin: ${(props) => props.margin};
 
         h1 {
             font-family: minion-pro, serif;
@@ -53,7 +54,7 @@ export const PCCLeftOne = styled.div`
             font-size: clamp(2rem, 2.5rem, 3vw);
             text-transform: uppercase;
             color: ${(props) => props.color};
-            margin-bottom: 20px;
+            margin-bottom: 15px;
         }
 
         p {
@@ -71,7 +72,7 @@ export const PCCLeftTwo = styled.div`
     align-items: ${(props) => props.alignItemsTwo};
     flex-direction: column;
     flex-basis: 211px;
-    margin: 0 0px 50px 0px;
+    margin: ${(props) => props.margin};
 
     h1 {
             font-family: minion-pro, serif;

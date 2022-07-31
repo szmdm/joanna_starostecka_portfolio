@@ -1,37 +1,47 @@
 import React from 'react'
 
-import { 
+import {
     PCCLeft,
     PCCLeftOne,
     PCCLeftTwo,
- } from './PCCLeftContentTreeStyle'
+} from './PCCLeftContentTreeStyle'
 
 
-const PCCLeftContentTree = ({...props}) => {
+const PCCLeftContentTree = ({ ...props }) => {
     return (
         <>
-            <PCCLeft 
+            <PCCLeft
                 backgroundColor={props.backgroundColorPCCRight}
                 imgPCCLeft={props.imgPCCLeft}
                 padding={props.padding}
+                borderRight={props.PCCLeftBorderRight}
+                borderBottomDirection={props.borderBottomDirection}
             >
                 <PCCLeftOne
-                 color={props.color}
-                 alignItems={props.PCCLeftOneAlign}
-                 >
-                    <h1>{props.titlePCCLeftOne}</h1>
-                    <p>{props.textPCCLeftOne}</p>
-                </PCCLeftOne>
-                <PCCLeftTwo
-                 color={props.color}
-                 alignItemsTwo={props.PCCLeftTwoAlign}
+                    color={props.color}
+                    alignItems={props.PCCLeftOneAlign}
+                    margin={props.PCCLeftOneMargin}
 
                 >
+                    <h1>{props.titlePCCLeftOne}</h1>
+                    {props.addComponentFour}
+                    <p>{props.textPCCLeftOne}</p>
+                    {props.addComponentTwo}
+                    {props.addComponentFive}
+                    {props.addComponentNine}
+                    {props.addComponentNineSecond}
+                </PCCLeftOne>
+                <PCCLeftTwo
+                    color={props.color}
+                    alignItems={props.PCCLeftOneAlign}
+                    margin={props.PCCLeftTwoMargin}
+                    >
                     <h1>{props.titlePCCLeftTwo}</h1>
+                    {props.addComponentSix}
                     <p>{props.textPCCLeftTwo}</p>
                     {props.addComponentTwo}
-                    {props.addComponentTree}
-                    {props.addComponentOne}
+                    {props.addComponentSeven}
+                    {props.addComponentNineThird}
                 </PCCLeftTwo>
             </PCCLeft>
         </>

@@ -4,7 +4,7 @@ import styled from 'styled-components'
 const PriceOneComponent = ({...props}) => {
   return (
     <>
-        <PriceOne marginBottom={props.marginBottom}>
+        <PriceOne marginBottom={props.marginBottom} marginTop={props.marginTop}>
             20.00 &euro;
         </PriceOne>
     </>
@@ -20,7 +20,7 @@ const PriceOne = styled.div `
     text-transform: uppercase;
     color: #7E7367;
     margin-bottom: ${(props) => props.marginBottom};
-    margin-top: 20px;
+    margin-top: ${(props) => props.marginTop};
     `
 
 export default PriceOneComponent

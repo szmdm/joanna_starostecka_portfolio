@@ -6,7 +6,7 @@ import {
     PCCLeftTwo,
  } from './PCCLeftContentOneStyle'
 
- import PCCLeftOneImg_01 from '../../assets/projectsDone/pDCeramicStudio/Logo.png'
+ import PCCLeftOneImg_01 from '../../assets/projectsDone/pDCeramicStudio/Logo_2.png'
 
 const PCCLeftContentOne = ({...props}) => {
     return (
