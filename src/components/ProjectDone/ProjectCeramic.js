@@ -4,6 +4,7 @@ import PCCLeftContentTwo from '../ProjectCeramicContent/PCCLeftContentTwo';
 import PCCRightContentOne from '../ProjectCeramicContent/PCCRightContentOne';
 import PCCRightContentTwo from '../ProjectCeramicContent/PCCRightContentTwo';
 import PCCLeftContentTree from '../ProjectCeramicContent/PCCLeftContentTree';
+import PCCLeftContentFour from '../ProjectCeramicContent/PCCLeftContentFour';
 
 import PDCeramicImg_01 from "../../assets/projectsDone/pDCeramicStudio/Image_001.png"
 import PDCeramicImg_02 from "../../assets/projectsDone/pDCeramicStudio/Image_002.png"
@@ -27,6 +28,8 @@ import PriceOneComponent from '../ProjectCeramicContent/PriceOneComponent';
 import PageNumberComponent from '../ProjectCeramicContent/PageNumberComponent';
 import PCCPictureComponent from '../ProjectCeramicContent/PCCPictureComponent';
 import ColorComponent from '../ProjectCeramicContent/ColorComponent';
+import FontComponent from '../ProjectCeramicContent/FontComponent';
+import FourthContent from '../ProjectCeramicContent/FourthContent';
 
 const ProjectCeramic = () => {
 
@@ -65,6 +68,8 @@ const ProjectCeramic = () => {
                 </ProjectCeramicContainer>
                 <ProjectCeramicContainer>
                     <PCCLeftContentTree
+                        PCCLeftOneJustify='center'
+                        PCCLeftTwoJustify='center'
                         PCCLeftBorderRight='1px solid #D19886'
                         PCCLeftOneMargin='0 0px 50px 0px'
                         PCCLeftTwoMargin='40px 0px 50px 0px'
@@ -89,6 +94,8 @@ const ProjectCeramic = () => {
                 </ProjectCeramicContainer>
                 <ProjectCeramicContainer>
                     <PCCLeftContentTree
+                        PCCLeftOneJustify='center'
+                        PCCLeftTwoJustify='center'
                         PCCLeftBorderRight='1px solid #D19886'
                         PCCLeftOneMargin='0 0px 0px 0px'
                         PCCLeftOneAlign='center'
@@ -110,6 +117,8 @@ const ProjectCeramic = () => {
                     >
                     </PCCLeftContentTree>
                     <PCCLeftContentTree
+                        PCCLeftOneJustify='center'
+                        PCCLeftTwoJustify='center'
                         borderBottomDirection='left: 0;'
                         PCCLeftOneMargin='0 0px 0px 0px'
                         PCCLeftOneAlign='center'
@@ -141,6 +150,8 @@ const ProjectCeramic = () => {
                         height='100%'
                     />
                     <PCCLeftContentTree
+                        PCCLeftOneJustify='center'
+                        PCCLeftTwoJustify='center'
                         borderBottomDirection='left: 0;'
                         PCCLeftOneMargin='10px 0px 10px 0px'
                         PCCLeftTwoMargin='10px 0px 60px 0px'
@@ -161,6 +172,8 @@ const ProjectCeramic = () => {
                 </ProjectCeramicContainer>
                 <ProjectCeramicContainer>
                     <PCCLeftContentTree
+                        PCCLeftOneJustify='center'
+                        PCCLeftTwoJustify='center'
                         PCCLeftBorderRight='1px solid #D19886'
                         PCCLeftOneMargin='10px 0px 10px 0px'
                         PCCLeftTwoMargin='10px 0px 15px 0px'
@@ -199,6 +212,8 @@ const ProjectCeramic = () => {
 
                     />
                     <PCCLeftContentTree
+                        PCCLeftOneJustify='center'
+                        PCCLeftTwoJustify='center'
                         borderBottomDirection='left: 0;'
                         PCCLeftOneMargin='10px 0px 10px 0px'
                         PCCLeftTwoMargin='10px 0px 105px 0px'
@@ -225,6 +240,8 @@ const ProjectCeramic = () => {
                         PCCLeftTwoMargin='10px 0px 215px 0px'
                         PCCLeftOneAlign='center'
                         PCCLeftTwoAlign='flex-start'
+                        PCCLeftOneJustify='center'
+                        PCCLeftTwoJustify='center'
                         backgroundColorPCCRight='#f2f1ed'
                         color='#7E7367'
                         titlePCCLeftOne='colors'
@@ -233,31 +250,45 @@ const ProjectCeramic = () => {
                         textPCCLeftTwo=''
                         addComponentOne={<ContactUsButton margin='20px 0 30px 0' />}
                         addComponentTree={<PageNumberComponent />}
-                        addComponentNine={<ColorComponent border='1px solid #7E7367' backgroundColor='#E2E2D8'  text='white' hexColor='f2f1ee' />}
-                        addComponentNineSecond={<ColorComponent border='none' backgroundColor='#3E4136' text='dark green' hexColor='3d4236'/>}
-                        addComponentNineThird={<ColorComponent border='none' backgroundColor='#7E7367' text='grey' hexColor='   a49d94'/>}
+                        addComponentNine={<ColorComponent border='1px solid #7E7367' backgroundColor='#E2E2D8' text='white' hexColor='f2f1ee' />}
+                        addComponentNineSecond={<ColorComponent border='none' backgroundColor='#3E4136' text='dark green' hexColor='3d4236' />}
+                        addComponentNineThird={<ColorComponent border='none' backgroundColor='#7E7367' text='grey' hexColor='   a49d94' />}
                     >
                     </PCCLeftContentTree>
                     <PCCLeftContentTree
-                        PCCLeftBorderRight='1px solid #D19886'
-                        borderBottomDirection='right: 0;'
-                        PCCLeftOneMargin='10px 0px 10px 0px'
-                        PCCLeftTwoMargin='10px 0px 215px 0px'
+                        PCCLeftBorderRight='none'
+                        borderBottomDirection='left: 0;'
+                        PCCLeftOneMargin='85px 0px 10px 0px'
+                        PCCLeftTwoMargin='10px 0px 275px 0px'
                         PCCLeftOneAlign='center'
+                        PCCLeftOneJustify='flex-start'
+                        PCCLeftTwoJustify='center'
                         PCCLeftTwoAlign='flex-start'
                         backgroundColorPCCRight='#f2f1ed'
                         color='#7E7367'
-                        titlePCCLeftOne='colors'
+                        titlePCCLeftOne='fonts'
                         titlePCCLeftTwo='&nbsp;'
                         textPCCLeftOne=''
                         textPCCLeftTwo=''
-                        addComponentOne={<ContactUsButton margin='20px 0 30px 0' />}
-                        addComponentTree={<PageNumberComponent />}
-                        addComponentNine={<ColorComponent border='1px solid #7E7367' backgroundColor='#E2E2D8'  text='white' hexColor='f2f1ee' />}
-                        addComponentNineSecond={<ColorComponent border='none' backgroundColor='#3E4136' text='dark green' hexColor='3d4236'/>}
-                        addComponentNineThird={<ColorComponent border='none' backgroundColor='#7E7367' text='grey' hexColor='   a49d94'/>}
+                        addComponentTen={<FontComponent text='Calibri' fontFamily='Calibri' fontType='regular' fontFamilySpan='Calibri' />}
+                        addComponentTenSecond={<FontComponent text='Minion Pro' fontFamily='Minion Pro' fontType='regular' fontFamilySpan='Calibri' />}
                     >
                     </PCCLeftContentTree>
+                </ProjectCeramicContainer>
+                <ProjectCeramicContainer>
+                    <PCCLeftContentFour
+                        PCCLeftBorderRight='1px solid #D19886'
+                        borderBottomDirection='right: 0;'
+                        backgroundColorPCCRight='#f2f1ed'
+                        color='#7E7367'
+                        addComponentOne={<FourthContent 
+                            title='action' 
+                            rowSecondTextFirst='first category button' 
+                            rowSecondTextSecond='second category button' 
+                            addComponentOne={<ContactUsButton />}
+                            image={PCCRightTwoImg_01}
+                        />}
+                    />
                 </ProjectCeramicContainer>
             </div>
         </>

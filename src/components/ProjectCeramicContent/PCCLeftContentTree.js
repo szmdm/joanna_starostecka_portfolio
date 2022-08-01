@@ -16,11 +16,14 @@ const PCCLeftContentTree = ({ ...props }) => {
                 padding={props.padding}
                 borderRight={props.PCCLeftBorderRight}
                 borderBottomDirection={props.borderBottomDirection}
+                
+                
             >
                 <PCCLeftOne
                     color={props.color}
                     alignItems={props.PCCLeftOneAlign}
                     margin={props.PCCLeftOneMargin}
+                    PCCLeftOneJustify={props.PCCLeftOneJustify}
 
                 >
                     <h1>{props.titlePCCLeftOne}</h1>
@@ -30,18 +33,22 @@ const PCCLeftContentTree = ({ ...props }) => {
                     {props.addComponentFive}
                     {props.addComponentNine}
                     {props.addComponentNineSecond}
+                    {props.addComponentTen}
                 </PCCLeftOne>
                 <PCCLeftTwo
                     color={props.color}
                     alignItems={props.PCCLeftOneAlign}
                     margin={props.PCCLeftTwoMargin}
-                    >
+                    PCCLeftTwoJustify={props.PCCLeftTwoJustify}
+                >
                     <h1>{props.titlePCCLeftTwo}</h1>
                     {props.addComponentSix}
                     <p>{props.textPCCLeftTwo}</p>
                     {props.addComponentTwo}
                     {props.addComponentSeven}
                     {props.addComponentNineThird}
+                    {props.addComponentTenSecond}
+                    
                 </PCCLeftTwo>
             </PCCLeft>
         </>

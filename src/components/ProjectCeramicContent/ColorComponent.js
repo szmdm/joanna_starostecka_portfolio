@@ -4,7 +4,12 @@ import styled from 'styled-components'
 const ColorComponent = ({ ...props }) => {
     return (
         <>
-            <Color border={props.border} backgroundColor={props.backgroundColor} text={props.text} hexColor={props.hexColor} />
+            <Color 
+                border={props.border} 
+                backgroundColor={props.backgroundColor} 
+                text={props.text} 
+                hexColor={props.hexColor} 
+            />
             <ColorContent>
                 <p>{props.text}</p>
                 <span>{props.hexColor}</span>
@@ -47,7 +52,5 @@ const ColorContent = styled.div`
             line-height: 144%;
         }
 `
-
-
 
 export default ColorComponent

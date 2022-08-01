@@ -40,7 +40,7 @@ border-right: ${(props) => props.borderRight};
 
 export const PCCLeftOne = styled.div`
     display: flex;
-    justify-content: center;
+    justify-content: ${(props) => props.PCCLeftOneJustify};
     align-items: flex-start;
     flex-direction: column;
     flex-basis: 211px;
@@ -68,7 +68,7 @@ export const PCCLeftOne = styled.div`
 
 export const PCCLeftTwo = styled.div`
     display: flex;
-    justify-content: center;
+    justify-content: ${(props) => props.PCCLeftTwoJustify};
     align-items: ${(props) => props.alignItemsTwo};
     flex-direction: column;
     flex-basis: 211px;
