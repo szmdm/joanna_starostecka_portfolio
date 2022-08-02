@@ -4,7 +4,7 @@ import {
     PCCLeft,
     PCCLeftOne,
     PCCLeftTwo,
-} from './PCCLeftContentTreeStyle'
+} from './PCCLeftContentFourStyle'
 
 
 const PCCLeftContentFour = ({ ...props }) => {
@@ -20,6 +20,7 @@ const PCCLeftContentFour = ({ ...props }) => {
                 
             >
                 {props.addComponentOne}
+                {props.addComponentTwo}
             </PCCLeft>
         </>
     )

@@ -5,13 +5,15 @@ export const PCCLeft = styled.div`
 position: relative;
 display: flex;
 justify-content: flex-start;
-align-items: ${(props) => props.alignItems};
+align-items: center;
 flex-basis: 634px;
 height: 100%;
+width: 100%;
 flex-wrap: wrap;
-gap: 75px;
 background-color: ${(props) => props.backgroundColor};
 border-right: ${(props) => props.borderRight};
+align-content: center;
+padding: 15px 15px 15px 15px;
 
 
 &::after {
@@ -22,7 +24,7 @@ border-right: ${(props) => props.borderRight};
         right: 0;
         height: 100%;
         width: 91%;
-        ${(props) => props.borderBottomDirection}
+        ${(props) => props.borderBottomDirection};
     }
 
 @media screen and (max-width: ${mediaSize}) {

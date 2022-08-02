@@ -17,6 +17,9 @@ import PDCeramicImg_08 from "../../assets/projectsDone/pDCeramicStudio/Image_005
 import PDCeramicImg_09 from "../../assets/projectsDone/pDCeramicStudio/Image_006.png"
 import PDCeramicImg_10 from "../../assets/projectsDone/pDCeramicStudio/Image_007.png"
 import PDCeramicImg_11 from "../../assets/projectsDone/pDCeramicStudio/Logo_3.png"
+import PDCeramicImg_12 from "../../assets/projectsDone/pDCeramicStudio/Component_52.png"
+import PDCeramicImg_13 from "../../assets/projectsDone/pDCeramicStudio/Component_53.png"
+import PDCeramicImg_14 from "../../assets/projectsDone/pDCeramicStudio/Component_54.png"
 
 import PCCRightTwoImg_01 from '../../assets/projectsDone/pDCeramicStudio/Component_34.png';
 
@@ -30,6 +33,9 @@ import PCCPictureComponent from '../ProjectCeramicContent/PCCPictureComponent';
 import ColorComponent from '../ProjectCeramicContent/ColorComponent';
 import FontComponent from '../ProjectCeramicContent/FontComponent';
 import FourthContent from '../ProjectCeramicContent/FourthContent';
+import FifthContent from '../ProjectCeramicContent/FifthContent';
+import FormCeramic from '../ProjectCeramicContent/FormCeramic';
+import PaymentCeramic from '../ProjectCeramicContent/PaymentCeramic';
 
 const ProjectCeramic = () => {
 
@@ -281,15 +287,130 @@ const ProjectCeramic = () => {
                         borderBottomDirection='right: 0;'
                         backgroundColorPCCRight='#f2f1ed'
                         color='#7E7367'
-                        addComponentOne={<FourthContent 
-                            title='action' 
-                            rowSecondTextFirst='first category button' 
-                            rowSecondTextSecond='second category button' 
+                        addComponentOne={<FourthContent
+                            title='action'
+                            rowSecondColumnOneText='first category button'
+                            rowSecondTextSecond='second category button'
                             addComponentOne={<ContactUsButton />}
                             image={PCCRightTwoImg_01}
+                            margin='15px 60px 15px 60px'
+                            rowFirstMargin='0px 0px 15px 0px'
+                            topHeight='180px'
+                            rowFirstColumnTwoDisplay='flex'
+                            rowFirstColumnOneTextDisplay='none'
+                        />}
+                        addComponentTwo={<FourthContent
+                            title='steppers'
+                            rowSecondColumnOneText='amount of products'
+                            margin='15px 60px 15px 60px'
+                            rowFirstMargin='0px 0px 15px 0px'
+                            topHeight='180px'
+                            rowFirstColumnTwoDisplay='none'
+                            rowFirstColumnOneTextDisplay='flex'
+                            rowFirstColumnOneText='< 1 >'
+                            rowSecondColumnTwoDisplay='flex'
+                            rowSecondColumnOneTextDisplay=''
+                        />}
+                    />
+                    <PCCLeftContentFour
+                        PCCLeftBorderRight='none'
+                        borderBottomDirection='left: 0;'
+                        backgroundColorPCCRight='#f2f1ed'
+                        color='#7E7367'
+                        addComponentOne={<FifthContent
+                            title='profile'
+                            image={PCCRightTwoImg_01}
+                            margin='15px 60px 15px 60px'
+                            rowFirstMargin='0px 0px 15px 0px'
+                            topHeight='180px'
+                            rowFirstColumnTwoDisplay='flex'
+                            rowFirstColumnOneTextDisplay='none'
+                            addComponentOne={<FormCeramic text='login' />}
+                            addComponentTree={<FormCeramic text='phone number' />}
+                            addComponentSix={<FormCeramic text='password' />}
+                            addComponentFive={<FormCeramic text='adress' />}
+                            rowFirstColumnOneBasis='211px'
+                            rowFirstColumnOneFlexDirection='column'
+                        />}
+                        addComponentTwo={<FifthContent
+                            title='payment'
+                            margin='15px 60px 15px 60px'
+                            rowFirstMargin='0px 0px 15px 0px'
+                            topHeight='180px'
+                            rowFirstColumnTwoDisplay='none'
+                            addComponentSeven={<PaymentCeramic img={PDCeramicImg_12} />}
+                            addComponentEight={<PaymentCeramic img={PDCeramicImg_13} />}
+                            addComponentNine={<PaymentCeramic img={PDCeramicImg_14} />}
+                            rowFirstColumnOneTextDisplay='none'
+                            rowSecondColumnTwoDisplay='flex'
+                            rowSecondColumnOneTextDisplay='none'
+                            rowFirstColumnOneBasis='440px'
+                            rowFirstColumnOneFlexDirection='row'
                         />}
                     />
                 </ProjectCeramicContainer>
+                <ProjectCeramicContainer>
+                    <PCCLeftContentFour
+                        PCCLeftBorderRight='1px solid #D19886'
+                        borderBottomDirection='right: 0;'
+                        backgroundColorPCCRight='#f2f1ed'
+                        color='#7E7367'
+                        addComponentOne={<FourthContent
+                            title='photos by'
+                            rowSecondColumnOneText={
+                                <div>
+                                    Karolina Grabowska<br />
+                                    John Diez<br />
+                                    Nadi Lindsay <br />
+                                    Kasia Sikorska <br />
+                                    RFstudio<br />
+                                </div>
+                            }
+                            image={PCCRightTwoImg_01}
+                            margin='15px 60px 0px 60px'
+                            rowFirstMargin='0px 0px 0px 0px'
+                            topHeight='180px'
+                            rowFirstColumnTwoDisplay='none'
+                            rowFirstColumnOneTextDisplay='none'
+                        />}
+                    />
+                    <PCCLeftContentFour
+                        PCCLeftBorderRight='none'
+                        borderBottomDirection='left: 0;'
+                        backgroundColorPCCRight='#f2f1ed'
+                        color='#7E7367'
+                        addComponentOne={<FourthContent
+                            title='design'
+                            rowSecondColumnOneText={
+                                <div className='divTextFirst'>
+                                    Joanna Starostecka
+                                </div>
+                            }
+                            image={PCCRightTwoImg_01}
+                            margin='15px 60px 15px 60px'
+                            rowFirstMargin='0px 0px 0px 0px'
+                            topHeight='180px'
+                            rowFirstColumnTwoDisplay='none'
+                            rowFirstColumnOneTextDisplay='none'
+                        />}
+                        addComponentTwo={<FourthContent
+                            title='developed by'
+                            margin='15px 60px 15px 60px'
+                            rowFirstMargin='0px 0px 15px 0px'
+                            topHeight='180px'
+                            rowFirstColumnTwoDisplay='none'
+                            rowFirstColumnOneTextDisplay='flex'
+                            rowFirstColumnOneText={
+                                <div className='divTextFirst'>
+                                    Piotr Dobrowolski
+                                </div>
+                            }
+                            rowSecondColumnTwoDisplay='flex'
+                            rowSecondColumnOneTextDisplay='none'
+                        />}
+                    />
+                </ProjectCeramicContainer>
+
             </div>
         </>
     )

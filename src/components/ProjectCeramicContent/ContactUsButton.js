@@ -4,7 +4,9 @@ import styled from 'styled-components'
 const ContactUsButton = ({ ...props }) => {
   return (
     <>
-      <Button margin={props.margin}>
+      <Button
+        margin={props.margin}
+      >
         contact us
       </Button>
     </>

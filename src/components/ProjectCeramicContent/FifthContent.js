@@ -1,33 +1,30 @@
 import React from 'react'
 import styled from 'styled-components'
 
-import PCCRightTwoImg_01 from '../../assets/projectsDone/pDCeramicStudio/Component_34.png';
-
-const FourthContent = ({ ...props }) => {
+const FifthContent = ({ ...props }) => {
     return (
-        <FourthContentBox
+        <FifthContentBox
             margin={props.margin}
             rowFirstMargin={props.rowFirstMargin}
             topHeight={props.topHeight}
             rowFirstColumnTwoDisplay={props.rowFirstColumnTwoDisplay}
             rowSecondColumnTwoDisplay={props.rowFirstColumnTwoDisplay}
+            rowFirstColumnOneBasis={props.rowFirstColumnOneBasis}
+            rowFirstColumnOneFlexDirection={props.rowFirstColumnOneFlexDirection}
         >
             <div className='topContainer'>
                 <h1>{props.title}</h1>
                 <div className='rowFirst'>
                     <div className='rowFirstColumnOne'>
-                        <RowFirstColumnOneText
-                            rowFirstColumnOneTextDisplay={props.rowFirstColumnOneTextDisplay}
-                            rowFirstColumnOneText={props.rowFirstColumnOneText}
-                        >
-                            {props.rowFirstColumnOneText}
-                        </RowFirstColumnOneText>
                         {props.addComponentOne}
                         {props.addComponentSix}
+                        {props.addComponentSeven}
+                        {props.addComponentEight}
+                        {props.addComponentNine}
                     </div>
                     <div className='rowFirstColumnTwo'>
-                        <img src={props.image} alt="/" />
-                        <div className='textFirst'>{props.rowFirstTextSecond}</div>
+                        {props.addComponentTree}
+                        {props.addComponentFive}
                     </div>
                 </div>
 
@@ -45,11 +42,11 @@ const FourthContent = ({ ...props }) => {
                     </div>
                 </div>
             </div>
-        </FourthContentBox>
+        </FifthContentBox>
     )
 }
 
-const FourthContentBox = styled.div`
+const FifthContentBox = styled.div`
     display: flex;
     justify-content: flex-start;
     align-items: center;
@@ -63,7 +60,6 @@ const FourthContentBox = styled.div`
         width: 100%;
 
         h1 {
-            width: 225px;
             font-family: minion-pro, serif;
             font-style: normal;
             font-weight: 400;
@@ -87,9 +83,9 @@ const FourthContentBox = styled.div`
 
         .rowFirstColumnOne{
         display: flex;
-        flex-basis: 211px;
-        flex-direction: row;
-        gap: 75px;
+        flex-basis: ${(props) => props.rowFirstColumnOneBasis};
+        flex-direction: ${(props) => props.rowFirstColumnOneFlexDirection};
+        gap: 23px;
 
             .textFirst {
                 font-family: "Calibri";
@@ -97,14 +93,13 @@ const FourthContentBox = styled.div`
                 font-size: 1.06rem;
                 font-size: clamp(0.6rem, 0.94rem, 3vw);
                 color: #7E7367;
-
             }
         }
         .rowFirstColumnTwo {
         display: ${(props) => props.rowFirstColumnTwoDisplay};
         flex-basis: 211px;
-        flex-direction: row;
-        gap: 75px;
+        flex-direction: column;
+        gap: 23px;
 
             .textFirst {
                 font-family: "Calibri";
@@ -127,7 +122,6 @@ const FourthContentBox = styled.div`
             display: flex;
             flex-basis: 211px;
             flex-direction: row;
-            gap: 75px;
 
             .textFirst {
                 font-family: "Calibri";
@@ -162,10 +156,6 @@ const RowFirstColumnOneText = styled.div`
     font-size: 1.06rem;
     font-size: clamp(0.6rem, 0.94rem, 3vw);
     color: #7E7367;
-    
-    .divTextFirst {
-                    font-size: clamp(0.9rem, 1.25rem, 3vw);
-                }
 `
 
 const RowSecondColumnOneText = styled.div`
@@ -175,10 +165,6 @@ const RowSecondColumnOneText = styled.div`
     font-size: 1.06rem;
     font-size: clamp(0.6rem, 0.94rem, 3vw);
     color: #7E7367;
-
-    .divTextFirst {
-                    font-size: clamp(0.9rem, 1.25rem, 3vw);
-                }
 `
 
-export default FourthContent
+export default FifthContent
