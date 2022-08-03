@@ -14,8 +14,9 @@ export const HeroContent = styled.div`
 `
 
 export const WelcomeContent = styled.div`
-    height: 360px;
-    width: 510px;
+    display: flex;
+    height: auto;
+    flex-basis: 510px;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;

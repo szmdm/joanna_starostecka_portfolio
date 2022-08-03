@@ -7,6 +7,7 @@ import schwartz_01 from "../../assets/projects/schwartz/schwartz_dlugie_strona_g
 import sprite_01 from "../../assets/projects/sprite/sprite_dlugie_strona_glowna1.png";
 import soft_01 from "../../assets/projects/soft/soft_dlugie_strona_glowna1.png";
 import cola_stand_01 from "../../assets/projects/cola_stand/cola_dlugie_strona_glowna1.png";
+import dobro_01 from "../../assets/projects/dobro/ceramika_dlugie_strona_glowna.png";
 import { useLocation } from 'react-router-dom';
 
 const HomePage = () => {
@@ -42,7 +43,7 @@ const HomePage = () => {
             <div id="schwartz"></div>
             <Project
                 projectName={'CeramicStudio'}
-                projectImg={schwartz_01}
+                projectImg={dobro_01}
             />
             {/* <div id="sprite"></div>
             <Project
