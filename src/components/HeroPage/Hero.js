@@ -10,7 +10,7 @@ const HeroSection = () => {
             <HeroContent>
                 <WelcomeContent>
                     <OpenTitle>Welcome</OpenTitle>
-                    <OpenText>I'm glad you are here.<br/>I hope you will enjoy your time.</OpenText>
+                    <OpenText>I'm glad you are here.<br/>I hope you enjoy your time.</OpenText>
                     <OpenContact>contact me: starostecka@design.com</OpenContact>
                 </WelcomeContent>
                 <ProjectsTitle>Projects</ProjectsTitle>

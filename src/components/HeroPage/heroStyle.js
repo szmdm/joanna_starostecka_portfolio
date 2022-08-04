@@ -11,6 +11,12 @@ export const HeroContent = styled.div`
     height: calc(100vh - 280px);
     max-height: 100%;
     width: 100%;
+    margin-bottom: 15px;
+
+    @media screen and (max-width: ${mediaSize}) {
+        height: auto;
+        margin-bottom: 20px;
+    }
 `
 
 export const WelcomeContent = styled.div`
@@ -32,7 +38,8 @@ export const WelcomeContent = styled.div`
 
 export const OpenTitle = styled.div`
     line-height: 45px;
-    font-size: 36px;
+    font-size: 2.25rem;
+    font-size: clamp(1.5rem,2.25rem,3vw);
     font-weight: bold;
     margin-bottom: 50px;
 
@@ -49,7 +56,8 @@ export const OpenTitle = styled.div`
 
 export const OpenText = styled.div`
     line-height: 35px;
-    font-size: 28px;
+    font-size: 1.75rem;
+    font-size: clamp(0.9rem,1.75rem,3vw);
     font-weight: bold;
     margin-bottom: 100px;
     width: 510px;
@@ -57,25 +65,32 @@ export const OpenText = styled.div`
     @media screen and (max-width: ${mediaSize}) {
         transition: 0.2s ease-in;
         width: auto;
+        line-height: 30px;
+        margin-bottom: 25px;
     }
 `
 
 export const OpenContact = styled.div`
-    font-size: 18px;
+    font-size: clamp(0.7rem,1.125rem,3vw);
     font-style: normal;
     font-weight: 400;
+    margin-bottom: 20px;
+
+    @media screen and (max-width: ${mediaSize}) {
+        margin-bottom: 10px;
+    }
 `
 
 export const ProjectsTitle = styled.div`
     font-size: 2.25rem;
+    font-size: clamp(1.1rem,2.25rem,3vw);
     font-weight: bold;
     width: auto;
-    padding: calc(100vh - 777px) 0 0 100px;
+    padding: calc(100vh - 666px) 0 0 100px;
     color: black;
 
     @media screen and (max-width: ${mediaSize}) {
-        padding: calc(100vh - 710px) 0 0 15px;
-        transition: 0.2s ease-in;
+        display: none;
     }
 `
 
