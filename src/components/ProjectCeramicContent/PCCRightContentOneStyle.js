@@ -13,6 +13,7 @@ export const PCCRight = styled.div`
     gap: 60px;
     background-image: url(${(props) => props.imgPCCRight});
     background-size: cover;
+    background-position: center;
 
     &::after {
         content: "";

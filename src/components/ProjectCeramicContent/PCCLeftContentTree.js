@@ -45,6 +45,7 @@ const PCCLeftContentTree = ({ ...props }) => {
                     {props.addComponentSix}
                     <p>{props.textPCCLeftTwo}</p>
                     {props.addComponentTwo}
+                    {props.addComponentFive}
                     {props.addComponentSeven}
                     {props.addComponentNineThird}
                     {props.addComponentTenSecond}

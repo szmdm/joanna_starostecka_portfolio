@@ -44,5 +44,9 @@ background-image: url(${(props) => props.imgPCCLeft});
 width: ${(props) => props.width};
 height: ${(props) => props.height};
 background-size: cover;
+background-position: center;
 
+@media screen and (max-width: ${mediaSize}) {
+    height: auto;
+}
 `
