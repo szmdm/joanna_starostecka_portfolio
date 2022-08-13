@@ -16,11 +16,27 @@ const PCCRightContentTwo = ({ ...props }) => {
             >
                 <PCCRightOne>
                     <h1>{props.titlePCCRightOne}</h1>
-                    <p>{props.textPCCRightOne}</p>
-                    <ContactUsButton margin='30px 0 30px 0'/>
+                    <p>
+                        Studio ceramika dobro to moja warszawska,
+                        autorska pracownia, gdzie
+                        <span className='dots'>...</span>
+                        <span className='restText'>
+                            powstaje
+                            głównie ceramika użytkowa w pojedyńczych egzemplarzach lub krótkich seriach.
+                            Pracownia znajduje się w malowniczym miejscu, na obrzeżach miasta, blisko sosnowego lasu, pod wydmą.
+                            To osobiste wnętrze, pełne znaczących przedmiotów i dzieł innych twórców.
+                        </span>
+                    </p>
+                    <span className='dots'>...</span>
+                    <ContactUsButton margin='30px 0 30px 0' />
                 </PCCRightOne>
                 <PCCRightTwo>
-                    <p>{props.textPCCRightTwo}</p>
+                    <p>
+                        Studio ceramika dobro to moja warszawska,
+                        autorska pracownia,gdzie powstaje głównie ceramika użytkowa w pojedyńczych egzemplarzach lub krótkich seriach.
+                        Pracownia znajduje się w malowniczym miejscu, na obrzeżach miasta, blisko sosnowego lasu, pod wydmą.
+                        To osobiste wnętrze, pełne znaczących przedmiotów i dzieł innych twórców.
+                    </p>
                     <img src={PCCRightTwoImg_01} alt="/" />
                 </PCCRightTwo>
             </PCCRight>

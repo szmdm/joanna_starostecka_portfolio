@@ -61,12 +61,8 @@ const ProjectCeramic = () => {
                     />
                     <PCCRightContentTwo
                         titlePCCRightOne='our products'
-                        textPCCRightOne=
-                        'Studio ceramika dobro to moja warszawska, autorska pracownia,gdzie powstaje głównie ceramika użytkowa w pojedyńczych egzemplarzach lub krótkich seriach. Pracownia znajduje się w malowniczym miejscu, na obrzeżach miasta, blisko sosnowego lasu, pod wydmą. To osobiste wnętrze, pełne znaczących przedmiotów i dzieł innych twórców.'
-                        textPCCRightTwo=
-                        'Studio ceramika dobro to moja warszawska, autorska pracownia,gdzie powstaje głównie ceramika użytkowa w pojedyńczych egzemplarzach lub krótkich seriach. Pracownia znajduje się w malowniczym'
                         backgroundColorPCCRight='#f2f1ed'
-                    />
+                        />
                 </ProjectCeramicContainer>
                 <ProjectCeramicContainer>
                     <PCCLeftContentTree
