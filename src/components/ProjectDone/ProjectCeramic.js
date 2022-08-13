@@ -104,7 +104,7 @@ const ProjectCeramic = () => {
                         PCCLeftTwoJustify='center'
                         PCCLeftBorderRight='1px solid #D19886'
                         PCCLeftOneMargin='0 0px 0px 0px'
-                        PCCLeftTwoMargin='0 0px 50px 0px'
+                        PCCLeftTwoMargin='0 0px 0px 0px'
                         PCCLeftOneAlign='center'
                         PCCLeftTwoAlign='flex-start'
                         backgroundColorPCCRight='#f2f1ed'
@@ -128,7 +128,7 @@ const ProjectCeramic = () => {
                         PCCLeftTwoJustify='center'
                         borderBottomDirection='left: 0;'
                         PCCLeftOneMargin='0 0px 0px 0px'
-                        PCCLeftTwoMargin='0 0px 50px 0px'
+                        PCCLeftTwoMargin='0 0px 5px 0px'
                         PCCLeftOneAlign='center'
                         PCCLeftTwoAlign='flex-start'
                         PCCLeftBorderRight='none'
@@ -141,6 +141,7 @@ const ProjectCeramic = () => {
                         textPCCLeftTwo=
                         'Studio ceramika dobro to moja warszawska ...'
                         addComponentOne={<ContactUsButton margin='20px 0 30px 0' />}
+                        addComponentTwo={<PriceOneComponent marginBottom='15px' marginTop='20px' />}
                         addComponentTree={<PageNumberComponent />}
                         addComponentFour={<PCCPictureComponent image={PDCeramicImg_06} width='210px' padding='5px 0 0 0' margin='0px 0 25px 0' />}
                         addComponentFive={<PCCPictureComponent image={PCCRightTwoImg_01} width='auto' padding='0 0 0 0' margin='0px 0 0px 0' />}
