@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { laptop, mediaSize, ceramicBasis } from "../../variables/Mixins";
+import { mediaSize, ceramicBasis } from "../../variables/Mixins";
 
 export const PCCLeft = styled.div`
 position: relative;
@@ -52,8 +52,8 @@ export const PCCLeftOne = styled.div`
             position: relative;
             display: flex;
             flex-direction: column;
-            margin-bottom: 77px;
-            margin-top: 10px;
+            margin-bottom: 60px;
+            margin-top: 30px;
 
             span {
                 height: 9px;
@@ -73,7 +73,6 @@ export const PCCLeftOne = styled.div`
             font-style: normal;
             font-weight: 400;
             font-size: 2.5rem;
-            font-size: clamp(2rem, 2.5rem, 3vw);
             text-transform: uppercase;
             color: #E2E2D8;
             margin-bottom: 20px;
@@ -86,6 +85,39 @@ export const PCCLeftOne = styled.div`
             font-size: clamp(0.6rem, 0.94rem, 3vw);
             color: #E2E2D8;
         }
+
+        .dots {
+            display: none;
+        }
+
+        .restText {
+            font-family: "Calibri";
+            font-weight: 400;
+            font-size: 0.94rem;
+            color: #E2E2D8;
+        }
+
+
+    @media screen and (max-width: ${mediaSize}) {
+        flex-basis: auto;
+
+        .restText {
+            display: none;
+        }
+
+        .dots {
+            display: block;
+        }
+        
+        h1 {
+            width: 200px;
+        }
+
+        p {
+            font-size: 0.94rem;
+            padding: 0 20px 0 0;
+        }
+}
 `;
 
 export const PCCLeftTwo = styled.div`
@@ -114,4 +146,8 @@ export const PCCLeftTwo = styled.div`
             font-size: clamp(0.6rem, 0.94rem, 3vw);
             color: #E2E2D8;
         }
+
+@media screen and (max-width: ${mediaSize}) {
+    display: none;
+}
 `;

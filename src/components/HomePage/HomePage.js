@@ -16,6 +16,7 @@ const HomePage = () => {
     console.log(location);
 
     useEffect(() => {
+        
         if (location.hash) {
             let elem = document.getElementById(location.hash.slice(1))
             if (elem) {

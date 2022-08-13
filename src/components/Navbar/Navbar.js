@@ -4,8 +4,6 @@ import { Nav, NavbarContainer, NavLogo, Navicon } from './navbarStyle';
 
 export const Navbar = ({toggle, isOpen}) => {
 
-    console.log(toggle);
-
     return (
         <>
             <Nav>

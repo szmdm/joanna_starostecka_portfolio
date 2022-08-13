@@ -29,21 +29,6 @@ const Sidebar = forwardRef((props, ref) => {
           <SimpleLink to="/#soft">Soft</SimpleLink>
           {/* <SimpleLink to="/#cocacolastand">Coca Cola stand</SimpleLink> */}
 
-
-   {/* react scroll version  */}
-
-          {/* <SidebarLink
-         activeClass="active"
-         to="Gillette" 
-         spy={true} 
-         smooth={true} 
-         duration={500} 
-         >
-          Gillette
-        </SidebarLink>
-
-        ...  */}
-
         </SidebarMenu>
       </SidebarWrapper>
     </SidebarContainer>

@@ -47,6 +47,6 @@ background-size: cover;
 background-position: center;
 
 @media screen and (max-width: ${mediaSize}) {
-    height: auto;
+    /* height: auto; */
 }
 `
