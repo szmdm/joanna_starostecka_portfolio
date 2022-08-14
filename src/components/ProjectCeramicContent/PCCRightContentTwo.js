@@ -27,7 +27,6 @@ const PCCRightContentTwo = ({ ...props }) => {
                             To osobiste wnętrze, pełne znaczących przedmiotów i dzieł innych twórców.
                         </span>
                     </p>
-                    <span className='dots'>...</span>
                     <ContactUsButton margin='30px 0 30px 0' />
                 </PCCRightOne>
                 <PCCRightTwo>

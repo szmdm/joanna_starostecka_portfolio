@@ -5,6 +5,7 @@ import PCCRightContentOne from '../ProjectCeramicContent/PCCRightContentOne';
 import PCCRightContentTwo from '../ProjectCeramicContent/PCCRightContentTwo';
 import PCCLeftContentTree from '../ProjectCeramicContent/PCCLeftContentTree';
 import PCCLeftContentFour from '../ProjectCeramicContent/PCCLeftContentFour';
+import PCCLeftContentTen from '../ProjectCeramicContent/PCCLeftContentTen';
 
 import PDCeramicImg_01 from "../../assets/projectsDone/pDCeramicStudio/Image_001.png"
 import PDCeramicImg_02 from "../../assets/projectsDone/pDCeramicStudio/Image_002.png"
@@ -65,7 +66,7 @@ const ProjectCeramic = () => {
                         />
                 </ProjectCeramicContainer>
                 <ProjectCeramicContainer>
-                    <PCCLeftContentTree
+                    <PCCLeftContentTen
                         PCCLeftOneJustify='center'
                         PCCLeftTwoJustify='center'
                         PCCLeftBorderRight='1px solid #D19886'
@@ -77,15 +78,11 @@ const ProjectCeramic = () => {
                         color='#7E7367'
                         titlePCCLeftOne='glazed plate'
                         titlePCCLeftTwo='&nbsp;'
-                        textPCCLeftOne=
-                        'Studio ceramika dobro to moja warszawska, autorska pracownia,gdzie powstaje głównie ceramika użytkowa w pojedyńczych egzemplarzach lub krótkich seriach. Pracownia znajduje się w malowniczym miejscu, na obrzeżach miasta, blisko sosnowego lasu, pod wydmą. To osobiste wnętrze, pełne znaczących przedmiotów i dzieł innych twórców.'
-                        textPCCLeftTwo=
-                        'Studio ceramika dobro to moja warszawska, autorska pracownia,gdzie powstaje głównie ceramika użytkowa w pojedyńczych egzemplarzach lub krótkich seriach. Pracownia znajduje się w malowniczym miejscu, na obrzeżach miasta, blisko sosnowego lasu, pod wydmą. To osobiste wnętrze, pełne znaczących przedmiotów i dzieł innych twórców.'
                         addComponentOne={<ContactUsButton margin='20px 0 30px 0' />}
-                        addComponentTwo={<PriceOneComponent marginBottom='5px' marginTop='20px' />}
+                        addComponentTwo={<PriceOneComponent marginBottom='5px' marginTop='10px' />}
                         addComponentTree={<PageNumberComponent />}
                     >
-                    </PCCLeftContentTree>
+                    </PCCLeftContentTen>
                     <PCCRightContentOne
                         imgPCCRight={PDCeramicImg_03}
                     />
