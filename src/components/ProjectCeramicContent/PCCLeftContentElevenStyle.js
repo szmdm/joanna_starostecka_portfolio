@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { laptop, mediaSize, ceramicBasis } from "../../variables/Mixins";
+import { mediaSize, ceramicBasis, mobileLMediaSize } from "../../variables/Mixins";
 
 export const PCCLeft = styled.div`
 position: relative;
@@ -30,7 +30,6 @@ border-right: ${(props) => props.borderRight};
 @media screen and (max-width: ${mediaSize}) {
     border-right: none;
     gap: 15px;
-    justify-content: left;
 }
 
 @media screen and (max-width: ${ceramicBasis}) {
@@ -52,7 +51,7 @@ export const PCCLeftOne = styled.div`
             font-style: normal;
             font-weight: 400;
             font-size: 2.5rem;
-            /* font-size: clamp(2rem, 2.5rem, 3vw); */
+            font-size: clamp(2rem, 2.5rem, 3vw);
             text-transform: uppercase;
             color: ${(props) => props.color};
             margin-bottom: 15px;
@@ -66,49 +65,12 @@ export const PCCLeftOne = styled.div`
             color: ${(props) => props.color};
         }
 
-        .dots {
-            display: none;
-        }
+@media screen and (min-width: ${mobileLMediaSize}) and (max-width: ${mediaSize}) {
+    margin: 50px 0px 50px 0px;
+}
 
-        .restText {
-            font-family: "Calibri";
-            font-weight: 400;
-            font-size: 0.94rem;
-            color: #7E7367;
-        }
-
-        .contactButton {
-            display: none;
-        }
-
-    @media screen and (max-width: ${mediaSize}) {
-        margin: 20px 0px 20px 45px;
-
-        .restText {
-            display: none;
-        }
-
-        .dots {
-            display: block;
-            font-family: "Calibri";
-            font-weight: 400;
-            font-size: 0.94rem;
-            /* font-size: clamp(0.6rem, 0.94rem, 3vw); */
-            color: #7E7367;
-        }
-        
-        h1 {
-            
-        }
-
-        p {
-            font-size: 0.94rem;
-            padding: 0 20px 0 0;
-        }
-
-        .contactButton {
-            display: contents;
-        }
+@media screen and (max-width: ${mobileLMediaSize}) {
+    margin: 50px 0px 0px 0px;
 }
 `;
 
@@ -125,7 +87,7 @@ export const PCCLeftTwo = styled.div`
             font-style: normal;
             font-weight: 400;
             font-size: 2.5rem;
-            /* font-size: clamp(2rem, 2.5rem, 3vw); */
+            font-size: clamp(2rem, 2.5rem, 3vw);
             text-transform: uppercase;
             color: ${(props) => props.color};
             margin-bottom: 20px;
@@ -139,14 +101,14 @@ export const PCCLeftTwo = styled.div`
             color: ${(props) => props.color};
         }
 
-        .restText {
-            font-family: "Calibri";
-            font-weight: 400;
-            font-size: 0.94rem;
-            color: #7E7367;
-        }
+@media screen and (min-width: ${mediaSize}) and (max-width: ${ceramicBasis}) {
+    margin: 50px 0px 50px 0px;
+}
+@media screen and (min-width: ${mobileLMediaSize}) and (max-width: ${mediaSize}) {
+    margin: 50px 0px 50px 0px;
+}
 
-@media screen and (max-width: ${mediaSize}) {
-    display: none;
+@media screen and (max-width: ${mobileLMediaSize}) {
+    margin: 0px 0px 50px 0px;
 }
 `;

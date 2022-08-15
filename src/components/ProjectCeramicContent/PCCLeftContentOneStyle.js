@@ -30,6 +30,7 @@ background-size: cover;
 @media screen and (max-width: ${mediaSize}) {
     border-right: none;
     gap: 0px;
+    justify-content: left;
 }
 
 @media screen and (max-width: ${ceramicBasis}) {
@@ -99,7 +100,7 @@ export const PCCLeftOne = styled.div`
 
 
     @media screen and (max-width: ${mediaSize}) {
-        flex-basis: auto;
+        margin-left: 45px;
 
         .restText {
             display: none;

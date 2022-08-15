@@ -13,7 +13,7 @@ export const PCCRight = styled.div`
     gap: 60px;
     background-image: url(${(props) => props.imgPCCRight});
     background-size: cover;
-    background-position: center;
+    /* background-position: center; */
 
     &::after {
         content: "";
@@ -29,6 +29,6 @@ export const PCCRight = styled.div`
         flex-direction: column;
     }
     @media screen and (max-width: ${ceramicBasis}) {
-        height: 630px;
+        height: 315px;
     }
 `;

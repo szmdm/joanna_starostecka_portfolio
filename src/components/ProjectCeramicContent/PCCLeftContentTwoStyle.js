@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { laptop, mediaSize, ceramicBasis } from "../../variables/Mixins";
+import { mediaSize, ceramicBasis } from "../../variables/Mixins";
 
 export const PCCLeft = styled.div`
 position: relative;
@@ -32,7 +32,7 @@ background-size: cover;
 }
 
 @media screen and (max-width: ${ceramicBasis}) {
-    height: 630px;
+    height: 315px;
     &::after {
         border-right: none;
     }

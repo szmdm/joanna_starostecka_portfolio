@@ -1,11 +1,11 @@
 import styled from "styled-components";
 import { laptop, mediaSize, ceramicBasis } from "../../variables/Mixins";
 
-export const PCCRight = styled.div`
+export const PCCLeft = styled.div`
 position: relative;
 display: flex;
 justify-content: center;
-align-items: flex-end;
+align-items: ${(props) => props.alignItems};
 flex-basis: 634px;
 height: 100%;
 flex-wrap: wrap;
@@ -13,6 +13,7 @@ gap: 75px;
 background-color: ${(props) => props.backgroundColor};
 background-image: url(${(props) => props.imgPCCLeft});
 background-size: cover;
+border-right: ${(props) => props.borderRight};
 
 
 &::after {
@@ -20,15 +21,15 @@ background-size: cover;
         border-bottom: 1px solid #D19886;
         position: absolute;
         bottom: 0;
-        left: 0;
+        right: 0;
         height: 100%;
         width: 91%;
-        /* width: 8px; */
+        ${(props) => props.borderBottomDirection}
     }
 
 @media screen and (max-width: ${mediaSize}) {
     border-right: none;
-    justify-content: left;
+    gap: 15px;
 }
 
 @media screen and (max-width: ${ceramicBasis}) {
@@ -37,22 +38,23 @@ background-size: cover;
 }
 `;
 
-export const PCCRightOne = styled.div`
+export const PCCLeftOne = styled.div`
     display: flex;
-    justify-content: center;
+    justify-content: ${(props) => props.PCCLeftOneJustify};
     align-items: flex-start;
     flex-direction: column;
     flex-basis: 211px;
-    margin: 30px 0px 50px 0px;
+    margin: ${(props) => props.margin};
 
         h1 {
             font-family: minion-pro, serif;
             font-style: normal;
             font-weight: 400;
             font-size: 2.5rem;
+            font-size: clamp(2rem, 2.5rem, 3vw);
             text-transform: uppercase;
-            color: #7E7367;
-            margin-bottom: 20px;
+            color: ${(props) => props.color};
+            margin-bottom: 15px;
         }
 
         p {
@@ -60,7 +62,7 @@ export const PCCRightOne = styled.div`
             font-weight: 400;
             font-size: 1.06rem;
             font-size: clamp(0.6rem, 0.94rem, 3vw);
-            color: #7E7367;
+            color: ${(props) => props.color};
         }
 
         .dots {
@@ -74,6 +76,9 @@ export const PCCRightOne = styled.div`
             color: #7E7367;
         }
 
+        .contactButton {
+            display: none;
+        }
 
     @media screen and (max-width: ${mediaSize}) {
         margin: 20px 0px 20px 45px;
@@ -84,30 +89,35 @@ export const PCCRightOne = styled.div`
 
         .dots {
             display: block;
+            font-family: "Calibri";
+            font-weight: 400;
+            font-size: 0.94rem;
+            /* font-size: clamp(0.6rem, 0.94rem, 3vw); */
+            color: #7E7367;
         }
         
         h1 {
-            width: 200px;
+            
         }
 
         p {
             font-size: 0.94rem;
             padding: 0 20px 0 0;
         }
+
+        .contactButton {
+            display: contents;
+        }
 }
 `;
 
-export const PCCRightTwo = styled.div`
+export const PCCLeftTwo = styled.div`
     display: flex;
-    justify-content: center;
-    align-items: flex-start;
+    justify-content: ${(props) => props.PCCLeftTwoJustify};
+    align-items: ${(props) => props.alignItemsTwo};
     flex-direction: column;
     flex-basis: 211px;
-    margin: 30px 0px 125px 0px;
-
-    img {
-        margin: 30px 0 30px 0;
-    }
+    margin: ${(props) => props.margin};
 
     h1 {
             font-family: minion-pro, serif;
@@ -116,7 +126,7 @@ export const PCCRightTwo = styled.div`
             font-size: 2.5rem;
             font-size: clamp(2rem, 2.5rem, 3vw);
             text-transform: uppercase;
-            color: #7E7367;
+            color: ${(props) => props.color};
             margin-bottom: 20px;
         }
 
@@ -125,7 +135,22 @@ export const PCCRightTwo = styled.div`
             font-weight: 400;
             font-size: 1.06rem;
             font-size: clamp(0.6rem, 0.94rem, 3vw);
+            color: ${(props) => props.color};
+        }
+
+        .dots {
+            display: none;
+        }
+
+        .restText {
+            font-family: "Calibri";
+            font-weight: 400;
+            font-size: 0.94rem;
             color: #7E7367;
+        }
+
+        .contactButton {
+            display: none;
         }
 
 @media screen and (max-width: ${mediaSize}) {

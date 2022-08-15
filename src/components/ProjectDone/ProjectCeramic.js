@@ -6,6 +6,8 @@ import PCCRightContentTwo from '../ProjectCeramicContent/PCCRightContentTwo';
 import PCCLeftContentTree from '../ProjectCeramicContent/PCCLeftContentTree';
 import PCCLeftContentFour from '../ProjectCeramicContent/PCCLeftContentFour';
 import PCCLeftContentTen from '../ProjectCeramicContent/PCCLeftContentTen';
+import PCCLeftContentEleven from '../ProjectCeramicContent/PCCLeftContentEleven';
+import PCCLeftContentTwelve from '../ProjectCeramicContent/PCCLeftContentTwelve';
 
 import PDCeramicImg_01 from "../../assets/projectsDone/pDCeramicStudio/Image_001.png"
 import PDCeramicImg_02 from "../../assets/projectsDone/pDCeramicStudio/Image_002.png"
@@ -88,12 +90,12 @@ const ProjectCeramic = () => {
                     />
                 </ProjectCeramicContainer>
                 <ProjectCeramicContainer>
-                    <PCCLeftContentTree
+                    <PCCLeftContentEleven
                         PCCLeftOneJustify='center'
                         PCCLeftTwoJustify='center'
                         PCCLeftBorderRight='1px solid #D19886'
-                        PCCLeftOneMargin='0 0px 0px 0px'
-                        PCCLeftTwoMargin='0 0px 0px 0px'
+                        PCCLeftOneMargin='50px 0px 50px 0px'
+                        PCCLeftTwoMargin='50px 0px 50px 0px'
                         PCCLeftOneAlign='center'
                         PCCLeftTwoAlign='flex-start'
                         backgroundColorPCCRight='#f2f1ed'
@@ -111,8 +113,8 @@ const ProjectCeramic = () => {
                         addComponentFive={<PCCPictureComponent image={PCCRightTwoImg_01} width='auto' padding='0 0 0 0' margin='0px 0 0px 0' />}
                         addComponentSix={<PCCPictureComponent image={PDCeramicImg_05} width='auto' padding='5px 0 0 0' margin='0px 0 25px 0' />}
                     >
-                    </PCCLeftContentTree>
-                    <PCCLeftContentTree
+                    </PCCLeftContentEleven>
+                    <PCCLeftContentEleven
                         PCCLeftOneJustify='center'
                         PCCLeftTwoJustify='center'
                         borderBottomDirection='left: 0;'
@@ -136,7 +138,7 @@ const ProjectCeramic = () => {
                         addComponentFive={<PCCPictureComponent image={PCCRightTwoImg_01} width='auto' padding='0 0 0 0' margin='0px 0 0px 0' />}
                         addComponentSix={<PCCPictureComponent image={PDCeramicImg_07} width='auto' padding='5px 0 0 0' margin='0px 0 25px 0' />}
                     >
-                    </PCCLeftContentTree>
+                    </PCCLeftContentEleven>
                 </ProjectCeramicContainer>
                 <ProjectCeramicContainer>
                     <PCCLeftContentTwo
@@ -146,7 +148,7 @@ const ProjectCeramic = () => {
                         width='100%'
                         height='100%'
                     />
-                    <PCCLeftContentTree
+                    <PCCLeftContentTwelve
                         PCCLeftOneJustify='center'
                         PCCLeftTwoJustify='center'
                         borderBottomDirection='left: 0;'
@@ -158,17 +160,13 @@ const ProjectCeramic = () => {
                         color='#7E7367'
                         titlePCCLeftOne='user persona'
                         titlePCCLeftTwo='&nbsp;'
-                        textPCCLeftOne=
-                        'Studio ceramika dobro to moja warszawska, autorska pracownia,gdzie powstaje głównie ceramika użytkowa w pojedyńczych egzemplarzach lub krótkich seriach. Pracownia znajduje się w malowniczym miejscu, na obrzeżach miasta, blisko sosnowego lasu, pod wydmą. To osobiste wnętrze, pełne znaczących przedmiotów i dzieł innych twórców.'
-                        textPCCLeftTwo=
-                        'Studio ceramika dobro to moja warszawska, autorska pracownia,gdzie powstaje głównie ceramika użytkowa w pojedyńczych egzemplarzach lub krótkich seriach. Pracownia znajduje się w malowniczym'
                         addComponentOne={<ContactUsButton margin='20px 0 30px 0' />}
                         addComponentTree={<PageNumberComponent />}
                     >
-                    </PCCLeftContentTree>
+                    </PCCLeftContentTwelve>
                 </ProjectCeramicContainer>
                 <ProjectCeramicContainer>
-                    <PCCLeftContentTree
+                    <PCCLeftContentTwelve
                         PCCLeftOneJustify='center'
                         PCCLeftTwoJustify='center'
                         PCCLeftBorderRight='1px solid #D19886'
@@ -187,7 +185,7 @@ const ProjectCeramic = () => {
                         addComponentSeven={<PCCPictureComponent image={PCCRightTwoImg_01} width='auto' padding='0 0 0 0' margin='40px 0 0px 0' />}
 
                     >
-                    </PCCLeftContentTree>
+                    </PCCLeftContentTwelve>
                     <PCCLeftContentTwo
                         imgPCCLeft={PDCeramicImg_09}
                         backgroundColorPCCLeft='#f2f1ed'
