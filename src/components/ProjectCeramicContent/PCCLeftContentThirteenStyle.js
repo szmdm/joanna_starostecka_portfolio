@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { mediaSize, ceramicBasis } from "../../variables/Mixins";
+import { laptop, mediaSize, ceramicBasis } from "../../variables/Mixins";
 
 export const PCCLeft = styled.div`
 position: relative;
@@ -29,7 +29,7 @@ border-right: ${(props) => props.borderRight};
 
 @media screen and (max-width: ${mediaSize}) {
     border-right: none;
-    gap: 15px;
+    gap: 0px;
     justify-content: flex-start;
 }
 
@@ -58,58 +58,15 @@ export const PCCLeftOne = styled.div`
             margin-bottom: 15px;
         }
 
-        p {
-            font-family: "Calibri";
-            font-weight: 400;
-            font-size: 1.06rem;
-            font-size: clamp(0.6rem, 0.94rem, 3vw);
-            color: ${(props) => props.color};
-        }
-
-        .dots {
-            display: none;
-        }
-
-        .restText {
-            font-family: "Calibri";
-            font-weight: 400;
-            font-size: 0.94rem;
-            color: #7E7367;
-        }
-
-        .contactButton {
-            display: none;
-        }
-
-        .restText {
-            display: none;
-        }
-
-        .dots {
-            display: block;
-            font-family: "Calibri";
-            font-weight: 400;
-            font-size: 0.94rem;
-            /* font-size: clamp(0.6rem, 0.94rem, 3vw); */
-            color: #7E7367;
-        }
-        
-        h1 {
-            
-        }
-
-        p {
-            font-size: 0.94rem;
-            padding: 0 20px 0 0;
-        }
-
-        .contactButton {
-            display: contents;
+        .colorBox {
+            display: flex;
+            flex-wrap: wrap;
         }
 
     @media screen and (max-width: ${mediaSize}) {
-        margin: 20px 0px 20px 45px;
-}
+        margin: 20px 0px 0px 45px;
+        flex-basis: 260px;
+    }
 `;
 
 export const PCCLeftTwo = styled.div`
@@ -125,36 +82,19 @@ export const PCCLeftTwo = styled.div`
             font-style: normal;
             font-weight: 400;
             font-size: 2.5rem;
-            font-size: clamp(2rem, 2.5rem, 3vw);
+            /* font-size: clamp(2rem, 2.5rem, 3vw); */
             text-transform: uppercase;
             color: ${(props) => props.color};
             margin-bottom: 20px;
         }
 
-        p {
-            font-family: "Calibri";
-            font-weight: 400;
-            font-size: 1.06rem;
-            font-size: clamp(0.6rem, 0.94rem, 3vw);
-            color: ${(props) => props.color};
+        .colorBox {
+            display: flex;
+            flex-wrap: wrap;
         }
 
-        .dots {
-            display: none;
-        }
-
-        .restText {
-            font-family: "Calibri";
-            font-weight: 400;
-            font-size: 0.94rem;
-            color: #7E7367;
-        }
-
-        .contactButton {
-            display: none;
-        }
-
-@media screen and (max-width: ${mediaSize}) {
-    display: none;
-}
+    @media screen and (max-width: ${mediaSize}) {
+        margin: 0px 0px 20px 45px;
+        flex-basis: 260px;
+    }
 `;

@@ -2,10 +2,10 @@ import React from 'react'
 
 import {
     PCCLeft,
-} from './PCCLeftContentFourStyle'
+} from './PCCLeftContentSixteenStyle'
 
 
-const PCCLeftContentFour = ({ ...props }) => {
+const PCCLeftContentSixteen = ({ ...props }) => {
     return (
         <>
             <PCCLeft
@@ -24,4 +24,4 @@ const PCCLeftContentFour = ({ ...props }) => {
     )
 }
 
-export default PCCLeftContentFour
+export default PCCLeftContentSixteen

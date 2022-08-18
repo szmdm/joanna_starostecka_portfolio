@@ -1,5 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
+import { mediaSize } from '../../variables/Mixins'
 
 const FifthContent = ({ ...props }) => {
     return (
@@ -25,20 +26,6 @@ const FifthContent = ({ ...props }) => {
                     <div className='rowFirstColumnTwo'>
                         {props.addComponentTree}
                         {props.addComponentFive}
-                    </div>
-                </div>
-
-                <div className='rowSecond'>
-                    <div className='rowSecondColumnOne'>
-                        <RowSecondColumnOneText
-                            rowSecondColumnOneTextDisplay={props.rowSecondColumnOneTextDisplay}
-                            rowSecondColumnOneText={props.rowSecondColumnOneText}
-                        >
-                            {props.rowSecondColumnOneText}
-                        </RowSecondColumnOneText>
-                    </div>
-                    <div className='rowSecondColumnTwo'>
-                        <div className='textSecond'>{props.rowSecondTextSecond}</div>
                     </div>
                 </div>
             </div>
@@ -76,9 +63,9 @@ const FifthContentBox = styled.div`
         align-items: center;
         justify-content: flex-start;
         flex-direction: row;
-        gap: 75px;
+        gap: 60px;
         margin: ${(props) => props.rowFirstMargin};
-
+        flex-wrap: wrap;
         
 
         .rowFirstColumnOne{
@@ -94,6 +81,10 @@ const FifthContentBox = styled.div`
                 font-size: clamp(0.6rem, 0.94rem, 3vw);
                 color: #7E7367;
             }
+
+        @media screen and (max-width: ${mediaSize}) {
+            gap: 15px;
+        }
         }
         .rowFirstColumnTwo {
         display: ${(props) => props.rowFirstColumnTwoDisplay};
@@ -108,7 +99,15 @@ const FifthContentBox = styled.div`
                 font-size: clamp(0.6rem, 0.94rem, 3vw);
                 color: #7E7367;
             }
+
+        @media screen and (max-width: ${mediaSize}) {
+            gap: 15px;
         }
+        }
+
+    @media screen and (max-width: ${mediaSize}) {
+        gap: 15px;
+    }
     }   
     .rowSecond {
         display: flex;

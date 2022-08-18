@@ -8,6 +8,10 @@ import PCCLeftContentFour from '../ProjectCeramicContent/PCCLeftContentFour';
 import PCCLeftContentTen from '../ProjectCeramicContent/PCCLeftContentTen';
 import PCCLeftContentEleven from '../ProjectCeramicContent/PCCLeftContentEleven';
 import PCCLeftContentTwelve from '../ProjectCeramicContent/PCCLeftContentTwelve';
+import PCCLeftContentThirteen from '../ProjectCeramicContent/PCCLeftContentThirteen';
+import PCCLeftContentFourteen from '../ProjectCeramicContent/PCCLeftContentFourteen';
+import PCCLeftContentFifteen from '../ProjectCeramicContent/PCCLeftContentFifteen';
+import PCCLeftContentSixteen from '../ProjectCeramicContent/PCCLeftContentFifteen';
 
 import PDCeramicImg_01 from "../../assets/projectsDone/pDCeramicStudio/Image_001.png"
 import PDCeramicImg_02 from "../../assets/projectsDone/pDCeramicStudio/Image_002.png"
@@ -206,7 +210,7 @@ const ProjectCeramic = () => {
                         addComponentEight={<PCCPictureComponent image={PDCeramicImg_11} width='auto' padding='0 0 0 0' margin='40px 0 0px 0' position='absolute' />}
 
                     />
-                    <PCCLeftContentTree
+                    <PCCLeftContentTwelve
                         PCCLeftOneJustify='center'
                         PCCLeftTwoJustify='center'
                         borderBottomDirection='left: 0;'
@@ -225,14 +229,14 @@ const ProjectCeramic = () => {
                         addComponentOne={<ContactUsButton margin='20px 0 30px 0' />}
                         addComponentTree={<PageNumberComponent />}
                     >
-                    </PCCLeftContentTree>
+                    </PCCLeftContentTwelve>
                 </ProjectCeramicContainer>
                 <ProjectCeramicContainer>
-                    <PCCLeftContentTree
+                    <PCCLeftContentThirteen
                         PCCLeftBorderRight='1px solid #D19886'
                         borderBottomDirection='right: 0;'
                         PCCLeftOneMargin='10px 0px 10px 0px'
-                        PCCLeftTwoMargin='10px 0px 215px 0px'
+                        PCCLeftTwoMargin='10px 0px 150px 0px'
                         PCCLeftOneAlign='center'
                         PCCLeftTwoAlign='flex-start'
                         PCCLeftOneJustify='center'
@@ -249,12 +253,12 @@ const ProjectCeramic = () => {
                         addComponentNineSecond={<ColorComponent border='none' backgroundColor='#3E4136' text='dark green' hexColor='3d4236' />}
                         addComponentNineThird={<ColorComponent border='none' backgroundColor='#7E7367' text='grey' hexColor='   a49d94' />}
                     >
-                    </PCCLeftContentTree>
-                    <PCCLeftContentTree
+                    </PCCLeftContentThirteen>
+                    <PCCLeftContentFourteen
                         PCCLeftBorderRight='none'
                         borderBottomDirection='left: 0;'
-                        PCCLeftOneMargin='85px 0px 10px 0px'
-                        PCCLeftTwoMargin='10px 0px 275px 0px'
+                        PCCLeftOneMargin='135px 0px 10px 0px'
+                        PCCLeftTwoMargin='10px 0px 155px 0px'
                         PCCLeftOneAlign='center'
                         PCCLeftOneJustify='flex-start'
                         PCCLeftTwoJustify='center'
@@ -268,7 +272,7 @@ const ProjectCeramic = () => {
                         addComponentTen={<FontComponent text='Calibri' fontFamily='Calibri' fontType='regular' fontFamilySpan='Calibri' />}
                         addComponentTenSecond={<FontComponent text='Minion Pro' fontFamily='Minion Pro' fontType='regular' fontFamilySpan='Calibri' />}
                     >
-                    </PCCLeftContentTree>
+                    </PCCLeftContentFourteen>
                 </ProjectCeramicContainer>
                 <ProjectCeramicContainer>
                     <PCCLeftContentFour
@@ -282,7 +286,7 @@ const ProjectCeramic = () => {
                             rowSecondTextSecond='second category button'
                             addComponentOne={<ContactUsButton />}
                             image={PCCRightTwoImg_01}
-                            margin='15px 60px 15px 60px'
+                            margin='15px 60px 15px 35px'
                             rowFirstMargin='0px 0px 15px 0px'
                             topHeight='180px'
                             rowFirstColumnTwoDisplay='flex'
@@ -291,7 +295,7 @@ const ProjectCeramic = () => {
                         addComponentTwo={<FourthContent
                             title='steppers'
                             rowSecondColumnOneText='amount of products'
-                            margin='15px 60px 15px 60px'
+                            margin='15px 60px 15px 35px'
                             rowFirstMargin='0px 0px 15px 0px'
                             topHeight='180px'
                             rowFirstColumnTwoDisplay='none'
@@ -301,7 +305,7 @@ const ProjectCeramic = () => {
                             rowSecondColumnOneTextDisplay=''
                         />}
                     />
-                    <PCCLeftContentFour
+                    <PCCLeftContentSixteen
                         PCCLeftBorderRight='none'
                         borderBottomDirection='left: 0;'
                         backgroundColorPCCRight='#f2f1ed'
@@ -309,9 +313,9 @@ const ProjectCeramic = () => {
                         addComponentOne={<FifthContent
                             title='profile'
                             image={PCCRightTwoImg_01}
-                            margin='15px 60px 15px 60px'
+                            margin='15px 60px 15px 35px'
                             rowFirstMargin='0px 0px 15px 0px'
-                            topHeight='180px'
+                            // topHeight='180px'
                             rowFirstColumnTwoDisplay='flex'
                             rowFirstColumnOneTextDisplay='none'
                             addComponentOne={<FormCeramic text='login' />}
@@ -323,7 +327,7 @@ const ProjectCeramic = () => {
                         />}
                         addComponentTwo={<FifthContent
                             title='payment'
-                            margin='15px 60px 15px 60px'
+                            margin='15px 60px 15px 35px'
                             rowFirstMargin='0px 0px 15px 0px'
                             topHeight='180px'
                             rowFirstColumnTwoDisplay='none'
@@ -339,7 +343,7 @@ const ProjectCeramic = () => {
                     />
                 </ProjectCeramicContainer>
                 <ProjectCeramicContainer>
-                    <PCCLeftContentFour
+                    <PCCLeftContentFifteen
                         PCCLeftBorderRight='1px solid #D19886'
                         borderBottomDirection='right: 0;'
                         backgroundColorPCCRight='#f2f1ed'
@@ -356,14 +360,16 @@ const ProjectCeramic = () => {
                                 </div>
                             }
                             image={PCCRightTwoImg_01}
-                            margin='15px 60px 0px 60px'
+                            margin='15px 60px 225px 35px'
+                            marginMediaSize='15px 60px 25px 35px'
+                            marginCeramicBasic='15px 60px 25px 35px'
                             rowFirstMargin='0px 0px 0px 0px'
                             topHeight='180px'
                             rowFirstColumnTwoDisplay='none'
                             rowFirstColumnOneTextDisplay='none'
                         />}
                     />
-                    <PCCLeftContentFour
+                    <PCCLeftContentFifteen
                         PCCLeftBorderRight='none'
                         borderBottomDirection='left: 0;'
                         backgroundColorPCCRight='#f2f1ed'
@@ -376,17 +382,19 @@ const ProjectCeramic = () => {
                                 </div>
                             }
                             image={PCCRightTwoImg_01}
-                            margin='15px 60px 15px 60px'
+                            margin='15px 60px 15px 35px'
                             rowFirstMargin='0px 0px 0px 0px'
                             topHeight='180px'
+                            topHeightMediaSize='110px'
                             rowFirstColumnTwoDisplay='none'
                             rowFirstColumnOneTextDisplay='none'
                         />}
                         addComponentTwo={<FourthContent
                             title='developed by'
-                            margin='15px 60px 15px 60px'
+                            margin='15px 60px 15px 35px'
                             rowFirstMargin='0px 0px 15px 0px'
                             topHeight='180px'
+                            topHeightMediaSize='125px'
                             rowFirstColumnTwoDisplay='none'
                             rowFirstColumnOneTextDisplay='flex'
                             rowFirstColumnOneText={

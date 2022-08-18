@@ -22,8 +22,8 @@ const Button = styled.div`
     padding: 6px;
     font-family: "Calibri";
     font-weight: 400;
-    font-size: 1.06rem;
-    font-size: clamp(0.6rem, 0.94rem, 3vw);
+    font-size: 0.94rem;
+    /* font-size: clamp(0.6rem, 0.94rem, 3vw); */
     color: #FFFFFF;
     margin: ${(props) => props.margin}
 `;

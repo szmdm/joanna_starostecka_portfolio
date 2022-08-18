@@ -1,14 +1,17 @@
 import React from 'react'
 import styled from 'styled-components'
 
-import PCCRightTwoImg_01 from '../../assets/projectsDone/pDCeramicStudio/Component_34.png';
+import { ceramicBasis, mediaSize } from '../../variables/Mixins';
 
 const FourthContent = ({ ...props }) => {
     return (
         <FourthContentBox
             margin={props.margin}
+            marginMediaSize={props.marginMediaSize}
+            marginCeramicBasic={props.marginCeramicBasic}
             rowFirstMargin={props.rowFirstMargin}
             topHeight={props.topHeight}
+            topHeightMediaSize={props.topHeightMediaSize}
             rowFirstColumnTwoDisplay={props.rowFirstColumnTwoDisplay}
             rowSecondColumnTwoDisplay={props.rowFirstColumnTwoDisplay}
         >
@@ -68,11 +71,15 @@ const FourthContentBox = styled.div`
             font-style: normal;
             font-weight: 400;
             font-size: 2.5rem;
-            font-size: clamp(2rem, 2.5rem, 3vw);
+            /* font-size: clamp(2rem, 2.5rem, 3vw); */
             text-transform: uppercase;
             color: #7E7367;
             margin-bottom: 35px;
         }
+
+    @media screen and (max-width: ${mediaSize}) {
+        height: ${props => props.topHeightMediaSize};
+    }
     }
 
     .rowFirst {
@@ -94,7 +101,7 @@ const FourthContentBox = styled.div`
             .textFirst {
                 font-family: "Calibri";
                 font-weight: 400;
-                font-size: 1.06rem;
+                font-size: 0.94rem;
                 font-size: clamp(0.6rem, 0.94rem, 3vw);
                 color: #7E7367;
 
@@ -109,17 +116,21 @@ const FourthContentBox = styled.div`
             .textFirst {
                 font-family: "Calibri";
                 font-weight: 400;
-                font-size: 1.06rem;
-                font-size: clamp(0.6rem, 0.94rem, 3vw);
+                font-size: 0.94rem;
+                /* font-size: clamp(0.6rem, 0.94rem, 3vw); */
                 color: #7E7367;
             }
+
+        @media screen and (max-width: ${mediaSize}) {
+            display: none;
+        }
         }
     }   
     .rowSecond {
         display: flex;
         flex-basis: 211px;
         align-items: flex-start;
-        justify-content: center;
+        justify-content: flex-start;
         flex-direction: row;
         gap: 75px;
 
@@ -132,7 +143,7 @@ const FourthContentBox = styled.div`
             .textFirst {
                 font-family: "Calibri";
                 font-weight: 400;
-                font-size: 1.06rem;
+                font-size: 0.94rem;
                 font-size: clamp(0.6rem, 0.94rem, 3vw);
                 color: #7E7367;
             }
@@ -147,38 +158,51 @@ const FourthContentBox = styled.div`
             .textSecond {
                 font-family: "Calibri";
                 font-weight: 400;
-                font-size: 1.06rem;
-                font-size: clamp(0.6rem, 0.94rem, 3vw);
+                font-size: 0.94rem;
+                /* font-size: clamp(0.6rem, 0.94rem, 3vw); */
                 color: #7E7367;
             }
+
+        @media screen and (max-width: ${mediaSize}) {
+            display: none;
+        }
         }
     }
+
+@media screen and (max-width: ${mediaSize}) {
+    margin: ${props => props.marginMediaSize};
+}
+@media screen and (min-width: ${mediaSize}) and (max-width: ${ceramicBasis}) {
+    margin: ${props => props.marginCeramicBasic};
+}
 `
 
 const RowFirstColumnOneText = styled.div`
     display: ${(props) => props.rowFirstColumnOneTextDisplay};
     font-family: "Calibri";
     font-weight: 400;
-    font-size: 1.06rem;
-    font-size: clamp(0.6rem, 0.94rem, 3vw);
+    font-size: 0.94rem;
+    /* font-size: clamp(0.6rem, 0.94rem, 3vw); */
     color: #7E7367;
     
     .divTextFirst {
-                    font-size: clamp(0.9rem, 1.25rem, 3vw);
-                }
+        font-size: 1.25rem;
+        font-size: clamp(0.9rem, 1.25rem, 3vw);
+    }
 `
 
 const RowSecondColumnOneText = styled.div`
     display: ${(props) => props.rowSecondColumnOneTextDisplay};
     font-family: "Calibri";
     font-weight: 400;
-    font-size: 1.06rem;
-    font-size: clamp(0.6rem, 0.94rem, 3vw);
+    font-size: 0.94rem;
+    /* font-size: clamp(0.6rem, 0.94rem, 3vw); */
     color: #7E7367;
 
     .divTextFirst {
-                    font-size: clamp(0.9rem, 1.25rem, 3vw);
-                }
+        font-size: 1.25rem;
+        font-size: clamp(0.9rem, 1.25rem, 3vw);
+    }
 `
 
 export default FourthContent

@@ -21,7 +21,7 @@ const FontContent = styled.div`
     width: 207px;
     border: ${(props) => props.border};
     background-color: ${(props) => props.backgroundColor};
-    margin-top: 50px;
+    
 
         p {
             margin-top: 25px;
@@ -30,7 +30,7 @@ const FontContent = styled.div`
             font-family: ${(props) => props.fontFamily};
             font-style: ${(props) => props.fontStyle};
             font-weight: ${(props) => props.fontWeight};
-            font-size: 25px;
+            font-size: 40px;
             font-size: clamp(2rem,2.5rem,3vw);
             line-height: 105.5%;
         }

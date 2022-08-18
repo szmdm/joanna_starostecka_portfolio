@@ -1,5 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
+import { mediaSize, mobileLMediaSize } from '../../variables/Mixins';
 
 const ColorComponent = ({ ...props }) => {
     return (
@@ -23,10 +24,15 @@ const Color = styled.div`
     width: 207px;
     border: ${(props) => props.border};
     background-color: ${(props) => props.backgroundColor};
+
+    @media screen and (max-width: ${mediaSize}) {
+        width: 130px;
+        margin-right: 20px; 
+    }
 `;
 
 const ColorContent = styled.div`
-        width: 100%;
+        
         height: auto;
         margin-bottom: 35px;
 

@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { mediaSize, ceramicBasis } from "../../variables/Mixins";
+import { laptop, mediaSize, ceramicBasis, mobileLMediaSize } from "../../variables/Mixins";
 
 export const PCCLeft = styled.div`
 position: relative;
@@ -37,6 +37,8 @@ border-right: ${(props) => props.borderRight};
     border-right: none;
     height: auto;
 }
+
+
 `;
 
 export const PCCLeftOne = styled.div`
@@ -52,7 +54,7 @@ export const PCCLeftOne = styled.div`
             font-style: normal;
             font-weight: 400;
             font-size: 2.5rem;
-            font-size: clamp(2rem, 2.5rem, 3vw);
+            /* font-size: clamp(2rem, 2.5rem, 3vw); */
             text-transform: uppercase;
             color: ${(props) => props.color};
             margin-bottom: 15px;
@@ -61,54 +63,30 @@ export const PCCLeftOne = styled.div`
         p {
             font-family: "Calibri";
             font-weight: 400;
-            font-size: 1.06rem;
-            font-size: clamp(0.6rem, 0.94rem, 3vw);
+            font-size: 0.94rem;
+            /* font-size: clamp(0.6rem, 0.94rem, 3vw); */
             color: ${(props) => props.color};
         }
 
-        .dots {
-            display: none;
-        }
+    @media screen and (max-width: ${mobileLMediaSize}) {
+        margin: 55px 0px 10px 45px;
 
-        .restText {
-            font-family: "Calibri";
-            font-weight: 400;
-            font-size: 0.94rem;
-            color: #7E7367;
-        }
-
-        .contactButton {
-            display: none;
-        }
-
-        .restText {
-            display: none;
-        }
-
-        .dots {
-            display: block;
-            font-family: "Calibri";
-            font-weight: 400;
-            font-size: 0.94rem;
-            /* font-size: clamp(0.6rem, 0.94rem, 3vw); */
-            color: #7E7367;
-        }
-        
         h1 {
-            
+            margin-bottom: 25px;
         }
+    }
 
-        p {
-            font-size: 0.94rem;
-            padding: 0 20px 0 0;
+    @media screen and (min-width: ${mediaSize}) and (max-width: ${ceramicBasis}) {
+        margin: 55px 0px 50px 0px;
+
+        h1 {
+            margin-bottom: 25px;
         }
+    }
 
-        .contactButton {
-            display: contents;
-        }
-
-    @media screen and (max-width: ${mediaSize}) {
-        margin: 20px 0px 20px 45px;
+    @media screen and (min-width: ${mobileLMediaSize}) and (max-width: ${mediaSize}) {
+        justify-content: flex-start;
+        margin: 55px 0px 0px 45px;
 }
 `;
 
@@ -125,7 +103,7 @@ export const PCCLeftTwo = styled.div`
             font-style: normal;
             font-weight: 400;
             font-size: 2.5rem;
-            font-size: clamp(2rem, 2.5rem, 3vw);
+            /* font-size: clamp(2rem, 2.5rem, 3vw); */
             text-transform: uppercase;
             color: ${(props) => props.color};
             margin-bottom: 20px;
@@ -134,27 +112,31 @@ export const PCCLeftTwo = styled.div`
         p {
             font-family: "Calibri";
             font-weight: 400;
-            font-size: 1.06rem;
-            font-size: clamp(0.6rem, 0.94rem, 3vw);
+            font-size: 0.94rem;
+            /* font-size: clamp(0.6rem, 0.94rem, 3vw); */
             color: ${(props) => props.color};
         }
 
-        .dots {
-            display: none;
-        }
+    @media screen and (max-width: ${mediaSize}) {
+        margin: 0px 0px 55px 0px;
+    }
 
-        .restText {
-            font-family: "Calibri";
-            font-weight: 400;
-            font-size: 0.94rem;
-            color: #7E7367;
-        }
+    @media screen and (min-width: ${mediaSize}) and (max-width: ${ceramicBasis}) {
+        margin: 125px 0px 50px 0px;
 
-        .contactButton {
-            display: none;
+        h1 {
+            margin-bottom: 25px;
         }
+    }
+    @media screen and (min-width: ${mobileLMediaSize}) and (max-width: ${mediaSize}) {
+        margin: 125px 0px 50px 0px;
 
-@media screen and (max-width: ${mediaSize}) {
-    display: none;
-}
+        h1 {
+            margin-bottom: 25px;
+        }
+    }
+
+    @media screen and (max-width: ${mobileLMediaSize}) {
+        margin: 0px 0px 25px 45px;
+    }
 `;
