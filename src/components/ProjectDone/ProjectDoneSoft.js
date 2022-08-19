@@ -54,6 +54,8 @@ import PDSoftImg_19 from "../../assets/projectsDone/pDSoft/Mastercard.png"
 import PDSoftImg_20 from "../../assets/projectsDone/pDSoft/paypall.png"
 import PDSoftImg_21 from "../../assets/projectsDone/pDSoft/visa.png"
 import PDSoftImg_22 from "../../assets/projectsDone/pDSoft/Mastercard_big.png"
+import PDSoftImg_23 from "../../assets/projectsDone/pDSoft/color_module03_04.png"
+import PDSoftImg_24 from "../../assets/projectsDone/pDSoft/Mask_group.png"
 
 
 
@@ -158,9 +160,10 @@ export const ProjectDoneSoft = () => {
                 </ProjectContainerSoft>
                 <ProjectContainerSoft>
                     <FifthContainerSoft>
-                        <img src={PDSoftImg_18} alt="" />
+                        <img src={PDSoftImg_24} alt="" />
                         <FifthCSoftContent>
                             <div className='user'>User Persona</div>
+                            <img src={PDSoftImg_23} alt="" />
                             <span>
                                 Made with broad spectrum SPF 15 sunscreen with titanium dioxide,
                                 the full coverage foundation helps to protect skin from dangerous

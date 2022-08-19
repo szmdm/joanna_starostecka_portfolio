@@ -13,8 +13,8 @@ max-height: 670px;
 overflow: auto;
 
 @media screen and (max-width: ${mediaSize}) {
-    position: initial;
     max-height: 450px;
+    flex-wrap: nowrap;
 }
 `;
 
@@ -31,8 +31,8 @@ margin-top: 5px;
     img {
 
         @media screen and (max-width: ${mediaSize}) {
-            width: 100%;
-            height: auto;
+            width: auto;
+            height: 382px;
         }
     }
 

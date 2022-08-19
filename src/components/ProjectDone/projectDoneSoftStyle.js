@@ -1,5 +1,5 @@
 import styled from "styled-components"
-import { laptop, mediaSize } from "../../variables/Mixins";
+import { laptop, mediaSize, mobileLMediaSize } from "../../variables/Mixins";
 
 export const ProjectContainerSoft = styled.div`
     display: flex;
@@ -26,6 +26,11 @@ export const FirstImageContainerSoft = styled.div`
      height: auto;
      object-fit: cover;
     }
+
+    @media screen and (max-width: ${mediaSize}) {
+        height: 568px;
+        width: auto;
+    } 
 `;
 
 export const FirstContainerSoft = styled.div`
@@ -136,6 +141,10 @@ export const ThirdContainerSoft = styled.div`
      width: 100%;
      height: auto;
      object-fit: cover;
+
+     @media screen and (max-width: ${mediaSize}) {
+        height: 100%;
+    }
     }
     
     .footerText {
@@ -153,7 +162,9 @@ export const ThirdContainerSoft = styled.div`
     }
 
     @media screen and (max-width: ${mediaSize}) {
-
+        height: 560px;
+        align-items: center;
+        
         .footerText {
             display: none;
             margin-left: 0;
@@ -253,6 +264,10 @@ export const FourthContentContainer = styled.div`
     margin-bottom: 120px;
     gap: 70px;
     flex-wrap: wrap;
+
+@media screen and (max-width: ${mediaSize}) {
+    margin-bottom: 70px;
+}
 `
 
 export const FCCLeft = styled.div`
@@ -344,7 +359,16 @@ export const FifthContainerSoft = styled.div`
         width: 100%;
         height: auto;
         object-fit: cover;
+
+        @media screen and (max-width: ${mediaSize}) {
+            height: 100%;
+            }
         }
+
+@media screen and (max-width: ${mediaSize}) {
+    height: 550px;
+    width: auto;
+    }
 `
 
 export const FifthCSoftContent = styled.div`
@@ -358,16 +382,39 @@ export const FifthCSoftContent = styled.div`
     padding: 10px;
     text-align: center;
 
+    img {
+        position: absolute;
+        width: auto;
+        height: 516px;
+        opacity: 0.9;
+
+    @media screen and (max-width: ${mediaSize}) {
+        max-height: 516px;
+        width: -webkit-fill-available;
+        height: auto;
+    }
+    
+    @media screen and (max-width: ${mobileLMediaSize}) {
+        opacity: 0.6;
+    }
+    }
+
     .user {
         font-family: "FuturaStd-Light";
         font-size: 1.875rem;
         font-size: clamp(1rem, 1.875rem, 2vw);
         margin-bottom: 30px;
+        z-index: 100;
     }
     span {
         font-family: "FuturaStd-Light";
         font-size: 1rem;
         font-size: clamp(0.7rem, 1rem, 2vw);
+        z-index: 101;
+
+        @media screen and (max-width: ${mediaSize}) {
+        padding: 0 50px 0 50px;
+}
     }
 
 `
@@ -397,7 +444,8 @@ export const SixthCContent = styled.div`
     flex: 1;
     flex-wrap: wrap;
     margin: 50px 0 80px 0;
-    max-width: 940px;
+    width: 100%;
+    max-width: 1000px;
     gap: 25px;
 `
 export const SCCLeft = styled.div`
@@ -405,6 +453,7 @@ export const SCCLeft = styled.div`
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    width: 50%;
 
 `
 export const SCCTitle = styled.div`
