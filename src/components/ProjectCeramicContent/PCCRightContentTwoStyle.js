@@ -103,7 +103,7 @@ export const PCCRightTwo = styled.div`
     align-items: flex-start;
     flex-direction: column;
     flex-basis: 211px;
-    margin: 30px 0px 125px 0px;
+    margin: 30px 0px 35px 0px;
 
     img {
         margin: 30px 0 30px 0;

@@ -90,7 +90,7 @@ export const PCCLeftTwo = styled.div`
             font-size: clamp(2rem, 2.5rem, 3vw);
             text-transform: uppercase;
             color: ${(props) => props.color};
-            margin-bottom: 20px;
+            margin-bottom: 15px;
         }
 
         p {

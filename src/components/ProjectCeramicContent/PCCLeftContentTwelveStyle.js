@@ -77,6 +77,10 @@ export const PCCLeftOne = styled.div`
             color: #7E7367;
         }
 
+        
+    @media screen and (max-width: ${mediaSize}) {
+        margin: 20px 0px 20px 45px;
+
         .contactButton {
             display: none;
         }
@@ -106,9 +110,6 @@ export const PCCLeftOne = styled.div`
         .contactButton {
             display: contents;
         }
-
-    @media screen and (max-width: ${mediaSize}) {
-        margin: 20px 0px 20px 45px;
 }
 `;
 

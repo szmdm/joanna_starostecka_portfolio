@@ -77,7 +77,7 @@ const ProjectCeramic = () => {
                         PCCLeftTwoJustify='center'
                         PCCLeftBorderRight='1px solid #D19886'
                         PCCLeftOneMargin='0 0px 50px 0px'
-                        PCCLeftTwoMargin='40px 0px 50px 0px'
+                        PCCLeftTwoMargin='75px 0px 0px 0px'
                         PCCLeftOneAlign='center'
                         PCCLeftTwoAlign='flex-start'
                         backgroundColorPCCRight='#f2f1ed'
@@ -113,9 +113,9 @@ const ProjectCeramic = () => {
                         addComponentOne={<ContactUsButton margin='20px 0 30px 0' />}
                         addComponentTwo={<PriceOneComponent marginBottom='15px' marginTop='20px' />}
                         addComponentTree={<PageNumberComponent />}
-                        addComponentFour={<PCCPictureComponent image={PDCeramicImg_04} width='210px' padding='5px 0 0 0' margin='0px 0 25px 0' />}
-                        addComponentFive={<PCCPictureComponent image={PCCRightTwoImg_01} width='auto' padding='0 0 0 0' margin='0px 0 0px 0' />}
-                        addComponentSix={<PCCPictureComponent image={PDCeramicImg_05} width='auto' padding='5px 0 0 0' margin='0px 0 25px 0' />}
+                        addComponentFour={<PCCPictureComponent image={PDCeramicImg_04} width='210px' height='268px' widthMediaSize='250px' heightMediaSize='250px' padding='5px 0 0 0' margin='0px 0 25px 0' />}
+                        addComponentFive={<PCCPictureComponent image={PCCRightTwoImg_01} width='44px' height='44px' widthMediaSize='44px' heightMediaSize='44px' padding='0 0 0 0' margin='0px 0 0px 0' />}
+                        addComponentSix={<PCCPictureComponent image={PDCeramicImg_05} width='auto' height='268px' widthMediaSize='250px' heightMediaSize='250px' padding='5px 0 0 0' margin='0px 0 25px 0' />}
                     >
                     </PCCLeftContentEleven>
                     <PCCLeftContentEleven
@@ -138,9 +138,9 @@ const ProjectCeramic = () => {
                         addComponentOne={<ContactUsButton margin='20px 0 30px 0' />}
                         addComponentTwo={<PriceOneComponent marginBottom='15px' marginTop='20px' />}
                         addComponentTree={<PageNumberComponent />}
-                        addComponentFour={<PCCPictureComponent image={PDCeramicImg_06} width='210px' padding='5px 0 0 0' margin='0px 0 25px 0' />}
-                        addComponentFive={<PCCPictureComponent image={PCCRightTwoImg_01} width='auto' padding='0 0 0 0' margin='0px 0 0px 0' />}
-                        addComponentSix={<PCCPictureComponent image={PDCeramicImg_07} width='auto' padding='5px 0 0 0' margin='0px 0 25px 0' />}
+                        addComponentFour={<PCCPictureComponent image={PDCeramicImg_06} width='210px' height='268px' widthMediaSize='250px' heightMediaSize='250px' padding='5px 0 0 0' margin='0px 0 25px 0' />}
+                        addComponentFive={<PCCPictureComponent image={PCCRightTwoImg_01} width='44px' height='44px' widthMediaSize='44px' heightMediaSize='44px' padding='0 0 0 0' margin='0px 0 0px 0' />}
+                        addComponentSix={<PCCPictureComponent image={PDCeramicImg_07} width='210px' height='268px' widthMediaSize='250px' heightMediaSize='250px' padding='5px 0 0 0' margin='0px 0 25px 0' />}
                     >
                     </PCCLeftContentEleven>
                 </ProjectCeramicContainer>
@@ -157,7 +157,7 @@ const ProjectCeramic = () => {
                         PCCLeftTwoJustify='center'
                         borderBottomDirection='left: 0;'
                         PCCLeftOneMargin='10px 0px 10px 0px'
-                        PCCLeftTwoMargin='10px 0px 60px 0px'
+                        PCCLeftTwoMargin='0px 0px 50px 0px'
                         PCCLeftOneAlign='center'
                         PCCLeftTwoAlign='flex-start'
                         backgroundColorPCCRight='#f2f1ed'

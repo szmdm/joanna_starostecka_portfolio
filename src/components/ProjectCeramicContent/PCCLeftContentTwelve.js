@@ -58,8 +58,7 @@ const PCCLeftContentTwelve = ({ ...props }) => {
                         <span className='dots'>...</span>
                         <span className='restText'>
                             głównie ceramika użytkowa w pojedyńczych egzemplarzach lub krótkich seriach.
-                            Pracownia znajduje się w malowniczym miejscu, na obrzeżach miasta, blisko sosnowego lasu, pod wydmą.
-                            To osobiste wnętrze, pełne znaczących przedmiotów i dzieł innych twórców.
+                            Pracownia znajduje się w malowniczym miejscu.
                         </span>
                     </p>
                     {props.addComponentTwo}
