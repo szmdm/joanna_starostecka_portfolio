@@ -5,12 +5,15 @@ import FCColaImg_03 from "../../assets/projectsDone/pDCocaCola/Cola_Web_1.png";
 import FCColaImg_04 from "../../assets/projectsDone/pDCocaCola/Cola_IPhones_1.png";
 import FCColaImg_05 from "../../assets/projectsDone/pDCocaCola/Cola_Tablet_2.png";
 import FCColaImg_06 from "../../assets/projectsDone/pDCocaCola/Cola_Tablet_3.png";
+import FCColaImg_07 from "../../assets/projectsDone/pDCocaCola/Coca_Cola_EC_KV_Image_1.png";
 import {
     ProjectContainerCola,
     FirstContainerCola,
     ImageContainerCola,
+    ImageBox,
     FCCTitle,
     FCCContentBox,
+    FCCMobileContentBox,
     SecondContainerCola,
     SCCContentBox,
     ThirdContainerCola,
@@ -18,6 +21,7 @@ import {
     TCCTitle,
     TCCFonts,
     TCCFontsBox,
+    TCCFontsBox2,
     FourthContainerCola,
     FourthContentContainer,
     FourthCCTitle,
@@ -53,8 +57,10 @@ export const ProjectDoneCocaCola = () => {
     return (
         <>
             <ProjectContainerCola >
-                <ImageContainerCola>
-                    <img src={FCColaImg_01} alt="" />
+                <ImageContainerCola
+                    backgroundLaptop={FCColaImg_01}
+                    backgroundMobile={FCColaImg_07}
+                >
                     <FirstContainerCola alignItems="center" flexDirection="column" >
                         <FCCTitle>
                             Together<br />
@@ -63,12 +69,20 @@ export const ProjectDoneCocaCola = () => {
                         </FCCTitle>
                         <FCCContentBox>
                             <img src={FCColaImg_02} alt="cola can shown on a tablet" />
-                            <p>
+                            {/* <p>
                                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt<br /> ut labore et dolore magna aliqua.
-                            </p>
+                            </p> */}
                         </FCCContentBox>
                     </FirstContainerCola>
                 </ImageContainerCola>
+            </ProjectContainerCola>
+            <ProjectContainerCola>
+                <FCCMobileContentBox>
+                    <img src={FCColaImg_02} alt="cola can shown on a tablet" />
+                    <p>
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt<br /> ut labore et dolore magna aliqua.
+                            </p>
+                </FCCMobileContentBox>
             </ProjectContainerCola>
             <ProjectContainerCola>
                 <SecondContainerCola flexDirection="column">
@@ -88,7 +102,7 @@ export const ProjectDoneCocaCola = () => {
                 <ThirdContainerCola>
                     <ThirdContentContainer>
                         <TCCTitle>
-                            <h1>typography</h1>
+                            <h1>fonts</h1>
                             <p>
                                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt<br />
                                 ut labore et dolore magna aliqua.
@@ -104,7 +118,7 @@ export const ProjectDoneCocaCola = () => {
                                     TCCC UnityHeadline Bold
                                 </p2>
                             </TCCFontsBox>
-                            <TCCFontsBox>
+                            <TCCFontsBox2>
                                 <span>for headline</span>
                                 <p1>
                                     TCCC
@@ -112,7 +126,7 @@ export const ProjectDoneCocaCola = () => {
                                 <p2>
                                     TCCC UnityHeadline Bold
                                 </p2>
-                            </TCCFontsBox>
+                            </TCCFontsBox2>
                         </TCCFonts>
                     </ThirdContentContainer>
                 </ThirdContainerCola>

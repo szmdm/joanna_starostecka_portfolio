@@ -23,7 +23,10 @@ export const NavbarContainer = styled.div`
     width: 100%;
     margin-top: 120px;
     margin-bottom: 80px;
-
+    
+    @media screen and (max-width: ${mediaSize}) {
+        margin-top: 30px;
+    }
 `
 
 export const NavLogo = styled(Link)`

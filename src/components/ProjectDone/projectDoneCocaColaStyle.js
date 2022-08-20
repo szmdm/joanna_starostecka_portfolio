@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { mediaSize, mobileLMediaSize } from "../../variables/Mixins";
+import { mediaSize, mobileLMediaSize, laptop } from "../../variables/Mixins";
 
 
 export const ProjectContainerCola = styled.div`
@@ -20,14 +20,17 @@ export const ImageContainerCola = styled.div`
     position: relative;
     display: flex;
     justify-content: center;
-    max-height: 1500px;
+    height: 1500px;
     width: 100%;
+    background-image: url(${(props) => props.backgroundLaptop});
+    background-size: cover;
 
-    img {
-     position: relative;
-     width: 100%;
-     height: auto;
-     object-fit: cover;
+    @media screen and (max-width: ${mediaSize}) {
+        background-image: url(${(props) => props.backgroundMobile});
+        height: 368px;
+    }
+    @media screen and (min-width: ${mediaSize}) and (max-width: ${laptop}) {
+        height: 1200px;
     }
 `;
 
@@ -42,11 +45,12 @@ export const FirstContainerCola = styled.div`
 
   @media screen and (max-width: ${mediaSize}) {
     flex-direction: column;
-    align-items: center;
+    align-items: center;    
+    justify-content: center;
   }
 `;
 
-export const FCCTitle = styled.span`
+export const FCCTitle = styled.div`
     margin-top: 200px;
     text-align: center;
     height: auto;
@@ -59,6 +63,8 @@ export const FCCTitle = styled.span`
 
     @media screen and (max-width: ${mediaSize}) {
         margin-top: 30px;
+        font-size: 2.5rem;
+        line-height: 2.75rem;
     }
 `;
 
@@ -69,6 +75,13 @@ export const FCCContentBox = styled.div`
     height: auto;
     margin: 20px 20px 70px 20px;
 
+    img {
+        /* display: flex;
+        height: 200px;
+        width: 100%;
+         */
+    }
+
     p {
         color: #fff;
         text-align: center;
@@ -78,10 +91,49 @@ export const FCCContentBox = styled.div`
 
     }
 
+    img {
+        @media screen and (min-width: ${mediaSize}) and (max-width: ${laptop}) {
+        height: 100%;
+        width: 760px;
+    } 
+    }
+
     @media screen and (max-width: ${mediaSize}) {
-        margin: 0px 10px 0px 10px; 
+        display: none;
     }
 `;
+
+export const FCCMobileContentBox = styled.div`
+    display: none;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    img {
+        height: 100%;
+        width: 100%;
+        background-size: cover;
+    }
+
+    p {
+        color: #fff;
+        text-align: center;
+        font-size: 0.75rem;
+        font-weight: 400;
+        position: relative;
+        bottom: 20px;
+        width: 211px;
+        height: auto;
+        font-family: "TCCC-UnityHeadline-Regular";
+        margin-bottom: 65px;
+    }
+
+    @media screen and (max-width: ${mediaSize}) {
+        display: flex;   
+    }    
+    
+
+`
 
 export const SecondContainerCola = styled.div`
   display: flex;
@@ -103,9 +155,15 @@ export const SecondContainerCola = styled.div`
         font-size: clamp(0.75rem, 1.25vw, 1rem);
         position: relative;
         bottom: 20px;
+        margin-top: 15px;
 
         @media screen and (max-width: ${mediaSize}) {
-            bottom: 5px;
+            bottom: 40px;
+            height: auto;
+            font-family: "TCCC-UnityHeadline-Regular";
+            font-size: 0.75rem;
+            width: 211px;
+            height: auto;
         }
     }
 `;
@@ -128,7 +186,8 @@ export const SCCContentBox = styled.div`
         text-transform: uppercase; 
         
         @media screen and (max-width: ${mediaSize}) {
-            bottom: 30px;
+            bottom: 90px;
+            font-size: 2.5rem;
         }
 
     }
@@ -174,7 +233,7 @@ export const TCCTitle = styled.div`
     width: 100%;
     height: auto;
     text-align: center;
-    margin-bottom: 95px;
+    margin-bottom: 40px;
 
     h1 {
         color: black;
@@ -187,7 +246,7 @@ export const TCCTitle = styled.div`
         margin: 88px 0 58px 0;
         
         @media screen and (max-width: ${mediaSize}) {
-
+            font-size: 2.5rem;
         }
     }
 
@@ -196,6 +255,11 @@ export const TCCTitle = styled.div`
         text-align: center;
         font-size: clamp(0.75rem, 1.25vw, 1rem);
         bottom: 20px;
+
+        @media screen and (max-width: ${mediaSize}) {
+            font-size: 1rem;
+            padding: 0 25px;
+        }
 
     }
 `;
@@ -226,7 +290,7 @@ export const TCCFontsBox = styled.div`
             line-height: 1.2rem;
             text-align: center;
             text-transform: lowercase;
-            margin-bottom: 25px;
+            margin-bottom: 10px;
             color: black;
         };
 
@@ -238,7 +302,11 @@ export const TCCFontsBox = styled.div`
             font-style: normal;
             font-weight: bold;
             text-transform: uppercase;
-            margin-bottom: 50px;
+            margin-bottom: 10px;
+
+            @media screen and (max-width: ${mediaSize}) {
+            font-size: 3.75rem;
+        }
         };
 
         p2 {
@@ -249,23 +317,69 @@ export const TCCFontsBox = styled.div`
             font-style: normal;
             font-weight: bold;
             text-transform: lowercase;
+            width: 190px;
         }
 
     @media screen and (max-width: ${mediaSize}) {
-        margin-bottom: 80px;
+        margin-bottom: 24px;
         min-width: auto;
     }
     
 `;
 
 export const TCCFontsBox2 = styled.div`
-    display: flex;
+ display: flex;
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
     flex-direction: column;
-    width: 50%;
+    min-width: 350px;
+    flex-grow: 1;
+    margin-bottom: 160px;
 
+        span {
+            font-family: "TCCC-UnityHeadline-Regular";
+            font-style: normal;
+            font-weight: 400;
+            font-size: 1rem;
+            line-height: 1.2rem;
+            text-align: center;
+            text-transform: lowercase;
+            margin-bottom: 10px;
+            color: black;
+        };
+
+        p1 {
+            color: black;
+            text-align: center;
+            font-size: clamp(1.5rem,5vw,60px);
+            font-family: "TCCC-UnityHeadline-Bold";
+            font-style: normal;
+            font-weight: normal;
+            text-transform: uppercase;
+            margin-bottom: 10px;
+
+            @media screen and (max-width: ${mediaSize}) {
+            font-size: 3.75rem;
+        }
+        };
+
+        p2 {
+            color: black;
+            text-align: center;
+            font-size: clamp(1rem,5vw,25px);
+            font-family: "TCCC-UnityHeadline-Bold";
+            font-style: normal;
+            font-weight: normal;
+            text-transform: lowercase;
+            width: 190px;
+        }
+
+    @media screen and (max-width: ${mediaSize}) {
+        margin-bottom: 24px;
+        min-width: auto;
+    }
+    
 `;
 
 export const FourthContainerCola = styled.div`
@@ -357,6 +471,8 @@ export const FifthContainerCola = styled.div`
 `;
 
 export const FifthCCTitle = styled.div`
+    display: flex;
+    justify-content: center;
     width: 100%;
     height: auto;
     text-align: center;
@@ -366,12 +482,16 @@ export const FifthCCTitle = styled.div`
     h1 {
         color: #fff;
         text-align: center;
-        font-size: clamp(1.2rem,5vw,60px);
-        line-height: clamp(1.2rem, 4vw, 4.8rem);
+        font-size: clamp(1.875rem,5vw,60px);
+        line-height: clamp(2rem, 4vw, 4.8rem);
         font-family: "TCCC-UnityHeadline-Bold";
         font-style: normal;
         font-weight: bold;
-        text-transform: uppercase; 
+        text-transform: uppercase;
+
+        @media screen and (max-width: ${mediaSize}) {
+        width: 200px;
+    }
     }
 
     @media screen and (max-width: ${mediaSize}) {
