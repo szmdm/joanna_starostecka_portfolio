@@ -49,22 +49,22 @@ export const ProjectDoneGilette = () => {
         <ProjectContainer alignItems="center">
           <BCGOne width="50%">
             <BCGOneContainer>
-              <img src={BCGOne_1} alt="content presented on tablet" />
+              <img src={BCGOne_1} alt="content presented on the tablet" />
             </BCGOneContainer>
           </BCGOne>
           <BCGTwo margin="5px 0 100px 0">
-            <BGHead width="auto" display="flex">
+            <BGHead display="flex">
               <img src={BCGTwo_1} alt="gillette logo" />
               <BGHeadDescription1 textcolor="#fff">
                 The Best a man can get
               </BGHeadDescription1>
             </BGHead>
             <BGContent>
-              <BGTitle textcolor="#fff">
+              <BGTitle textcolor="#fff" margin="0 0 15px 0">
                 Landingpage for campagne
               </BGTitle>
               <BGHeadDescription2 textcolor="#fff">
-                Becoming the best doesn’t happen overnight.<br />
+                Becoming the best doesn’t happen overnight.
                 There’s always room for improvement.
               </BGHeadDescription2>
             </BGContent>
@@ -74,19 +74,19 @@ export const ProjectDoneGilette = () => {
       <SmallerContainerGilette alignItems="center" maxHeight="500px" backgroundImage={GilletteImg_01}>
         <ProjectContainer alignItems="center">
           <SCGOne margin="6rem 3rem 0.6rem 0rem">
-            <BGHead width="380px" mediaWidth="100%">
-              <BGTitle textcolor="#1A316D">
+            <BGHead width="380px" margin="0 0 0 20px">
+              <BGTitle textcolor="#1A316D" margin="0 0 15px 0px">
                 Campain gap
               </BGTitle>
               <BGHeadDescription2 textcolor="#1A316D">
                 Becoming the best doesn’t happen overnight.
-                <br /> There’s always room for improvement.
+                There’s always room for improvement.
               </BGHeadDescription2>
             </BGHead>
-            <BGContent>
+            <BGContent margin="50px 0 0px 20px" width="100%">
               <SCGImg>
-                <img src={SCGImg_1} alt="gillette fusion logo" height="60px" width="209px" />
-                <img src={SCGImg_2} alt="gillette icons" />
+                <img src={SCGImg_1} alt="gillette fusion logo" height="60px" width="209px" className="logoImg"/>
+                <img src={SCGImg_2} alt="gillette icons" className="iconsImg"/>
               </SCGImg>
             </BGContent>
           </SCGOne>

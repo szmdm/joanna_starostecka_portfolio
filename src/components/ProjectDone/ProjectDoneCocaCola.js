@@ -10,7 +10,6 @@ import {
     ProjectContainerCola,
     FirstContainerCola,
     ImageContainerCola,
-    ImageBox,
     FCCTitle,
     FCCContentBox,
     FCCMobileContentBox,

@@ -39,7 +39,8 @@ export const BCGOne = styled.div`
   flex-direction: ${(props) => props.flexDirection};
 
   @media screen and (max-width: ${mediaSize}) {
-    
+    width: 90%;    
+    margin-left: 35px;
   }
 `;
 
@@ -66,7 +67,7 @@ export const BCGOneContainer = styled.div`
 
 export const BCGTwo = styled.div`
   display: flex;
-  align-items: flex-start;
+  align-items: baseline;
   justify-content: center;
   flex-direction: column;
   width: 50%;
@@ -74,7 +75,7 @@ export const BCGTwo = styled.div`
 
   @media screen and (max-width: ${mediaSize}) {
     align-items: center;
-    margin: 10px 2.5rem 10px 2.5rem;
+    margin: 5px 0 50px 0;
   }
 `;
 
@@ -97,14 +98,14 @@ export const BGHead = styled.div`
   justify-content: flex-end;
   flex-direction: column;
   height: 30%;
-  width: ${(props) => props.width};
+  margin: ${(props) => props.margin};
+  /* width: ${(props) => props.width}; */
 
   @media screen and (max-width: ${mediaSize}) {
     display: ${(props) => props.display};
-    text-align: center;
-    justify-content: center;
+    justify-content: left;
     width: ${(props) => props.mediaWidth};
-    align-items: center;
+    align-items: left;
   }
 `;
 export const BGHeadFidelity = styled.div`
@@ -148,15 +149,17 @@ export const BGHeadDescription2 = styled.div`
   color: ${(props) => props.textcolor};
   font-family: "FuturaStd-Medium";
   font-style: normal;
-  font-weight: 300;
+  font-weight: 400;
   font-size: 1.25rem;
   position: ${(props) => props.position};
-  line-height: 30px;
+  line-height: 1.8rem;
   margin: ${(props) => props.margin};
+  width: 400px;
   
 
   @media screen and (max-width: ${mediaSize}) {
-    font-size: clamp(1rem, 1.25rem, 2vw);
+    text-align: left;
+    width: 300px;
   }
 `;
 
@@ -164,15 +167,17 @@ export const BGTitle = styled.div`
   color: ${(props) => props.textcolor};
   font-family: "FuturaStd-Bold";
   font-style: normal;
-  font-weight: 800;
+  font-weight: 700;
   text-transform: uppercase;
   font-size: 3rem;
   max-width: 435px;
   line-height: 4rem;
-  margin-bottom: 15px;
+  margin: ${(props) => props.margin};
 
   @media screen and (max-width: ${mediaSize}) {
-    font-size: clamp(1.5rem, 2vw, 2.5rem);
+    font-size: clamp(1.875rem, 2vw, 2.5rem);
+    line-height: 2.4rem;
+    margin-top: 60px;
   }
 `;
 
@@ -182,14 +187,12 @@ export const BGContent = styled.div`
   justify-content: center;
   flex-direction: column;
   margin-top: 80px;
-  line-height: 1.6;
   height: ${(props) => props.height};
+  margin: ${(props) => props.margin};
+  width: ${(props) => props.width};
 
   @media screen and (max-width: ${mediaSize}) {
-    display: block;
-    text-align: center;
-    align-items: center;
-    margin-top: 0px;
+    margin: 20px 0 15px 35px;
   }
 `;
 
@@ -229,7 +232,7 @@ export const SCGOne = styled.div`
 export const SCGTwo = styled.div`
   
   z-index: 99;
-  margin-left: 25px;
+  margin-left: 30px;
 
   img {
     position: relative;
@@ -267,6 +270,8 @@ export const SCGImg = styled.div`
   display: flex;
   flex-direction: column;
   position: ${(props) => props.position};
+  width: 100%;
+  align-items: flex-start;
 
   img {
     margin-bottom: 30px;
@@ -275,7 +280,15 @@ export const SCGImg = styled.div`
   }
 
   @media screen and (max-width: ${mediaSize}) {
-  align-items: center;
+    margin-top: 20px;
+
+  .iconsImg {
+    width: 200px;
+  }
+
+  .logoImg {
+    width: 154px;
+  }
   }
 `;
 
