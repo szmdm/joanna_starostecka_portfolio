@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { mediaSize } from "../../variables/Mixins";
+import { mediaSize, mobileLMediaSize } from "../../variables/Mixins";
 
 export const ProjectContainer = styled.div`
   display: flex;
@@ -12,6 +12,21 @@ export const ProjectContainer = styled.div`
 
   @media screen and (max-width: ${mediaSize}) {
     flex-direction: column;
+    align-items: center;
+  }
+`
+
+export const ProjectContainer2 = styled.div`
+  display: flex;
+  max-width: 1280px;
+  height: auto;
+  align-items: ${(props) => props.alignItems};
+  justify-content: center;
+  flex-direction: ${(props) => props.flexDirection};
+  width: 100%;
+
+  @media screen and (max-width: ${mediaSize}) {
+    flex-direction: column-reverse;
     align-items: center;
   }
 `
@@ -46,7 +61,6 @@ export const BCGOne = styled.div`
 
 export const BCGOneContainer = styled.div`
   margin: 3rem 4.5rem 0 1rem;
-  width: 100%;
 
   img {
    max-width: 100%;
@@ -60,14 +74,14 @@ export const BCGOneContainer = styled.div`
   }
 
   @media screen and (max-width: ${mediaSize}) {
-    margin: 1.5rem 0.5rem 0.5rem 0.5rem;
+    margin: 1.5rem 0.5rem 0.5rem 0rem;
   }
 `;
 
 
 export const BCGTwo = styled.div`
   display: flex;
-  align-items: baseline;
+  align-items: center;
   justify-content: center;
   flex-direction: column;
   width: 50%;
@@ -81,14 +95,16 @@ export const BCGTwo = styled.div`
 
 export const BCGTwoColorTitle = styled.div`
   display: flex;
-  align-items: flex-end;
+  align-items: flex-start;
   justify-content: center;
   flex-direction: column;
   width: 60%;
   margin: ${(props) => props.margin};
 
   @media screen and (max-width: ${mediaSize}) {
-    margin: 10px 2.5rem 10px 2.5rem;
+    width: 100%;
+    align-items: center;
+    padding: 0 10px 0 20px;
   }
 `;
 
@@ -109,26 +125,22 @@ export const BGHead = styled.div`
   }
 `;
 export const BGHeadFidelity = styled.div`
+  position: relative;
+  left: 150px;
+  width: ${(props) => props.width};
   display: flex;
   align-items: flex-start;
   justify-content: flex-end;
   flex-direction: column;
-  height: 30%;
-  width: 380px;
-  position: relative;
-  bottom: 240px;
-  left: -110px;
-  min-height: 560px;
 
   @media screen and (max-width: ${mediaSize}) {
-    display: ${(props) => props.display};
-    text-align: center;
+    position: inherit;
+    display: flex;
     justify-content: center;
     width: ${(props) => props.mediaWidth};
-    align-items: center;
-    bottom: 0px;
-    left: 0px;
+    align-items: left;
     min-height: 200px;
+    margin-left: 20px;
   }
 `;
 
@@ -159,7 +171,7 @@ export const BGHeadDescription2 = styled.div`
 
   @media screen and (max-width: ${mediaSize}) {
     text-align: left;
-    width: 300px;
+    width: ${(props) => props.mediaWidth};
   }
 `;
 
@@ -170,14 +182,18 @@ export const BGTitle = styled.div`
   font-weight: 700;
   text-transform: uppercase;
   font-size: 3rem;
-  max-width: 435px;
+  max-width: ${(props) => props.maxWidth};
   line-height: 4rem;
   margin: ${(props) => props.margin};
 
   @media screen and (max-width: ${mediaSize}) {
     font-size: clamp(1.875rem, 2vw, 2.5rem);
     line-height: 2.4rem;
-    margin-top: 60px;
+    margin: ${(props) => props.marginMobile};
+  }
+
+  @media screen and (max-width: ${mobileLMediaSize}) {
+    width: 100%;
   }
 `;
 
@@ -186,13 +202,12 @@ export const BGContent = styled.div`
   align-items: flex-start;
   justify-content: center;
   flex-direction: column;
-  margin-top: 80px;
   height: ${(props) => props.height};
   margin: ${(props) => props.margin};
   width: ${(props) => props.width};
 
   @media screen and (max-width: ${mediaSize}) {
-    margin: 20px 0 15px 35px;
+    margin: ${(props) => props.marginMobile};
   }
 `;
 
@@ -221,11 +236,12 @@ export const SCGOne = styled.div`
   justify-content: center;
   flex-direction: column;
   margin: ${(props) => props.margin};
+  max-width: 1280px;
+  width: 100%;
 
   @media screen and (max-width: ${mediaSize}) {
-    margin: 0.6rem 1rem 0.6rem 1rem;
-    width: auto;
     align-items: center;
+    margin: ${(props) => props.marginMobile};
   }
 `;
 
@@ -236,7 +252,7 @@ export const SCGTwo = styled.div`
 
   img {
     position: relative;
-    width: 85%;
+    width: 95%;
     max-height: auto; 
     left: 50px;
 
@@ -246,7 +262,7 @@ export const SCGTwo = styled.div`
   }
 
   @media screen and (max-width: ${mediaSize}) {
-    margin-left: 70px;
+    margin-left: 40px;
     /* display: none; */
     position: static;
   }
@@ -307,11 +323,33 @@ export const BGHeadDescription3 = styled.div`
   }
 `;
 
+export const BGHeadDescription4 = styled.div`
+  display: none;
+  color: ${(props) => props.textcolor};
+  font-family: "FuturaStd-Book";
+  font-style: normal;
+  font-size: 1.25rem;
+  position: ${(props) => props.position};
+  line-height: 1.8rem;
+  margin: ${(props) => props.margin};
+  width: 400px;
+  
+
+  @media screen and (max-width: ${mediaSize}) {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    margin: 20px 0 0 0;
+  }
+`;
+
 export const ColorContainer = styled.div`
   display: flex;
   align-items: flex-start;
-  justify-content: flex-end;
+  justify-content: flex-start;
   flex-direction: column;
+  flex-wrap: wrap;
   width: 100%;
   height: auto;
   padding: 10px;
@@ -340,20 +378,19 @@ export const TextBox = styled.div`
   margin: 25px 0 25px 0;
 
   @media screen and (max-width: ${mediaSize}) {
-    margin-left: 20px;
-    width: 100px;
+    margin-left: 0px;
   }
 `
 
 export const InsideBiggerContainerGilette = styled.div`
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
     flex: 1;
     flex-wrap: wrap;
     margin: 50px 0 80px 0;
-    max-width: 940px;
-    gap: 25px;
+    max-width: 980px;
+    width: 100%;
 
   @media screen and (max-width: ${mediaSize}) {
     flex-direction: column;
@@ -364,6 +401,9 @@ export const IPadContainer = styled.div`
   z-index: 100;
   display: flex;
   justify-content: center;
+  max-width: 1280px;
+  width: 100%;
+  padding: 0 50px 0 0;
 
 img {
   position: relative;
@@ -373,13 +413,15 @@ img {
   right: -66px;
 
   @media screen and (max-width: ${mediaSize}) {
-    position: static;
     margin-top: 30px;
+    top: -100px;
+    right: 0px;
+    padding: 0 0 0 0;
   }
 }
 
 @media screen and (max-width: ${mediaSize}) {
-  margin-left: 45px;
+  margin-left: 0x;
   top: 30px;
 }
 `;
@@ -395,6 +437,6 @@ export const BCGTwoColor = styled.div`
   @media screen and (max-width: ${mediaSize}) {
     align-items: center;
     margin: 0;
-    width: 200px;
+    width: 280px;
   }
 `;
