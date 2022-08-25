@@ -26,6 +26,14 @@ import {
   BGHeadFidelity,
   BCGTwoColorTitle,
   ProjectContainer2,
+  SCGFidelity,
+  SCGTypo,
+  ProjectContainerTypo,
+  BCGTwoUser,
+  BGContentUser,
+  ProjectContainerLandingpage,
+  BCGTwoLandingpage,
+  BGHeadLandingpage,
 } from "./projectDoneGilletteStyle";
 import BCGOne_1 from "../../assets/projectsDone/pDGillette/IPad_01-1.png";
 import BCGTwo_1 from "../../assets/projectsDone/pDGillette/Gillette_logo_02-1.png";
@@ -48,19 +56,19 @@ export const ProjectDoneGilette = () => {
     <>
       <ScrollToTop />
       <BiggerContainerGilette>
-        <ProjectContainer alignItems="center">
-          <BCGOne width="50%">
+        <ProjectContainerLandingpage alignItems="center">
+          <BCGOne width="58%">
             <BCGOneContainer>
               <img src={BCGOne_1} alt="content presented on the tablet" />
             </BCGOneContainer>
           </BCGOne>
-          <BCGTwo margin="5px 0 100px 0">
-            <BGHead display="flex">
+          <BCGTwoLandingpage margin="5px 0 100px 0">
+            <BGHeadLandingpage display="flex" width="100%">
               <img src={BCGTwo_1} alt="gillette logo" />
               <BGHeadDescription1 textcolor="#fff">
                 The Best a man can get
               </BGHeadDescription1>
-            </BGHead>
+            </BGHeadLandingpage>
             <BGContent>
               <BGTitle textcolor="#fff" margin="0 0 15px 0">
                 Landingpage for campagne
@@ -70,14 +78,14 @@ export const ProjectDoneGilette = () => {
                 There’s always room for improvement.
               </BGHeadDescription2>
             </BGContent>
-          </BCGTwo>
-        </ProjectContainer>
+          </BCGTwoLandingpage>
+        </ProjectContainerLandingpage>
       </BiggerContainerGilette>
       <SmallerContainerGilette alignItems="center" maxHeight="500px" backgroundImage={GilletteImg_01}>
         <ProjectContainer alignItems="center">
-          <SCGOne margin="6rem 3rem 0.6rem 0rem">
-            <BGHead width="380px" margin="0 0 0 20px">
-              <BGTitle textcolor="#1A316D" margin="0 0 15px 0px">
+          <SCGOne margin="6rem 0 0.6rem 0">
+            <BGHead>
+              <BGTitle textcolor="#1A316D" widthMobile="100%">
                 Campain gap
               </BGTitle>
               <BGHeadDescription2 textcolor="#1A316D">
@@ -85,7 +93,7 @@ export const ProjectDoneGilette = () => {
                 There’s always room for improvement.
               </BGHeadDescription2>
             </BGHead>
-            <BGContent margin="50px 0 0px 20px" width="100%">
+            <BGContent margin="50px 0 0px 0px" width="100%" paddingMobile="0 10px 0 20px">
               <SCGImg>
                 <img src={SCGImg_1} alt="gillette fusion logo" height="60px" width="209px" className="logoImg" />
                 <img src={SCGImg_2} alt="gillette icons" className="iconsImg" />
@@ -104,24 +112,24 @@ export const ProjectDoneGilette = () => {
               <img src={BCGImg_1} alt="young couple on a smartphone screen" />
             </BCGOneContainer>
           </BCGOne>
-          <BCGTwo margin="100px 0 100px 80px">
-            <BGContent margin="0 0 0 0" marginMobile="0 0 0 0">
-              <BGTitle textcolor="#fff">
+          <BCGTwoUser>
+            <BGContentUser width="70%" widthMobile="100%">
+              <BGTitle textcolor="#fff" widthMobile="100%">
                 User persona
               </BGTitle>
               <BGHeadDescription2 textcolor="#fff">
                 Becoming the best doesn’t happen overnight.
                 There’s always room for improvement.
               </BGHeadDescription2>
-            </BGContent>
-          </BCGTwo>
+            </BGContentUser>
+          </BCGTwoUser>
         </ProjectContainer2>
       </BiggerContainerGilette>
       <SmallerContainerGilette alignItems="flex-end" maxHeight="500px" backgroundImage={GilletteImg_03}>
-        <ProjectContainer alignItems="flex-end">
-          <SCGOne margin="0.6rem 7rem 0.6rem 0rem">
-            <BGHead width="380px" mediaWidth="100%">
-              <BGTitle textcolor="#1A316D">
+        <ProjectContainerTypo alignItems="flex-end">
+          <SCGTypo>
+            <BGHead width="auto" mediaWidth="100%" margin="60px 0px 35px 0px;">
+              <BGTitle textcolor="#1A316D" widthMobile="100%">
                 Typography
               </BGTitle>
               <BGHeadDescription2 textcolor="#1A316D">
@@ -129,7 +137,7 @@ export const ProjectDoneGilette = () => {
                 <br /> There’s always room for improvement.
               </BGHeadDescription2>
             </BGHead>
-            <BGContent>
+            <BGContent marginMobile="0.6rem 1rem 0.6rem 1rem" widthMobile="auto">
               <SCGImg>
                 <img src={SCGImg_4} alt="" />
               </SCGImg>
@@ -138,9 +146,9 @@ export const ProjectDoneGilette = () => {
                 <br /> Aa Bb Cc
               </BGHeadDescription3>
             </BGContent>
-          </SCGOne>
+          </SCGTypo>
           <SCGThree>
-            <BGContent>
+            <BGContent marginMobile="0.6rem 1rem 0.6rem 1rem">
               <SCGImg>
                 <img src={SCGImg_5} alt="" />
               </SCGImg >
@@ -150,12 +158,12 @@ export const ProjectDoneGilette = () => {
               </BGHeadDescription3>
             </BGContent>
           </SCGThree>
-        </ProjectContainer>
+        </ProjectContainerTypo>
       </SmallerContainerGilette>
       <BiggerContainerGilette backgroundImage={GilletteImg_04} >
         <ProjectContainer alignItems="center" flexDirection="column">
           <BCGTwoColorTitle margin="60px 0px 10px 0px">
-            <BGTitle textcolor="#fff">
+            <BGTitle textcolor="#fff" widthMobile="100%">
               User persona
             </BGTitle>
             <BGHeadDescription4 textcolor="#fff">
@@ -200,9 +208,9 @@ export const ProjectDoneGilette = () => {
         </ProjectContainer>
       </BiggerContainerGilette>
       <SmallerContainerGilette alignItems="flex-end" backgroundImage={GilletteImg_01}>
-        <SCGOne margin="115px 0 250px 0" marginMobile="85px 0 100px 0">
-          <BGHeadFidelity mediaWidth="280px" width="auto">
-            <BGTitle textcolor="#1A316D" marginMobile="0 0 0 0">
+        <SCGFidelity margin="115px 0 250px 0" marginMobile="85px 0 100px 0"> 
+          <BGHeadFidelity mediaWidth="100%" width="auto">
+            <BGTitle textcolor="#1A316D">
               High fidelity mockup
             </BGTitle>
             <BGHeadDescription2 textcolor="#1A316D" mediaWidth="100%" margin="10px 0 0px 0">
@@ -210,7 +218,7 @@ export const ProjectDoneGilette = () => {
               <br /> There’s always room for improvement.
             </BGHeadDescription2>
           </BGHeadFidelity>
-        </SCGOne>
+        </SCGFidelity>
       </SmallerContainerGilette>
       <BiggerContainerGilette>
         <IPadContainer>

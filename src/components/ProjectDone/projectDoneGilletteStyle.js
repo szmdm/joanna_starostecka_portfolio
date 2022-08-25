@@ -15,10 +15,39 @@ export const ProjectContainer = styled.div`
     align-items: center;
   }
 `
+export const ProjectContainerLandingpage = styled.div`
+  display: flex;
+  max-width: 980px;
+  height: auto;
+  align-items: ${(props) => props.alignItems};
+  justify-content: center;
+  flex-direction: ${(props) => props.flexDirection};
+  width: 100%;
+
+  @media screen and (max-width: ${mediaSize}) {
+    flex-direction: column;
+    align-items: center;
+  }
+`
+
+export const ProjectContainerTypo = styled.div`
+  display: flex;
+  max-width: 980px;
+  height: auto;
+  align-items: ${(props) => props.alignItems};
+  justify-content: center;
+  flex-direction: ${(props) => props.flexDirection};
+  width: 100%;
+
+  @media screen and (max-width: ${mediaSize}) {
+    flex-direction: column;
+    align-items: center;
+  }
+`
 
 export const ProjectContainer2 = styled.div`
   display: flex;
-  max-width: 1280px;
+  max-width: 980px;
   height: auto;
   align-items: ${(props) => props.alignItems};
   justify-content: center;
@@ -49,7 +78,7 @@ export const BiggerContainerGilette = styled.div`
 export const BCGOne = styled.div`
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: flex-start;
   width: ${(props) => props.width};
   flex-direction: ${(props) => props.flexDirection};
 
@@ -60,21 +89,18 @@ export const BCGOne = styled.div`
 `;
 
 export const BCGOneContainer = styled.div`
-  margin: 3rem 4.5rem 0 1rem;
+  padding: 2rem;
 
   img {
    max-width: 100%;
    height: auto;
-   position: relative;
-   left: 65px;
+  }
 
    @media screen and (max-width: ${mediaSize}) {
-    left: 0;
-  }
+    padding: 20px;
   }
 
   @media screen and (max-width: ${mediaSize}) {
-    margin: 1.5rem 0.5rem 0.5rem 0rem;
   }
 `;
 
@@ -84,21 +110,53 @@ export const BCGTwo = styled.div`
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  width: 50%;
   margin: ${(props) => props.margin};
+  padding: 0 10px 0 20px;
+  width: 100%;
 
   @media screen and (max-width: ${mediaSize}) {
     align-items: center;
-    margin: 5px 0 50px 0;
+    margin: 60px 0px 35px 0px;
+  }
+`;
+
+export const BCGTwoLandingpage = styled.div`
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin: ${(props) => props.margin};
+  width: 42%;
+
+  @media screen and (max-width: ${mediaSize}) {
+    align-items: center;
+    width: 100%;
+    padding: 0 10px 0 20px;
+    gap: 20px;
+    margin: 0px 0px 35px 0px;
+  }
+`;
+
+export const BCGTwoUser = styled.div`
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  flex-direction: column;
+  margin: ${(props) => props.margin};
+  padding: 0 10px 0 20px;
+
+  @media screen and (max-width: ${mediaSize}) {
+    align-items: center;
+    margin: 60px 0px 35px 0px;
   }
 `;
 
 export const BCGTwoColorTitle = styled.div`
   display: flex;
-  align-items: flex-start;
+  align-items: flex-end;
   justify-content: center;
   flex-direction: column;
-  width: 60%;
+  width: 75%;
   margin: ${(props) => props.margin};
 
   @media screen and (max-width: ${mediaSize}) {
@@ -113,21 +171,38 @@ export const BGHead = styled.div`
   align-items: flex-start;
   justify-content: flex-end;
   flex-direction: column;
-  height: 30%;
   margin: ${(props) => props.margin};
-  /* width: ${(props) => props.width}; */
+  width: ${(props) => props.width};
 
   @media screen and (max-width: ${mediaSize}) {
     display: ${(props) => props.display};
-    justify-content: left;
+    justify-content: center;
     width: ${(props) => props.mediaWidth};
-    align-items: left;
+    align-items: flex-start;
+    padding: 0 10px 0 20px;
+  }
+`;
+
+export const BGHeadLandingpage = styled.div`
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-end;
+  flex-direction: column;
+  margin: ${(props) => props.margin};
+  max-width: 490px;
+  width: ${(props) => props.width};
+
+  @media screen and (max-width: ${mediaSize}) {
+    display: ${(props) => props.display};
+    justify-content: center;
+    width: ${(props) => props.mediaWidth};
+    align-items: flex-start;
   }
 `;
 export const BGHeadFidelity = styled.div`
-  position: relative;
-  left: 150px;
-  width: ${(props) => props.width};
+  /* position: relative;
+  left: 150px; */
+  width: 400px;
   display: flex;
   align-items: flex-start;
   justify-content: flex-end;
@@ -139,8 +214,7 @@ export const BGHeadFidelity = styled.div`
     justify-content: center;
     width: ${(props) => props.mediaWidth};
     align-items: left;
-    min-height: 200px;
-    margin-left: 20px;
+    padding: 0 10px 0 20px;
   }
 `;
 
@@ -166,7 +240,6 @@ export const BGHeadDescription2 = styled.div`
   position: ${(props) => props.position};
   line-height: 1.8rem;
   margin: ${(props) => props.margin};
-  width: 400px;
   
 
   @media screen and (max-width: ${mediaSize}) {
@@ -190,10 +263,11 @@ export const BGTitle = styled.div`
     font-size: clamp(1.875rem, 2vw, 2.5rem);
     line-height: 2.4rem;
     margin: ${(props) => props.marginMobile};
+    width: ${(props) => props.widthMobile};
   }
 
   @media screen and (max-width: ${mobileLMediaSize}) {
-    width: 100%;
+    width: ${(props) => props.widthMobile};
   }
 `;
 
@@ -208,6 +282,26 @@ export const BGContent = styled.div`
 
   @media screen and (max-width: ${mediaSize}) {
     margin: ${(props) => props.marginMobile};
+    width: ${(props) => props.widthMobile};
+    max-width: 490px;
+    padding: ${(props) => props.paddingMobile};
+  }
+`;
+
+export const BGContentUser = styled.div`
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  flex-direction: column;
+  height: ${(props) => props.height};
+  margin: ${(props) => props.margin};
+  width: ${(props) => props.width};
+
+  @media screen and (max-width: ${mediaSize}) {
+    margin: ${(props) => props.marginMobile};
+    width: ${(props) => props.widthMobile};
+    max-width: 490px;
+    padding: ${(props) => props.paddingMobile};
   }
 `;
 
@@ -236,12 +330,44 @@ export const SCGOne = styled.div`
   justify-content: center;
   flex-direction: column;
   margin: ${(props) => props.margin};
-  max-width: 1280px;
+  max-width: 400px;
+  width: 50%;
+
+  @media screen and (max-width: ${mediaSize}) {
+    align-items: center;
+    margin: ${(props) => props.marginMobile};
+    width: 100%;
+  }
+`;
+
+export const SCGTypo = styled.div`
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  flex-direction: column;
+  margin: ${(props) => props.margin};
+  width: 50%;
+
+  @media screen and (max-width: ${mediaSize}) {
+    align-items: center;
+    margin: ${(props) => props.marginMobile};
+    width: 100%;
+  }
+`;
+
+export const SCGFidelity = styled.div`
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  flex-direction: column;
+  margin: ${(props) => props.margin};
+  max-width: 980px;
   width: 100%;
 
   @media screen and (max-width: ${mediaSize}) {
     align-items: center;
     margin: ${(props) => props.marginMobile};
+    width: 100%;
   }
 `;
 
@@ -273,10 +399,9 @@ export const SCGThree = styled.div`
   align-items: flex-start;
   justify-content: center;
   flex-direction: column;
-  margin: 0.6rem 3rem 0.6rem 7rem;
+  width: 50%;
 
   @media screen and (max-width: ${mediaSize}) {
-    margin: 0.6rem 1rem 0.6rem 1rem;
     width: auto;
 
   }
@@ -437,6 +562,6 @@ export const BCGTwoColor = styled.div`
   @media screen and (max-width: ${mediaSize}) {
     align-items: center;
     margin: 0;
-    width: 280px;
+    width: 260px;
   }
 `;
