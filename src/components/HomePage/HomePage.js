@@ -3,12 +3,12 @@ import HeroSection from '../HeroPage/Hero';
 import Project from '../Project/Project';
 import gilette_01 from "../../assets/projects/gilette/gillette_dlugie_strona_glowna1.png";
 import cola_01 from "../../assets/projects/cola/cola_dlugie_strona_glowna1.png";
-import schwartz_01 from "../../assets/projects/schwartz/schwartz_dlugie_strona_glowna1.png";
-import sprite_01 from "../../assets/projects/sprite/sprite_dlugie_strona_glowna1.png";
 import soft_01 from "../../assets/projects/soft/soft_dlugie_strona_glowna1.png";
-import cola_stand_01 from "../../assets/projects/cola_stand/cola_dlugie_strona_glowna1.png";
 import dobro_01 from "../../assets/projects/dobro/ceramika_dlugie_strona_glowna.png";
 import { useLocation } from 'react-router-dom';
+
+
+
 
 const HomePage = () => {
 
@@ -46,22 +46,12 @@ const HomePage = () => {
                 projectName={'CeramicStudio'}
                 projectImg={dobro_01}
             />
-            {/* <div id="sprite"></div>
-            <Project
-                projectName={'Sprite'}
-                projectImg={sprite_01}
-            /> */}
             <div id="soft"></div>
             <Project
                 projectName={'Soft'}
                 projectImg={soft_01}
             />
-            {/* <div id="cocacolastand"></div>
-            <Project
-                id="cocacolastand"
-                projectName={'Coca Cola stand'}
-                projectImg={cola_stand_01}
-            /> */}
+            
         </>
     )
 }

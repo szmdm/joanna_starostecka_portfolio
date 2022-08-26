@@ -2,13 +2,14 @@ import './App.css';
 import React, { useRef, useState, useEffect } from 'react';
 import { BrowserRouter as Router, Routes, Route, } from 'react-router-dom';
 import HomePage from './components/HomePage';
-import ProjectName from './components/ProjectName/ProjectName';
 import { Navbar } from './components/Navbar/Navbar';
 import Sidebar from './components/Sidebar/Sidebar';
 import { ProjectDoneGilette } from './components/ProjectDone/ProjectDoneGillette';
 import { ProjectDoneCocaCola } from './components/ProjectDone/ProjectDoneCocaCola';
 import { ProjectDoneSoft } from './components/ProjectDone/ProjectDoneSoft';
 import ProjectDoneCeramic from './components/ProjectDone/ProjectDoneCeramic';
+
+import ToTopButton from '../src/components/MoveToTopButton/ToTopButton';
 
 
 let useClickOutside = (handler) => {
@@ -47,16 +48,6 @@ const App = () => {
   });
 
 
-
-  // const project1 = "Gillette"
-  // const project2 = "Coca Cola"
-  // const project3 = "Schwartz"
-  const project4 = "Sprite"
-  // const project5 = "Soft"
-  const project6 = "Coca Cola stand"
-  
-
-
   return (
     <Router>
       <Navbar 
@@ -85,20 +76,13 @@ const App = () => {
           path="/project/CeramicStudio"
           element={<ProjectDoneCeramic />}
         />
-        {/* <Route
-          path="/project/"{...project4}
-          element={<ProjectName name={project4} />}
-        /> */}
         <Route
           path="/project/Soft"
           element={<ProjectDoneSoft />}
         />
-        {/* <Route
-          path="/project/"{...project6}
-          element={<ProjectName name={project6} />}
-        /> */}
       </Routes>
       {/* <FooterBar /> */}
+      <ToTopButton props={500} />
     </Router>
   );
 }

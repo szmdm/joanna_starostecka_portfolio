@@ -4,7 +4,6 @@ import {
   BiggerContainerGilette,
   InsideBiggerContainerGilette,
   BCGOne,
-  BCGTwo,
   BCGOneContainer,
   SmallerContainerGilette,
   SCGOne,
@@ -48,7 +47,9 @@ import GilletteImg_01 from "../../assets/projectsDone/pDGillette/Gillette_02_bac
 import GilletteImg_02 from "../../assets/projectsDone/pDGillette/Gillette_03_background.png";
 import GilletteImg_03 from "../../assets/projectsDone/pDGillette/Gillette_04_background.png";
 import GilletteImg_04 from "../../assets/projectsDone/pDGillette/Gillette_03_background_2.png";
+
 import ScrollToTop from "../ScrollToTop";
+import ToTopButton from '../../components/MoveToTopButton/ToTopButton';
 
 
 export const ProjectDoneGilette = () => {
@@ -208,7 +209,7 @@ export const ProjectDoneGilette = () => {
         </ProjectContainer>
       </BiggerContainerGilette>
       <SmallerContainerGilette alignItems="flex-end" backgroundImage={GilletteImg_01}>
-        <SCGFidelity margin="115px 0 250px 0" marginMobile="85px 0 100px 0"> 
+        <SCGFidelity margin="115px 0 250px 0" marginMobile="85px 0 100px 0">
           <BGHeadFidelity mediaWidth="100%" width="auto">
             <BGTitle textcolor="#1A316D">
               High fidelity mockup
@@ -225,7 +226,7 @@ export const ProjectDoneGilette = () => {
           <img src={BCGImg_2} alt="" />
         </IPadContainer>
       </BiggerContainerGilette>
-
+      <ToTopButton props={100} />
     </>
   );
 };
