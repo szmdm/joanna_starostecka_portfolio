@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { mediaSize, mobileLMediaSize } from "../../variables/Mixins";
+import { laptop, mediaSize, mobileLMediaSize } from "../../variables/Mixins";
 
 export const ProjectContainer = styled.div`
   display: flex;
@@ -17,7 +17,7 @@ export const ProjectContainer = styled.div`
 `
 export const ProjectContainerLandingpage = styled.div`
   display: flex;
-  max-width: 980px;
+  max-width: 1280px;
   height: auto;
   align-items: ${(props) => props.alignItems};
   justify-content: center;
@@ -32,22 +32,27 @@ export const ProjectContainerLandingpage = styled.div`
 
 export const ProjectContainerTypo = styled.div`
   display: flex;
-  max-width: 980px;
+  max-width: 1050px;
   height: auto;
   align-items: ${(props) => props.alignItems};
   justify-content: center;
   flex-direction: ${(props) => props.flexDirection};
   width: 100%;
+  padding: 115px 0 115px;
+  gap: 150px;
 
   @media screen and (max-width: ${mediaSize}) {
     flex-direction: column;
     align-items: center;
+    padding: 60px 0 60px;
+    gap: 0px;
   }
 `
 
 export const ProjectContainer2 = styled.div`
   display: flex;
-  max-width: 980px;
+  max-width: 1050px;
+  /* max-height: 880px; */
   height: auto;
   align-items: ${(props) => props.alignItems};
   justify-content: center;
@@ -82,14 +87,12 @@ export const BCGOne = styled.div`
   width: ${(props) => props.width};
   flex-direction: ${(props) => props.flexDirection};
 
-  @media screen and (max-width: ${mediaSize}) {
-    width: 90%;    
-    margin-left: 35px;
+  @media screen and (max-width: ${mediaSize}) { 
   }
 `;
 
 export const BCGOneContainer = styled.div`
-  padding: 2rem;
+  padding: 4rem 2rem 2rem 2rem;
 
   img {
    max-width: 100%;
@@ -97,11 +100,10 @@ export const BCGOneContainer = styled.div`
   }
 
    @media screen and (max-width: ${mediaSize}) {
-    padding: 20px;
+    padding: 2rem 1rem 2rem 1rem;
   }
 
-  @media screen and (max-width: ${mediaSize}) {
-  }
+ 
 `;
 
 
@@ -122,18 +124,20 @@ export const BCGTwo = styled.div`
 
 export const BCGTwoLandingpage = styled.div`
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   justify-content: center;
   flex-direction: column;
   margin: ${(props) => props.margin};
   width: 42%;
+  max-width: 425px;
 
   @media screen and (max-width: ${mediaSize}) {
     align-items: center;
     width: 100%;
     padding: 0 10px 0 20px;
     gap: 20px;
-    margin: 0px 0px 35px 0px;
+    margin: 0px 0px 50px 0px;
+    max-width: 400px;
   }
 `;
 
@@ -144,6 +148,7 @@ export const BCGTwoUser = styled.div`
   flex-direction: column;
   margin: ${(props) => props.margin};
   padding: 0 10px 0 20px;
+  width: 100%;
 
   @media screen and (max-width: ${mediaSize}) {
     align-items: center;
@@ -156,11 +161,12 @@ export const BCGTwoColorTitle = styled.div`
   align-items: flex-end;
   justify-content: center;
   flex-direction: column;
-  width: 75%;
+  width: 70%;
   margin: ${(props) => props.margin};
 
   @media screen and (max-width: ${mediaSize}) {
     width: 100%;
+    max-width: 425px;
     align-items: center;
     padding: 0 10px 0 20px;
   }
@@ -177,6 +183,7 @@ export const BGHead = styled.div`
   @media screen and (max-width: ${mediaSize}) {
     display: ${(props) => props.display};
     justify-content: center;
+    max-width: 425px;
     width: ${(props) => props.mediaWidth};
     align-items: flex-start;
     padding: 0 10px 0 20px;
@@ -192,17 +199,25 @@ export const BGHeadLandingpage = styled.div`
   max-width: 490px;
   width: ${(props) => props.width};
 
+    img {
+      margin: 0 0 15px 0;
+      max-width: 100%;
+      height: auto;
+    }
+
   @media screen and (max-width: ${mediaSize}) {
     display: ${(props) => props.display};
     justify-content: center;
     width: ${(props) => props.mediaWidth};
     align-items: flex-start;
+    margin: 0 0 50px 0;
   }
 `;
 export const BGHeadFidelity = styled.div`
   /* position: relative;
   left: 150px; */
-  width: 400px;
+  width: 100%;
+  max-width: 425px;
   display: flex;
   align-items: flex-start;
   justify-content: flex-end;
@@ -224,7 +239,7 @@ export const BGHeadDescription1 = styled.span`
   font-style: normal;
   font-weight: 800;
   text-transform: uppercase;
-  font-size: clamp(1rem, 1.75rem, 2.5rem);
+  font-size: clamp(1.2rem, 1.75rem, 2.5rem);
 
   @media screen and (max-width: ${mediaSize}) {
     font-size: clamp(1rem, 2vw, 2rem);
@@ -233,7 +248,7 @@ export const BGHeadDescription1 = styled.span`
 
 export const BGHeadDescription2 = styled.div`
   color: ${(props) => props.textcolor};
-  font-family: "FuturaStd-Medium";
+  font-family: "FuturaStd-Book";
   font-style: normal;
   font-weight: 400;
   font-size: 1.25rem;
@@ -245,6 +260,7 @@ export const BGHeadDescription2 = styled.div`
   @media screen and (max-width: ${mediaSize}) {
     text-align: left;
     width: ${(props) => props.mediaWidth};
+    max-width: 400px;
   }
 `;
 
@@ -256,7 +272,7 @@ export const BGTitle = styled.div`
   text-transform: uppercase;
   font-size: 3rem;
   max-width: ${(props) => props.maxWidth};
-  line-height: 4rem;
+  line-height: 64px;
   margin: ${(props) => props.margin};
 
   @media screen and (max-width: ${mediaSize}) {
@@ -268,6 +284,10 @@ export const BGTitle = styled.div`
 
   @media screen and (max-width: ${mobileLMediaSize}) {
     width: ${(props) => props.widthMobile};
+  }
+
+  @media screen and (min-width: ${mobileLMediaSize}) and (max-width: ${mediaSize}) {
+    text-align: ${(props) => props.textAlign};
   }
 `;
 
@@ -283,7 +303,24 @@ export const BGContent = styled.div`
   @media screen and (max-width: ${mediaSize}) {
     margin: ${(props) => props.marginMobile};
     width: ${(props) => props.widthMobile};
-    max-width: 490px;
+    max-width: 425px;
+    padding: ${(props) => props.paddingMobile};
+  }
+`;
+
+export const BGContentTypo = styled.div`
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  flex-direction: column;
+  height: ${(props) => props.height};
+  margin: ${(props) => props.margin};
+  width: ${(props) => props.width};
+
+  @media screen and (max-width: ${mediaSize}) {
+    margin: ${(props) => props.marginMobile};
+    width: ${(props) => props.widthMobile};
+    max-width: 425px;
     padding: ${(props) => props.paddingMobile};
   }
 `;
@@ -296,11 +333,12 @@ export const BGContentUser = styled.div`
   height: ${(props) => props.height};
   margin: ${(props) => props.margin};
   width: ${(props) => props.width};
+  max-width: 425px;
 
   @media screen and (max-width: ${mediaSize}) {
     margin: ${(props) => props.marginMobile};
     width: ${(props) => props.widthMobile};
-    max-width: 490px;
+    max-width: 425px;
     padding: ${(props) => props.paddingMobile};
   }
 `;
@@ -374,16 +412,19 @@ export const SCGFidelity = styled.div`
 export const SCGTwo = styled.div`
   
   z-index: 99;
-  margin-left: 30px;
+  margin-left: 100px;
 
   img {
     position: relative;
     width: 95%;
     max-height: auto; 
-    left: 50px;
+    left: 85px;
 
     @media screen and (max-width: ${mediaSize}) {
     left: 0;
+  }
+    @media screen and (min-width: ${mediaSize}) and (max-width: ${laptop}) {
+    left: 10px;
   }
   }
 
@@ -402,7 +443,7 @@ export const SCGThree = styled.div`
   width: 50%;
 
   @media screen and (max-width: ${mediaSize}) {
-    width: auto;
+    width: 100%;
 
   }
 `;
@@ -418,10 +459,14 @@ export const SCGImg = styled.div`
     margin-bottom: 30px;
     max-width: 100%;
     height: auto;
+
+    @media screen and (max-width: ${mediaSize}) {
+    
   }
 
   @media screen and (max-width: ${mediaSize}) {
     margin-top: 20px;
+  }
 
   .iconsImg {
     width: 200px;
@@ -442,9 +487,10 @@ export const BGHeadDescription3 = styled.div`
   margin-left: 10px;
 
   @media screen and (max-width: ${mediaSize}) {
-    font-size: clamp(1.5rem, 2.5vw, 2rem);
+    font-size: clamp(1.875rem, 2.5vw, 2rem);
     position: relative;
-    top: -130px;
+    top: -125px;
+    height: 0px;
   }
 `;
 
@@ -477,7 +523,6 @@ export const ColorContainer = styled.div`
   flex-wrap: wrap;
   width: 100%;
   height: auto;
-  padding: 10px;
 
   @media screen and (max-width: ${mediaSize}) {
   width: 100%;
@@ -516,6 +561,7 @@ export const InsideBiggerContainerGilette = styled.div`
     margin: 50px 0 80px 0;
     max-width: 980px;
     width: 100%;
+    padding: 0 10px 0 20px;
 
   @media screen and (max-width: ${mediaSize}) {
     flex-direction: column;

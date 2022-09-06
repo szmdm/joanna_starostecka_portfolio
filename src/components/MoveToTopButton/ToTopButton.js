@@ -16,7 +16,7 @@ const ToTopButton = ({props}) => {
                 setToTopButton(false)
             }
         })
-    }, [])
+    },)
 
     const scrollUp = () => {
         window.scrollTo({

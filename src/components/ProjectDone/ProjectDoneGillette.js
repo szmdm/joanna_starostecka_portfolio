@@ -33,9 +33,10 @@ import {
   ProjectContainerLandingpage,
   BCGTwoLandingpage,
   BGHeadLandingpage,
+  BGContentTypo,
 } from "./projectDoneGilletteStyle";
 import BCGOne_1 from "../../assets/projectsDone/pDGillette/IPad_01-1.png";
-import BCGTwo_1 from "../../assets/projectsDone/pDGillette/Gillette_logo_02-1.png";
+import BCGTwo_1 from "../../assets/projectsDone/pDGillette/gillette_logo.png";
 import SCGImg_1 from "../../assets/projectsDone/pDGillette/Fusion_Logo-1.png";
 import SCGImg_2 from "../../assets/projectsDone/pDGillette/Icons-1.png";
 import SCGImg_3 from "../../assets/projectsDone/pDGillette/gillette_image_02.png";
@@ -58,19 +59,17 @@ export const ProjectDoneGilette = () => {
       <ScrollToTop />
       <BiggerContainerGilette>
         <ProjectContainerLandingpage alignItems="center">
-          <BCGOne width="58%">
-            <BCGOneContainer>
-              <img src={BCGOne_1} alt="content presented on the tablet" />
-            </BCGOneContainer>
-          </BCGOne>
-          <BCGTwoLandingpage margin="5px 0 100px 0">
-            <BGHeadLandingpage display="flex" width="100%">
+          <BCGOneContainer>
+            <img src={BCGOne_1} alt="content presented on the tablet" />
+          </BCGOneContainer>
+          <BCGTwoLandingpage margin="5px 40px 100px 0">
+            <BGHeadLandingpage display="flex" width="100%" margin="0 0 100px 0">
               <img src={BCGTwo_1} alt="gillette logo" />
               <BGHeadDescription1 textcolor="#fff">
                 The Best a man can get
               </BGHeadDescription1>
             </BGHeadLandingpage>
-            <BGContent>
+            <BGContent widthMobile="100%">
               <BGTitle textcolor="#fff" margin="0 0 15px 0">
                 Landingpage for campagne
               </BGTitle>
@@ -84,9 +83,9 @@ export const ProjectDoneGilette = () => {
       </BiggerContainerGilette>
       <SmallerContainerGilette alignItems="center" maxHeight="500px" backgroundImage={GilletteImg_01}>
         <ProjectContainer alignItems="center">
-          <SCGOne margin="6rem 0 0.6rem 0">
+          <SCGOne margin="0.6rem 0 0.6rem 0" marginMobile="60px 0 0.6rem 0">
             <BGHead>
-              <BGTitle textcolor="#1A316D" widthMobile="100%">
+              <BGTitle textcolor="#1A316D" widthMobile="100%" margin="0px 0 10px 0">
                 Campain gap
               </BGTitle>
               <BGHeadDescription2 textcolor="#1A316D">
@@ -108,13 +107,13 @@ export const ProjectDoneGilette = () => {
       </SmallerContainerGilette>
       <BiggerContainerGilette backgroundImage={GilletteImg_02}>
         <ProjectContainer2 alignItems="center">
-          <BCGOne>
+          <BCGOne width="100%">
             <BCGOneContainer>
               <img src={BCGImg_1} alt="young couple on a smartphone screen" />
             </BCGOneContainer>
           </BCGOne>
           <BCGTwoUser>
-            <BGContentUser width="70%" widthMobile="100%">
+            <BGContentUser width="100%" widthMobile="100%">
               <BGTitle textcolor="#fff" widthMobile="100%">
                 User persona
               </BGTitle>
@@ -126,10 +125,10 @@ export const ProjectDoneGilette = () => {
           </BCGTwoUser>
         </ProjectContainer2>
       </BiggerContainerGilette>
-      <SmallerContainerGilette alignItems="flex-end" maxHeight="500px" backgroundImage={GilletteImg_03}>
+      <SmallerContainerGilette alignItems="flex-end" backgroundImage={GilletteImg_03}>
         <ProjectContainerTypo alignItems="flex-end">
           <SCGTypo>
-            <BGHead width="auto" mediaWidth="100%" margin="60px 0px 35px 0px;">
+            <BGHead width="auto" mediaWidth="100%" margin="0px 0 35px 0px">
               <BGTitle textcolor="#1A316D" widthMobile="100%">
                 Typography
               </BGTitle>
@@ -138,7 +137,7 @@ export const ProjectDoneGilette = () => {
                 <br /> There’s always room for improvement.
               </BGHeadDescription2>
             </BGHead>
-            <BGContent marginMobile="0.6rem 1rem 0.6rem 1rem" widthMobile="auto">
+            <BGContentTypo widthMobile="100%" paddingMobile="0 10px 0 20px">
               <SCGImg>
                 <img src={SCGImg_4} alt="" />
               </SCGImg>
@@ -146,25 +145,23 @@ export const ProjectDoneGilette = () => {
                 Futura STD Bold
                 <br /> Aa Bb Cc
               </BGHeadDescription3>
-            </BGContent>
+            </BGContentTypo>
           </SCGTypo>
-          <SCGThree>
-            <BGContent marginMobile="0.6rem 1rem 0.6rem 1rem">
-              <SCGImg>
-                <img src={SCGImg_5} alt="" />
-              </SCGImg >
-              <BGHeadDescription3 textcolor="#1A316D" position="absolute" fontWeight="lighter">
-                Futura STD Bold
-                <br /> Aa Bb Cc
-              </BGHeadDescription3>
-            </BGContent>
-          </SCGThree>
+          <BGContentTypo widthMobile="100%" paddingMobile="0 10px 0 20px">
+            <SCGImg>
+              <img src={SCGImg_5} alt="" />
+            </SCGImg >
+            <BGHeadDescription3 textcolor="#1A316D" position="absolute" fontWeight="lighter">
+              Futura STD Bold
+              <br /> Aa Bb Cc
+            </BGHeadDescription3>
+          </BGContentTypo>
         </ProjectContainerTypo>
       </SmallerContainerGilette>
       <BiggerContainerGilette backgroundImage={GilletteImg_04} >
         <ProjectContainer alignItems="center" flexDirection="column">
           <BCGTwoColorTitle margin="60px 0px 10px 0px">
-            <BGTitle textcolor="#fff" widthMobile="100%">
+            <BGTitle textcolor="#fff" widthMobile="100%" textAlign="left">
               User persona
             </BGTitle>
             <BGHeadDescription4 textcolor="#fff">
@@ -226,7 +223,6 @@ export const ProjectDoneGilette = () => {
           <img src={BCGImg_2} alt="" />
         </IPadContainer>
       </BiggerContainerGilette>
-      <ToTopButton props={100} />
     </>
   );
 };
