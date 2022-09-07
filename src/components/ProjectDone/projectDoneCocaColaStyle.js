@@ -212,6 +212,7 @@ export const ThirdContainerCola = styled.div`
   align-items: ${(props) => props.alignItems};
   justify-content: space-between;
   flex-direction: ${(props) => props.flexDirection};
+  padding: 0 10px;
 
   @media screen and (max-width: ${mediaSize}) {
     flex-direction: column;
@@ -247,6 +248,7 @@ export const TCCTitle = styled.div`
         
         @media screen and (max-width: ${mediaSize}) {
             font-size: 2.5rem;
+            margin: 45px 0 15px 0;
         }
     }
 
@@ -294,7 +296,7 @@ export const TCCFontsBox = styled.div`
             color: black;
         };
 
-        p1 {
+        p {
             color: black;
             text-align: center;
             font-size: clamp(1.5rem,5vw,60px);
@@ -309,7 +311,7 @@ export const TCCFontsBox = styled.div`
         }
         };
 
-        p2 {
+        p:last-child {
             color: black;
             text-align: center;
             font-size: clamp(1rem,5vw,25px);
@@ -345,30 +347,28 @@ export const TCCFontsBox2 = styled.div`
             line-height: 1.2rem;
             text-align: center;
             text-transform: lowercase;
-            margin-bottom: 10px;
             color: black;
         };
 
-        p1 {
+        p {
             color: black;
             text-align: center;
             font-size: clamp(1.5rem,5vw,60px);
-            font-family: "TCCC-UnityHeadline-Bold";
+            font-family: "TCCC-UnityHeadline-Regular";
             font-style: normal;
             font-weight: normal;
             text-transform: uppercase;
-            margin-bottom: 10px;
 
             @media screen and (max-width: ${mediaSize}) {
             font-size: 3.75rem;
         }
         };
 
-        p2 {
+        p:last-child {
             color: black;
             text-align: center;
             font-size: clamp(1rem,5vw,25px);
-            font-family: "TCCC-UnityHeadline-Bold";
+            font-family: "TCCC-UnityHeadline-Regular";
             font-style: normal;
             font-weight: normal;
             text-transform: lowercase;
@@ -376,7 +376,7 @@ export const TCCFontsBox2 = styled.div`
         }
 
     @media screen and (max-width: ${mediaSize}) {
-        margin-bottom: 24px;
+        margin-bottom: 60px;
         min-width: auto;
     }
     
@@ -418,7 +418,7 @@ export const FourthCCTitle = styled.div`
     h1 {
         color: #fff;
         text-align: center;
-        font-size: clamp(1.5rem,5vw,60px);
+        font-size: clamp(1,875rem,5vw,60px);
         font-family: "TCCC-UnityHeadline-Bold";
         font-style: normal;
         font-weight: bold;
@@ -426,7 +426,7 @@ export const FourthCCTitle = styled.div`
     }
 
     @media screen and (max-width: ${mediaSize}) {
-        margin-bottom: 50px;
+        margin-bottom: 130px;
     }
 `;
 
@@ -442,15 +442,19 @@ export const FourthCCBox = styled.div`
 
     img {
      position: relative;
-     width: 80%;
+     width: 90%;
      height: auto;
      object-fit: cover;
      bottom: 30%;
 
      @media screen and (max-width: ${mediaSize}) {
-        top: 7px;
+        top: -85px;
         bottom: 0;
     }
+    }
+
+    @media screen and (max-width: ${mobileLMediaSize}) {
+        height: 180px;
     }
 `;
 
@@ -462,7 +466,6 @@ export const FifthContainerCola = styled.div`
     align-items: ${(props) => props.alignItems};
     justify-content: space-between;
     flex-direction: ${(props) => props.flexDirection};
-    margin-bottom: 20px;
 
   @media screen and (max-width: ${mediaSize}) {
     flex-direction: column;
@@ -495,7 +498,7 @@ export const FifthCCTitle = styled.div`
     }
 
     @media screen and (max-width: ${mediaSize}) {
-        margin-bottom: 50px;
+        margin: 15px 0 35px 0;
     }
 `;
 

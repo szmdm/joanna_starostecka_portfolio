@@ -68,9 +68,6 @@ export const ProjectDoneCocaCola = () => {
                         </FCCTitle>
                         <FCCContentBox>
                             <img src={FCColaImg_02} alt="cola can shown on a tablet" />
-                            {/* <p>
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt<br /> ut labore et dolore magna aliqua.
-                            </p> */}
                         </FCCContentBox>
                     </FirstContainerCola>
                 </ImageContainerCola>
@@ -79,8 +76,8 @@ export const ProjectDoneCocaCola = () => {
                 <FCCMobileContentBox>
                     <img src={FCColaImg_02} alt="cola can shown on a tablet" />
                     <p>
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt<br /> ut labore et dolore magna aliqua.
-                            </p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt<br /> ut labore et dolore magna aliqua.
+                    </p>
                 </FCCMobileContentBox>
             </ProjectContainerCola>
             <ProjectContainerCola>
@@ -110,21 +107,21 @@ export const ProjectDoneCocaCola = () => {
                         <TCCFonts>
                             <TCCFontsBox>
                                 <span>for headline</span>
-                                <p1>
+                                <p>
                                     TCCC
-                                </p1>
-                                <p2>
+                                </p>
+                                <p>
                                     TCCC UnityHeadline Bold
-                                </p2>
+                                </p>
                             </TCCFontsBox>
                             <TCCFontsBox2>
                                 <span>for headline</span>
-                                <p1>
+                                <p>
                                     TCCC
-                                </p1>
-                                <p2>
-                                    TCCC UnityHeadline Bold
-                                </p2>
+                                </p>
+                                <p>
+                                    TCCC UnityHeadline Regular
+                                </p>
                             </TCCFontsBox2>
                         </TCCFonts>
                     </ThirdContentContainer>

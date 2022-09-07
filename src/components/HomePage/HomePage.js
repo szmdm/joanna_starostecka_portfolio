@@ -8,12 +8,9 @@ import dobro_01 from "../../assets/projects/dobro/ceramika_dlugie_strona_glowna.
 import { useLocation } from 'react-router-dom';
 
 
-
-
 const HomePage = () => {
 
     const location = useLocation();
-    console.log(location);
 
     useEffect(() => {
         
