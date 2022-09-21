@@ -1,6 +1,7 @@
 import React from 'react';
 import { ProjectContainer, ProjectButton, ImgContainer, InfoContainer, ArrowIcon } from './projectStyle';
-import { BsArrowRight } from 'react-icons/bs';
+
+import ArrowImg from '../../assets/Arrow--right.png';
 
 
 
@@ -17,7 +18,7 @@ const Project = ({ projectName, projectImg }) => {
             <ProjectButton to={"/project/" + projectName} >
               Landingpage and visuals
             <ArrowIcon>
-            <BsArrowRight />
+            <img src={ArrowImg} alt='move to the project icon' />
             </ArrowIcon>
             </ProjectButton>
           </div>

@@ -51,6 +51,7 @@ export const InfoContainer = styled.div`
     align-content: flex-start;
     justify-content: center;
     flex-direction: column;
+    color: #D19886;
 
     @media screen and (max-width: ${mediaSize}) {
         height: auto;
@@ -61,8 +62,7 @@ export const ProjectButton = styled(Link)`
     display: flex;
     font-size: clamp(0.7rem,1.2rem,3vw);
     border: none;
-    color: black;
-    /* transition: 0.2s ease-in; */
+    color: #D19886;
     background-color: white;
     margin: 0 0 20px 100px;
     text-decoration: none;
@@ -92,7 +92,14 @@ const move = keyframes`
 `
 
 export const ArrowIcon = styled.div`
-    margin-left: 20px;
-    animation: ${move} 2s cubic-bezier(0, 0, 0.2, 1) infinite;
+    display: block;
+    width: auto;
+    height: auto;
+        img {
+            position: relative;
+            bottom: 3px;
+            left: 10px;
+            animation: ${move} 2s cubic-bezier(0, 0, 0.2, 1) infinite;
+        }
 
 `

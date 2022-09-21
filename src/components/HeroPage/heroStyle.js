@@ -28,6 +28,7 @@ export const WelcomeContent = styled.div`
     justify-content: flex-start;
     align-items: flex-start;
     padding-left: 100px;
+    color: #D19886;
 
     @media screen and (max-width: ${mediaSize}) {
         padding-left: 15px;
@@ -49,7 +50,7 @@ export const OpenTitle = styled.div`
         content: '';
         height: 2px;
         bottom: -20px;
-        background-color: black;
+        background-color: #D19886;
         width: 100%;
     }
 `
@@ -87,7 +88,7 @@ export const ProjectsTitle = styled.div`
     font-weight: bold;
     width: auto;
     padding: calc(100vh - 666px) 0 0 100px;
-    color: black;
+    color: #D19886;
 
     @media screen and (max-width: ${mediaSize}) {
         display: none;

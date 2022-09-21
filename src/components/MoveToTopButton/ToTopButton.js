@@ -1,5 +1,7 @@
 import React, {useEffect, useState } from 'react'
 import styled from 'styled-components'
+import TopImg from '../../assets/Chevron--up.png'
+import { mediaSize } from '../../variables/Mixins'
 
 const ToTopButton = ({props}) => {
 
@@ -28,23 +30,35 @@ const ToTopButton = ({props}) => {
   return (
     <>
         {toTopButton && (
-            <Button onClick={scrollUp}>^</Button>
+            <Button onClick={scrollUp}>
+                <img src={TopImg} alt='go to top button' />
+            </Button>
         )}
     </>
   )
 }
 
 const Button = styled.button`
+    display: flex;
+    justify-content: center;
+    align-items: center;
     position: fixed;
     bottom: 50px;
     right: 50px;
-    height: 55px;
-    width: 55px;
+    height: 40px;
+    width: 32px;
     font-size: 50px;
-    border: 1px solid;
-    background-color: grey;
     opacity: 0.5;
     cursor: pointer;
+
+        img {
+            display: block;
+        }
+
+        @media screen and (max-width: ${mediaSize}){
+            bottom: 20px;
+            right: 20px;
+        }
 `
 
 export default ToTopButton;

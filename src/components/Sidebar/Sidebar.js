@@ -4,12 +4,9 @@ import {
   Icon,
   CloseIcon,
   SidebarMenu,
-  // SidebarLink,
   SimpleLink,
   SidebarWrapper,
 } from './sidebarStyle';
-
-
 
 const Sidebar = forwardRef((props, ref) => {
 
@@ -25,14 +22,10 @@ const Sidebar = forwardRef((props, ref) => {
           <SimpleLink to="/#gillette">Gillette</SimpleLink>
           <SimpleLink to="/#cocacola">Coca Cola</SimpleLink>
           <SimpleLink to="/#schwartz">Ceramic Studio</SimpleLink>
-          {/* <SimpleLink to="/#sprite">Sprite</SimpleLink> */}
           <SimpleLink to="/#soft">Soft</SimpleLink>
-          {/* <SimpleLink to="/#cocacolastand">Coca Cola stand</SimpleLink> */}
-
         </SidebarMenu>
       </SidebarWrapper>
     </SidebarContainer>
-
   )
 })
 
