@@ -48,7 +48,7 @@ const Button = styled.button`
     height: 40px;
     width: 32px;
     font-size: 50px;
-    opacity: 0.5;
+    opacity: 0.4;
     cursor: pointer;
 
         img {
