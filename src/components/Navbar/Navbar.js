@@ -9,7 +9,7 @@ export const Navbar = ({toggle, isOpen}) => {
             <Nav>
                 <NavbarContainer>
                     <NavLogo to="/">
-                        <img src={process.env.PUBLIC_URL + '/assets/logo.svg'} style={{height: '80px'}} alt='logo' />
+                        <img src={process.env.PUBLIC_URL + '/assets/logo_1.svg'} style={{height: '80px'}} alt='logo' />
                     </NavLogo>
                     <Navicon onClick={toggle} isOpen={isOpen}>
                         <img src={process.env.PUBLIC_URL + '/assets/menu_bar.svg'} style={{height: '50px'}} alt='menu' />

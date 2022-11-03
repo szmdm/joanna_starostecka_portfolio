@@ -11,7 +11,6 @@
          url('../src/fonts/TCCC-UnityHeadline-Bold/TCCC-UnityHeadline\ Bold.woff') format('woff'),
          url('../src/fonts/TCCC-UnityHeadline-Bold/TCCC-UnityHeadline\ Bold.ttf') format('truetype');
 }
-
 @font-face {
     font-family: "TCCC-UnityHeadline-Regular";
     src: url('../src/fonts/TCCC-UnityHeadline-Regular/TCCC-UnityHeadline\ Regular.woff2') format('woff2'),
@@ -25,31 +24,64 @@
         font-weight: 100;
         font-style: normal;
 }
-
 @font-face {
     font-family: "FuturaStd-Bold";
     src: url('../src/fonts/FuturaStd/FuturaStd-Bold.ttf') format('truetype');
     font-weight: 800;
     font-style: normal;
 }
-
 @font-face {
     font-family: "FuturaStd-Book";
     src: url('../src/fonts/FuturaStd/FuturaStd-Book.otf') format('opentype');
     font-weight: 300;
     font-style: normal;
 }
-
 @font-face {
     font-family: "FuturaStd-Medium";
     src: url('../src/fonts/FuturaStd/FuturaStd-Medium.otf') format('opentype');
     font-weight: 500;
     font-style: normal;
 }
-
 @font-face {
     font-family: "FuturaStd-Heavy";
     src: url('../src/fonts/FuturaStd/FuturaStd-Heavy.otf') format('opentype');
+    font-weight: 800;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Arboria";
+    src: url('../src/fonts/Arboria/OTF/Arboria-Thin.otf') format('opentype');
+    font-weight: 100;
+    font-style: normal;
+}
+@font-face {
+    font-family: "Arboria";
+    src: url('../src/fonts/Arboria/OTF/Arboria-Medium.otf') format('opentype');
+    font-weight: 600;
+    font-style: normal;
+}
+@font-face {
+    font-family: "Arboria";
+    src: url('../src/fonts/Arboria/OTF/Arboria-Light.otf') format('opentype');
+    font-weight: 300;
+    font-style: normal;
+}
+@font-face {
+    font-family: "Arboria";
+    src: url('../src/fonts/Arboria/OTF/Arboria-Book.otf') format('opentype');
+    font-weight: 400;
+    font-style: book;
+}
+@font-face {
+    font-family: "Arboria";
+    src: url('../src/fonts/Arboria/OTF/Arboria-Bold.otf') format('opentype');
     font-weight: 700;
+    font-style: bold;
+}
+@font-face {
+    font-family: "Arboria";
+    src: url('../src/fonts/Arboria/OTF/Arboria-Black.otf') format('opentype');
+    font-weight: 900;
     font-style: normal;
 }

@@ -9,6 +9,8 @@ export const ProjectContainer = styled.div`
     
 
     h1 {
+        font-family: "Arboria";
+        font-weight: 700;
         text-align: left;
         margin: 25px 0 10px 100px;
         font-size: clamp(1.5rem,2rem,3vw);
@@ -51,7 +53,7 @@ export const InfoContainer = styled.div`
     align-content: flex-start;
     justify-content: center;
     flex-direction: column;
-    color: #D19886;
+    color: #3E4136;
 
     @media screen and (max-width: ${mediaSize}) {
         height: auto;
@@ -62,13 +64,17 @@ export const ProjectButton = styled(Link)`
     display: flex;
     font-size: clamp(0.7rem,1.2rem,3vw);
     border: none;
-    color: #D19886;
+    color: #3E4136;
     background-color: white;
     margin: 0 0 20px 100px;
     text-decoration: none;
+    font-family: "Arboria";
+    font-weight: 400;
+    font-style: book;
+
 
     &:hover {
-        color: gold;
+        color: #269FF6;
         transition: ease-in;
         cursor: pointer;
     }
@@ -93,13 +99,17 @@ const move = keyframes`
 
 export const ArrowIcon = styled.div`
     display: block;
-    width: auto;
-    height: auto;
-        img {
-            position: relative;
-            bottom: 3px;
-            left: 10px;
-            animation: ${move} 2s cubic-bezier(0, 0, 0.2, 1) infinite;
-        }
+    width: 25px;
+    height: 25px;
+    background-image: url(${(props) => props.img});
+    position: relative;
+    bottom: 3px;
+    left: 10px;
+    /* animation: ${move} 2s cubic-bezier(0, 0, 0.2, 1) infinite; */
+    
+
+    &:hover {
+        background-image: url(${(props) => props.img_hover});
+    }
 
 `

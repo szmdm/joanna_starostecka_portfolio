@@ -20,6 +20,8 @@ export const HeroContent = styled.div`
 `
 
 export const WelcomeContent = styled.div`
+    font-family: "Arboria";
+    font-weight: 700;
     display: flex;
     height: auto;
     flex-basis: 510px;
@@ -28,7 +30,7 @@ export const WelcomeContent = styled.div`
     justify-content: flex-start;
     align-items: flex-start;
     padding-left: 100px;
-    color: #D19886;
+    color: #3E4136;
 
     @media screen and (max-width: ${mediaSize}) {
         padding-left: 15px;
@@ -50,7 +52,7 @@ export const OpenTitle = styled.div`
         content: '';
         height: 2px;
         bottom: -20px;
-        background-color: #D19886;
+        background-color: #66665C;
         width: 100%;
     }
 `
@@ -88,7 +90,7 @@ export const ProjectsTitle = styled.div`
     font-weight: bold;
     width: auto;
     padding: calc(100vh - 666px) 0 0 100px;
-    color: #D19886;
+    color: #3E4136;
 
     @media screen and (max-width: ${mediaSize}) {
         display: none;

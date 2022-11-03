@@ -239,7 +239,7 @@ export const BGHeadDescription1 = styled.span`
   font-style: normal;
   font-weight: 800;
   text-transform: uppercase;
-  font-size: clamp(1.2rem, 1.75rem, 2.5rem);
+  font-size: clamp(1.2rem, 2vw, 1.75rem);
 
   @media screen and (max-width: ${mediaSize}) {
     font-size: clamp(1rem, 2vw, 2rem);
@@ -250,7 +250,7 @@ export const BGHeadDescription2 = styled.div`
   color: ${(props) => props.textcolor};
   font-family: "FuturaStd-Book";
   font-style: normal;
-  font-weight: 400;
+  font-weight: 300;
   font-size: 1.25rem;
   position: ${(props) => props.position};
   line-height: 1.8rem;
@@ -270,7 +270,7 @@ export const BGTitle = styled.div`
   font-style: normal;
   font-weight: 700;
   text-transform: uppercase;
-  font-size: 3rem;
+  font-size: clamp(2rem, 4vw, 3rem);;
   max-width: ${(props) => props.maxWidth};
   line-height: 64px;
   margin: ${(props) => props.margin};
