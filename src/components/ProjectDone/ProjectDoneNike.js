@@ -22,6 +22,8 @@ import img_03 from '../../assets/projects/nike/nike-pan.png'
 import img_04 from '../../assets/projects/nike/nike-txt2.png'
 import img_05 from '../../assets/projects/nike/nike-txt3.png'
 import img_06 from '../../assets/projects/nike/nike-txt4.png'
+import img_07 from '../../assets/projects/nike/shoe_01.png'
+import img_08 from '../../assets/projects/nike/nike-back.png'
 
 const ProjectDoneNike = () => {
     return (
@@ -46,14 +48,14 @@ const ProjectDoneNike = () => {
                         </OneSectionHeroNike>
                         <TwoSectionHeroNike>
                             <img className='airmax' src={img_05} alt="/" />                            
-                            <img className='terrascape' src={img_06} alt="/" />                     
+                            <img className='terrascape' src={img_06} alt="/" /> 
+                            <img className='shoe01' src={img_07} alt="/" /> 
                         </TwoSectionHeroNike>
                         <TreeSectionHeroNike>
-
                         </TreeSectionHeroNike>
                     </HeroNike>
                     <FooterNike>
-
+                            <img src={img_08} alt="/" /> 
                     </FooterNike>
                 </FirstContainerNike>
             </MainContainerNike>

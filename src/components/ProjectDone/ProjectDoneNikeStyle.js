@@ -59,11 +59,13 @@ export const OneSectionHeroNike = styled.div`
 
 `
 export const TwoSectionHeroNike = styled.div`
+    position: relative;
     display: flex;
     flex-direction: column;
     width: 88%;
     background-color: #fffffa;
     z-index: 20;
+    box-shadow: 9px 9px 15px -9px rgba(66, 68, 90, 1);
 
         .airmax {
             width: 369px;
@@ -73,10 +75,20 @@ export const TwoSectionHeroNike = styled.div`
             width: 542px;
             margin: 52px 0 0 65px;
         }
+        .shoe01 {
+            position: absolute;
+            left: 66px;
+            width: 1055px;
+        }
 `
 export const TreeSectionHeroNike = styled.div`
     display: flex;
     width: 5%;
 `
 export const FooterNike = styled.div`
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+    height: 50px;
+    width: 100%;
 `
