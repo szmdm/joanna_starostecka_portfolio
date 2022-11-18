@@ -5,6 +5,7 @@ import gilette_01 from "../../assets/projects/gilette/gillette_dlugie_strona_glo
 import cola_01 from "../../assets/projects/cola/cola_dlugie_strona_glowna1.png";
 import soft_01 from "../../assets/projects/soft/soft_dlugie_strona_glowna1.png";
 import dobro_01 from "../../assets/projects/dobro/ceramika_dlugie_strona_glowna.png";
+import nike_01 from "../../assets/projects/nike/nike_01.png";
 import { useLocation } from 'react-router-dom';
 
 
@@ -47,6 +48,11 @@ const HomePage = () => {
             <Project
                 projectName={'Soft'}
                 projectImg={soft_01}
+            />
+            <div id="nike"></div>
+            <Project
+                projectName={'Nike'}
+                projectImg={nike_01}
             />
             
         </>

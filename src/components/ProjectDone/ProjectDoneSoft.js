@@ -58,9 +58,6 @@ import PDSoftImg_23 from "../../assets/projectsDone/pDSoft/color_module03_04.png
 import PDSoftImg_24 from "../../assets/projectsDone/pDSoft/Mask_group.png"
 
 
-
-
-
 //COMPONENT CODE
 
 

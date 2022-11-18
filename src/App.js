@@ -10,6 +10,7 @@ import { ProjectDoneSoft } from './components/ProjectDone/ProjectDoneSoft';
 import ProjectDoneCeramic from './components/ProjectDone/ProjectDoneCeramic';
 
 import ToTopButton from '../src/components/MoveToTopButton/ToTopButton';
+import ProjectDoneNike from './components/ProjectDone/ProjectDoneNike';
 
 
 let useClickOutside = (handler) => {
@@ -79,6 +80,10 @@ const App = () => {
         <Route
           path="/project/Soft"
           element={<ProjectDoneSoft />}
+        />
+        <Route
+          path="/project/Nike"
+          element={<ProjectDoneNike />}
         />
       </Routes>
       {/* <FooterBar /> */}
