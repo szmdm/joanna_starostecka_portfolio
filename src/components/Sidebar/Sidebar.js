@@ -23,6 +23,7 @@ const Sidebar = forwardRef((props, ref) => {
           <SimpleLink to="/#cocacola">Coca Cola</SimpleLink>
           <SimpleLink to="/#schwartz">Ceramic Studio</SimpleLink>
           <SimpleLink to="/#soft">Soft</SimpleLink>
+          <SimpleLink to="/#nike">Nike</SimpleLink>
         </SidebarMenu>
       </SidebarWrapper>
     </SidebarContainer>
