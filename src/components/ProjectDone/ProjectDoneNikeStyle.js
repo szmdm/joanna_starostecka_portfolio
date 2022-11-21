@@ -10,7 +10,7 @@ export const MainContainerNike = styled.div`
 `
 // FIRST CONTAINER NIKE //
 
-export const FirstContainerNike= styled.div`
+export const FirstContainerNike = styled.div`
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -23,12 +23,24 @@ export const HeadNike = styled.div`
     display: flex;
     position: relative;
     width: 100%;
-    padding: 0 100px 0 87px;
+    padding: 0 100px 0 87px;    
+    
+    @media screen and (max-width:${mediaSize}) {
+        padding: 0 0 0 35px;
+        }
     
 `
 export const NikeImg01 = styled.div`
     display: flex;
     height: 188px;
+
+    @media screen and (max-width:${mediaSize}) {
+        height: 103px;
+
+                img {
+                    display: none;
+            }
+        }
 
 `
 export const NikeImg02 = styled.div`
@@ -37,8 +49,18 @@ export const NikeImg02 = styled.div`
     top: 50%;
     left: 50%;
     transform: translate(0%, -50%);
-    height: 42px;
+    width: 256px;
     z-index: 10;
+
+        img {
+            width: 100%;
+        }
+
+    
+    @media screen and (max-width:${mediaSize}) {
+        width: 150px;
+        left: 35px;
+        }
 `
 
 export const NikeImg03 = styled.div`
@@ -47,17 +69,37 @@ export const NikeImg03 = styled.div`
     right: 24px;
     height: 468px;
 
+    @media screen and (max-width:${mediaSize}) {
+                height: 149px;
+            }
+
 `
 export const HeroNike = styled.div`
     display: flex;
     width: 100%;
-    height: 650px;
+    height: auto;
+
+        /* .shoe01 {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            z-index: 30;
+        }  */
 `
 export const OneSectionHeroNike = styled.div`
     display: flex;
     align-items: center;
     width: 7%;
     margin-left: 87px;
+    
+    @media screen and (max-width:${mediaSize}) {
+        margin-left: 7px;
+
+                img {
+                    height: 174px;
+            }
+        }
+
 
 `
 export const TwoSectionHeroNike = styled.div`
@@ -72,16 +114,36 @@ export const TwoSectionHeroNike = styled.div`
 
         .airmax {
             width: 369px;
+            height: auto;
             margin: 52px 0 0 65px;
+
+            @media screen and (max-width:${mediaSize}) {
+                width: 140px;
+                margin: 47px 0 0 17px;
+            }
         }
         .terrascape {
             width: 542px;
-            margin: 52px 0 0 65px;
+            margin: 52px 0 79px 65px;
+
+            @media screen and (max-width:${mediaSize}) {
+                width: 165px;
+                margin: 52px 0 20px 26px;
+            }
         }
         .shoe01 {
             position: absolute;
-            left: 66px;
-            width: 1055px;
+            width: 100%;
+            height: auto;
+            left: 60px;
+
+            @media screen and (max-width:${mediaSize}) {
+                left: 20px;
+            }
+            @media screen and (max-width:${mobileLMediaSize}) {
+                left: 20px;
+                top: 60px;
+            }
         }
 `
 export const TreeSectionHeroNike = styled.div`
@@ -94,11 +156,17 @@ export const FooterNike = styled.div`
     justify-content: flex-end;
     height: 50px;
     width: 100%;
+
+    img {
+        margin-left: 5%;
+        width: 79%;
+
+    }
 `
 // SECOND CONTAINER NIKE //
 
 
-export const SecondContainerNike= styled.div`
+export const SecondContainerNike = styled.div`
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -182,4 +250,5 @@ export const TwoSectionHero2Nike = styled.div`
 
 `
 
+// THIRD CONTAINER NIKE //
 

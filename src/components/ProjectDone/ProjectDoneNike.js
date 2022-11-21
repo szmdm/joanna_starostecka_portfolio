@@ -28,7 +28,7 @@ import img_05 from '../../assets/projects/nike/nike-txt3.png'
 import img_06 from '../../assets/projects/nike/nike-txt4.png'
 import img_07 from '../../assets/projects/nike/shoe_01.png'
 import img_08 from '../../assets/projects/nike/nike-back.png'
-import img_09 from '../../assets/projects/nike/Module_02_Sustainable-Materials1.png'
+import img_09 from '../../assets/projects/nike/nike-txt9.png'
 import img_10 from '../../assets/projects/nike/nike2-back.png'
 import img_11 from '../../assets/projects/nike/nike-back2.png'
 import img_12 from '../../assets/projects/nike/nike-pany.png'
@@ -55,6 +55,7 @@ const ProjectDoneNike = () => {
                         </NikeImg03>
                     </HeadNike>
                     <HeroNike>
+                        {/* <img className='shoe01' src={img_07} alt="/" /> */}
                         <OneSectionHeroNike>
                             <img src={img_04} alt="/" />
                         </OneSectionHeroNike>
@@ -79,16 +80,16 @@ const ProjectDoneNike = () => {
                     </Head2Nike>
                     <Hero2Nike>
                         <OneSectionHero2Nike>
-                            <img className='shoe2' style={{width: '1082px'}} src={img_16} alt="/" />
+                            <img className='shoe2' style={{ width: '1082px' }} src={img_16} alt="/" />
                         </OneSectionHero2Nike>
                         <TwoSectionHero2Nike backgroundImage={img_10}>
                             <div className='textContainer'>
                                 <div className='left'>
-                                    <img style={{width: '273px', height: '13px'}} src={img_14} alt="/" />
+                                    <img style={{ width: '273px', height: '13px' }} src={img_14} alt="/" />
                                 </div>
                                 <div className='right'>
-                                    <img style={{width: '295px', height: '100px'}} src={img_13} alt="/" />
-                                    <img style={{width: '95px', height: '28px'}} src={img_15} alt="/" />
+                                    <img style={{ width: '295px', height: '100px' }} src={img_13} alt="/" />
+                                    <img style={{ width: '95px', height: '28px' }} src={img_15} alt="/" />
                                 </div>
                             </div>
                         </TwoSectionHero2Nike>
