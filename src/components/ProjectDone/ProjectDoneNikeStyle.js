@@ -335,7 +335,11 @@ export const ThirdContainerNike = styled.div`
     align-items: center;
     width: 100%;
     max-width: 1280px;
-    margin-top: 15px;
+    margin-top: 35px;
+
+    @media screen and (max-width:${mediaSize}) {
+        margin-top: 50px;
+        }
 `
 
 export const Head3Nike = styled.div`
@@ -399,22 +403,13 @@ export const Hero3Nike = styled.div`
     display: flex;
     width: 100%;
     height: auto;
-`
-export const OneSectionHero3Nike = styled.div`
-    display: flex;
-    align-items: center;
-    width: 5%;
-    margin-left: 87px;
-    
+    padding-left: 125px;
+    padding-right: 50px;
+
     @media screen and (max-width:${mediaSize}) {
-        margin-left: 7px;
-
-                img {
-                    height: 174px;
+                padding-right: 0px;
+                padding-left: 7px;
             }
-        }
-
-
 `
 export const TwoSectionHero3Nike = styled.div`
     position: relative;
@@ -426,9 +421,13 @@ export const TwoSectionHero3Nike = styled.div`
     z-index: 20;
     /* box-shadow: 9px 9px 15px -9px rgba(66, 68, 90, 1); */
 
+    @media screen and (max-width:${mediaSize}) {
+                width: 100%;
+            }
+
         .pan {
             position: absolute;
-            right: -106px;
+            right: -101px;
             top: -25px;
             z-index: 0;   
 
@@ -468,8 +467,8 @@ export const TwoSectionHero3Nike = styled.div`
             top: 95px;
 
             @media screen and (max-width:${mediaSize}) {
-                left: 68px;
-                top: -40px;
+                left: 100px;
+                top: -50px;
                 width: 82%;
             }
             @media screen and (max-width:${mobileLMediaSize}) {
@@ -497,9 +496,172 @@ export const Footer3Nike = styled.div`
 
             @media screen and (max-width:${mediaSize}) {
                 width: 50%;
+                margin-left: 0%;
             }
             @media screen and (max-width:${mobileLMediaSize}) {
                 width: 50%;
             }
     }
+`
+
+// FOURTH CONTAINER NIKE //
+
+
+export const FourthContainerNike = styled.div`
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+    align-items: center;
+    width: 100%;
+    max-width: 1280px;
+    margin-top: 94px;
+
+    @media screen and (max-width:${mediaSize}) {
+        margin-top: 39px;    
+    }
+
+        .nike-pany {
+            position: absolute;
+            z-index: 0;
+            top: 62px;
+            left: 135px;
+
+                @media screen and (max-width:${mediaSize}) {
+                    width: 135px;  
+                    top: 12px;
+                    left: 15px;  
+                }
+        }
+`
+
+export const Head4Nike = styled.div`
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    position: absolute;
+    top: -57px;
+    width: 100%;
+    padding: 0 111px 0 87px;
+
+    @media screen and (max-width:${mediaSize}) {
+        top: -30px;
+        padding: 0 15px 0 50px;
+            img {
+                width: 180px;
+            }
+        }
+    
+`
+export const Hero4Nike = styled.div`
+    display: flex;
+    width: 100%;
+    height: 662px;
+
+    @media screen and (max-width:${mediaSize}) {
+            height: 309px;
+        }
+    @media screen and (max-width:${mobileLMediaSize}) {
+            height: 240px;
+        }
+`
+
+export const OneSectionHero4Nike = styled.div`
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    position: relative;
+    width: 7%;
+    margin-left: 87px;
+    z-index: 50;
+    
+        @media screen and (max-width:${mediaSize}) {
+            margin-left: 7px;   
+        }
+            
+        `
+
+export const TwoSectionHero4Nike = styled.div`
+    display: flex;
+    align-items: center;
+    width: 93%;
+    margin-left: 87px;
+    background-image: url(${(props) => props.backgroundImage});
+    background-size: cover;
+    align-items: flex-end;
+
+    
+        @media screen and (max-width:${mediaSize}) {
+            margin-left: 7px;   
+        }
+
+        .shoe02 {
+                position: absolute;
+                width: 83%;
+                top: 88px;
+                left: 212px;
+
+                @media screen and (max-width:${mediaSize}) {
+                    width: 89%;
+                    top: 50px;
+                    left: 18px;  
+                }
+            }
+        .textContainer {
+            display: flex;
+            justify-content: space-between;
+            align-content: center;
+            width: 100%;
+            
+            .left {
+                display: flex;
+                align-items: flex-end;
+                padding: 0 0 68px 20px;
+                width: 50%;
+
+                    @media screen and (max-width:${mediaSize}) {
+                        padding: 0 0 18px 17px;
+                    }
+
+                    img {
+                        width: 273px;
+                        height: auto;
+
+                        @media screen and (max-width:${mediaSize}) {
+                            width: 135px;    
+                        }
+                    }
+            }
+            .right {
+                display: flex;
+                align-content: center;
+                justify-content: center;
+                align-items: flex-end;
+                flex-direction: column;
+                gap: 23px;
+                margin: 0 116px 68px 0;
+                width: 50%;
+                
+                @media screen and (max-width:${mediaSize}) {
+                    margin: 0 17px 18px 0;
+                    }
+
+                .right__1 {
+                        width: 295px;
+                        height: auto;
+
+                        @media screen and (max-width:${mediaSize}) {
+                            width: 135px;    
+                        }
+                    }
+            }
+                .right__2 {
+                        width: 95px;
+                        height: auto;
+
+                        @media screen and (max-width:${mediaSize}) {
+                            display: none;   
+                        }
+                    }
+            }
 `

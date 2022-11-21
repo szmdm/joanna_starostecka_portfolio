@@ -26,7 +26,12 @@ import {
     Footer3Nike,
     Nike3Img01,
     Nike3Img02,
-    Nike3Img03
+    Nike3Img03,
+    FourthContainerNike,
+    Head4Nike,
+    Hero4Nike,
+    OneSectionHero4Nike,
+    TwoSectionHero4Nike,
 
 }
     from './ProjectDoneNikeStyle'
@@ -112,25 +117,42 @@ const ProjectDoneNike = () => {
             </MainContainerNike>
             <MainContainerNike>
                 <ThirdContainerNike>
-                    <Head3Nike>
-                        <Nike3Img01 />
-                        <Nike3Img03>
-                        </Nike3Img03>
-                    </Head3Nike>
                     <Hero3Nike>
-                        <OneSectionHero3Nike />
                         <TwoSectionHero3Nike backgroundImage={img_08}>
                             <img className='pan' src={img_18} alt="/" />
                             <img className='ramp' src={img_17} alt="/" />
                             <img className='comfort' src={img_19} alt="/" />
                             <img className='shoe03' src={img_20} alt="/" />
                         </TwoSectionHero3Nike>
-                        {/* <TreeSectionHero3Nike /> */}
                     </Hero3Nike>
                     <Footer3Nike>
                         <img src={img_11} alt="/" />
                     </Footer3Nike>
                 </ThirdContainerNike>
+            </MainContainerNike>
+            <MainContainerNike>
+                <FourthContainerNike>
+                    <img className='nike-pany' src={img_12} alt="/" />
+                    <Head4Nike>
+                        <img src={img_09} alt="/" />
+                    </Head4Nike>
+                    <Hero4Nike>
+                        <OneSectionHero4Nike>
+                        </OneSectionHero4Nike>
+                        <TwoSectionHero4Nike backgroundImage={img_10}>
+                            <img className='shoe02' src={img_16} alt="/" />
+                            <div className='textContainer'>
+                                <div className='left'>
+                                    <img src={img_14} alt="/" />
+                                </div>
+                                <div className='right'>
+                                    <img className='right__1' src={img_13} alt="/" />
+                                    <img className='right__2' src={img_15} alt="/" />
+                                </div>
+                            </div>
+                        </TwoSectionHero4Nike>
+                    </Hero4Nike>
+                </FourthContainerNike>
             </MainContainerNike>
         </>
     )
