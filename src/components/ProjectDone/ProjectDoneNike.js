@@ -17,6 +17,16 @@ import {
     Hero2Nike,
     OneSectionHero2Nike,
     TwoSectionHero2Nike,
+    ThirdContainerNike,
+    Head3Nike,
+    Hero3Nike,
+    OneSectionHero3Nike,
+    TwoSectionHero3Nike,
+    TreeSectionHero3Nike,
+    Footer3Nike,
+    Nike3Img01,
+    Nike3Img02,
+    Nike3Img03
 
 }
     from './ProjectDoneNikeStyle'
@@ -36,6 +46,10 @@ import img_13 from '../../assets/projects/nike/nike-txt5.png'
 import img_14 from '../../assets/projects/nike/nike-txt6.png'
 import img_15 from '../../assets/projects/nike/nike-txt7.png'
 import img_16 from '../../assets/projects/nike/shoe_02.png'
+import img_17 from '../../assets/projects/nike/nike-txt8.png'
+import img_18 from '../../assets/projects/nike/nike3-pan.png'
+import img_19 from '../../assets/projects/nike/nike-txt10.png'
+import img_20 from '../../assets/projects/nike/shoe_03.png'
 
 const ProjectDoneNike = () => {
     return (
@@ -95,6 +109,28 @@ const ProjectDoneNike = () => {
                         </TwoSectionHero2Nike>
                     </Hero2Nike>
                 </SecondContainerNike>
+            </MainContainerNike>
+            <MainContainerNike>
+                <ThirdContainerNike>
+                    <Head3Nike>
+                        <Nike3Img01 />
+                        <Nike3Img03>
+                        </Nike3Img03>
+                    </Head3Nike>
+                    <Hero3Nike>
+                        <OneSectionHero3Nike />
+                        <TwoSectionHero3Nike backgroundImage={img_08}>
+                            <img className='pan' src={img_18} alt="/" />
+                            <img className='ramp' src={img_17} alt="/" />
+                            <img className='comfort' src={img_19} alt="/" />
+                            <img className='shoe03' src={img_20} alt="/" />
+                        </TwoSectionHero3Nike>
+                        {/* <TreeSectionHero3Nike /> */}
+                    </Hero3Nike>
+                    <Footer3Nike>
+                        <img src={img_11} alt="/" />
+                    </Footer3Nike>
+                </ThirdContainerNike>
             </MainContainerNike>
         </>
     )

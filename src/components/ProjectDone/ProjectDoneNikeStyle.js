@@ -327,3 +327,179 @@ export const TwoSectionHero2Nike = styled.div`
 
 // THIRD CONTAINER NIKE //
 
+
+export const ThirdContainerNike = styled.div`
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    max-width: 1280px;
+    margin-top: 15px;
+`
+
+export const Head3Nike = styled.div`
+    display: flex;
+    position: relative;
+    width: 100%;
+    padding: 0 100px 0 87px;    
+    
+    @media screen and (max-width:${mediaSize}) {
+        padding: 0 0 0 35px;
+        }
+    
+`
+export const Nike3Img01 = styled.div`
+    display: flex;
+    height: 188px;
+
+    @media screen and (max-width:${mediaSize}) {
+        height: 70px;
+
+                img {
+                    display: none;
+            }
+        }
+
+`
+export const Nike3Img02 = styled.div`
+    display: flex;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(0%, -50%);
+    width: 256px;
+    z-index: 10;
+
+        img {
+            width: 100%;
+        }
+
+    
+    @media screen and (max-width:${mediaSize}) {
+        width: 150px;
+        left: 35px;
+        }
+`
+
+export const Nike3Img03 = styled.div`
+    display: flex;
+    position: absolute;
+    right: 24px;
+    height: 468px;
+    z-index: 30;
+
+    @media screen and (max-width:${mediaSize}) {
+                height: 149px;
+
+            }
+
+`
+export const Hero3Nike = styled.div`
+    display: flex;
+    width: 100%;
+    height: auto;
+`
+export const OneSectionHero3Nike = styled.div`
+    display: flex;
+    align-items: center;
+    width: 5%;
+    margin-left: 87px;
+    
+    @media screen and (max-width:${mediaSize}) {
+        margin-left: 7px;
+
+                img {
+                    height: 174px;
+            }
+        }
+
+
+`
+export const TwoSectionHero3Nike = styled.div`
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width: 95%;
+    background-image: url(${(props) => props.backgroundImage});
+    background-size: cover;
+    z-index: 20;
+    /* box-shadow: 9px 9px 15px -9px rgba(66, 68, 90, 1); */
+
+        .pan {
+            position: absolute;
+            right: -106px;
+            top: -25px;
+            z-index: 0;   
+
+                @media screen and (max-width:${mediaSize}) {
+                    width: 97px;
+                    height: auto;
+                    top: -45px;
+                    right: 12px;
+                }
+        }
+
+        .ramp {
+            width: 369px;
+            height: auto;
+            margin: 12px 0 0 130px;
+            z-index: 10;
+
+            @media screen and (max-width:${mediaSize}) {
+                width: 109px;
+                margin: -12px 0 0 30px;
+            }
+        }
+        .comfort {
+            width: 542px;
+            margin: 322px 0 79px 130px;
+
+            @media screen and (max-width:${mediaSize}) {
+                width: 165px;
+                margin: 130px 0 20px 26px;
+            }
+        }
+        .shoe03 {
+            position: absolute;
+            width: 83%;
+            height: auto;
+            left: 240px;
+            top: 95px;
+
+            @media screen and (max-width:${mediaSize}) {
+                left: 68px;
+                top: -40px;
+                width: 82%;
+            }
+            @media screen and (max-width:${mobileLMediaSize}) {
+                left: 30px;
+                top: 15px;
+                width: 79%;
+            }
+        }
+`
+export const TreeSectionHero3Nike = styled.div`
+    display: flex;
+    width: 4%;
+`
+export const Footer3Nike = styled.div`
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-start;
+    height: 50px;
+    width: 100%;
+
+    img {
+        margin-left: 5%;
+        width: 79%;
+        height: auto;
+
+            @media screen and (max-width:${mediaSize}) {
+                width: 50%;
+            }
+            @media screen and (max-width:${mobileLMediaSize}) {
+                width: 50%;
+            }
+    }
+`
