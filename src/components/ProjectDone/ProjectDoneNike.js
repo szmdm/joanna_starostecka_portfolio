@@ -80,16 +80,16 @@ const ProjectDoneNike = () => {
                     </Head2Nike>
                     <Hero2Nike>
                         <OneSectionHero2Nike>
-                            <img className='shoe2' style={{ width: '1082px' }} src={img_16} alt="/" />
                         </OneSectionHero2Nike>
                         <TwoSectionHero2Nike backgroundImage={img_10}>
+                            <img className='shoe02' src={img_16} alt="/" />
                             <div className='textContainer'>
                                 <div className='left'>
-                                    <img style={{ width: '273px', height: '13px' }} src={img_14} alt="/" />
+                                    <img src={img_14} alt="/" />
                                 </div>
                                 <div className='right'>
-                                    <img style={{ width: '295px', height: '100px' }} src={img_13} alt="/" />
-                                    <img style={{ width: '95px', height: '28px' }} src={img_15} alt="/" />
+                                    <img className='right__1' src={img_13} alt="/" />
+                                    <img className='right__2' src={img_15} alt="/" />
                                 </div>
                             </div>
                         </TwoSectionHero2Nike>
