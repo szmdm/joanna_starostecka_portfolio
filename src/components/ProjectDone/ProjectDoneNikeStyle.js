@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { laptop, mediaSize, mobileLMediaSize } from "../../variables/Mixins";
+import { mediaSize, mobileLMediaSize } from "../../variables/Mixins";
 
 export const MainContainerNike = styled.div`
     display: flex;
@@ -7,6 +7,11 @@ export const MainContainerNike = styled.div`
     align-items: center;
     width: 100%;
     background: #FBF9FA;
+
+    @media screen and (max-width:${mediaSize}) {
+        flex-direction: column;
+        }
+
 `
 // FIRST CONTAINER NIKE //
 
@@ -521,14 +526,29 @@ export const FourthContainerNike = styled.div`
         margin-top: 39px;    
     }
 
-        .nike-pany {
+        .nike-pan3 {
             position: absolute;
             z-index: 0;
-            top: 62px;
-            left: 135px;
+            top: -117px;
+            left: 125px;
 
                 @media screen and (max-width:${mediaSize}) {
-                    width: 135px;  
+                    display: none;
+                    width: 106px;  
+                    top: 12px;
+                    left: 15px;  
+                }
+        }
+        .nike-pan3mobile {
+            display: none;
+            position: absolute;
+            z-index: 0;
+            top: -117px;
+            left: 125px;
+
+                @media screen and (max-width:${mediaSize}) {
+                    display: block;
+                    width: 106px;  
                     top: 12px;
                     left: 15px;  
                 }
@@ -571,8 +591,8 @@ export const OneSectionHero4Nike = styled.div`
     align-items: center;
     justify-content: flex-start;
     position: relative;
-    width: 7%;
-    margin-left: 87px;
+    width: 2%;
+    margin-left: 135px;
     z-index: 50;
     
         @media screen and (max-width:${mediaSize}) {
@@ -584,22 +604,21 @@ export const OneSectionHero4Nike = styled.div`
 export const TwoSectionHero4Nike = styled.div`
     display: flex;
     align-items: center;
-    width: 93%;
-    margin-left: 87px;
+    width: 85%;
     background-image: url(${(props) => props.backgroundImage});
     background-size: cover;
     align-items: flex-end;
 
     
         @media screen and (max-width:${mediaSize}) {
-            margin-left: 7px;   
+            width: 95%;  
         }
 
-        .shoe02 {
+        .shoe04 {
                 position: absolute;
-                width: 83%;
-                top: 88px;
-                left: 212px;
+                width: 70.6%;
+                top: -30px;
+                left: 228px;
 
                 @media screen and (max-width:${mediaSize}) {
                     width: 89%;
@@ -611,20 +630,21 @@ export const TwoSectionHero4Nike = styled.div`
             display: flex;
             justify-content: space-between;
             align-content: center;
+            flex-direction: column;
             width: 100%;
             
             .left {
                 display: flex;
                 align-items: flex-end;
-                padding: 0 0 68px 20px;
-                width: 50%;
+                padding: 0 0 0 81px;
+                width: 100%;
 
                     @media screen and (max-width:${mediaSize}) {
                         padding: 0 0 18px 17px;
                     }
 
                     img {
-                        width: 273px;
+                        width: 493px;
                         height: auto;
 
                         @media screen and (max-width:${mediaSize}) {
@@ -634,20 +654,18 @@ export const TwoSectionHero4Nike = styled.div`
             }
             .right {
                 display: flex;
-                align-content: center;
                 justify-content: center;
-                align-items: flex-end;
+                align-items: flex-start;
                 flex-direction: column;
-                gap: 23px;
-                margin: 0 116px 68px 0;
-                width: 50%;
+                margin: 37px 0px 0px 78px;
+                width: 100%;
                 
                 @media screen and (max-width:${mediaSize}) {
-                    margin: 0 17px 18px 0;
+                    margin: 0 17px 18px 17px;
                     }
 
                 .right__1 {
-                        width: 295px;
+                        width: 542px;
                         height: auto;
 
                         @media screen and (max-width:${mediaSize}) {
@@ -655,13 +673,65 @@ export const TwoSectionHero4Nike = styled.div`
                         }
                     }
             }
+
+            }
+
+            .rightness {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-direction: column;
+                gap: 23px;
+                margin-top: 29px;
+                width: 100%;
+                
+                @media screen and (max-width:${mediaSize}) {
+                    margin: 0 17px 18px 0;
+                    display: none;
+                    }
+
                 .right__2 {
-                        width: 95px;
+                        width: 372px;
                         height: auto;
 
                         @media screen and (max-width:${mediaSize}) {
                             display: none;   
                         }
                     }
+
             }
+`
+export const TreeSectionHero4Nike = styled.div`
+    position: absolute;
+    top: 31px;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    width: 8%;
+    z-index: 50;
+    
+        @media screen and (max-width:${mediaSize}) {
+            margin-left: 7px; 
+                img {
+                    height: 124.5px;
+                }  
+        }
+            
+        `
+
+export const HiddenFooter4 = styled.div`
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin-top: 13px;
+
+    @media screen and (max-width:${mediaSize}) {
+           display: flex;
+            img {
+                width: 133.5px;
+            }
+        }
 `
