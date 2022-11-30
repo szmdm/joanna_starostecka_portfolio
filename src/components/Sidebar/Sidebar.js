@@ -14,8 +14,8 @@ const Sidebar = forwardRef((props, ref) => {
 
     <SidebarContainer isOpen={props.isOpen} ref={ref} >
       <SidebarWrapper>
-        <Icon onClick={props.toggle} >
-          <CloseIcon size={80} />
+        <Icon>
+          <CloseIcon size={80} onClick={props.toggle} />
         </Icon>
         <SidebarMenu>
           <SimpleLink to="/#" style={{marginBottom: "40px"}}>HOME</SimpleLink>

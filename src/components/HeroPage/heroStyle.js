@@ -9,6 +9,7 @@ export const HeroContainer = styled.section`
 
 export const HeroContent = styled.div`
     height: calc(100vh - 280px);
+    min-height: 400px;
     max-height: 100%;
     width: 100%;
     margin-bottom: 15px;

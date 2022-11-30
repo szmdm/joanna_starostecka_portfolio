@@ -25,9 +25,11 @@ export const CloseIcon = styled(FaTimes)`
 `
 
 export const Icon = styled.div`
-    position: absolute;
-    top: 7.5rem;
-    right: 8rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin-top: 120px;
     background: transparent;
     border: transparent;
     font-size: 2rem;
@@ -43,7 +45,7 @@ export const Icon = styled.div`
 export const SidebarMenu = styled.div`
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: repeat(7, 40px);
+    grid-template-rows: repeat(8, 40px);
     text-align: center;
     position: absolute;
     top: 16rem;
@@ -51,7 +53,7 @@ export const SidebarMenu = styled.div`
     width: 100%;
 
     @media screen and (max-width: 400px) {
-        grid-template-rows: repeat(7, 30px);
+        grid-template-rows: repeat(8, 30px);
         transition: 0.3s ease-in-out;
     }
 `
