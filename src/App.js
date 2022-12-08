@@ -1,5 +1,6 @@
 import './App.css';
 import React, { useRef, useState, useEffect } from 'react';
+// import { LocomotiveScrollProvider } from "react-locomotive-scroll";
 import { BrowserRouter as Router, Routes, Route, } from 'react-router-dom';
 import HomePage from './components/HomePage';
 import { Navbar } from './components/Navbar/Navbar';
@@ -8,7 +9,6 @@ import { ProjectDoneGilette } from './components/ProjectDone/ProjectDoneGillette
 import { ProjectDoneCocaCola } from './components/ProjectDone/ProjectDoneCocaCola';
 import { ProjectDoneSoft } from './components/ProjectDone/ProjectDoneSoft';
 import ProjectDoneCeramic from './components/ProjectDone/ProjectDoneCeramic';
-
 import ToTopButton from '../src/components/MoveToTopButton/ToTopButton';
 import ProjectDoneNike from './components/ProjectDone/ProjectDoneNike';
 
@@ -22,15 +22,11 @@ let useClickOutside = (handler) => {
         handler()
       }
     }
-
     document.addEventListener("mousedown", maybeHandler)
-
     return () => {
       document.removeEventListener("mousedown", maybeHandler)
     }
-
   })
-
   return domNode
 }
 
@@ -48,10 +44,21 @@ const App = () => {
     setIsOpen(false);
   });
 
+  // const ref = useRef(null);
+
+  // const options = {
+  //   smooth: true,
+  // } 
+
 
   return (
+    
+    // <LocomotiveScrollProvider options={options} containerRef={ref}>
+    //   <main data-scroll-container ref={ref}>
+
     <Router>
-      <Navbar 
+    
+      <Navbar
         toggle={toggle}
         isOpen={isOpen}
       />
@@ -89,6 +96,10 @@ const App = () => {
       {/* <FooterBar /> */}
       <ToTopButton props={500} />
     </Router>
+
+
+    //   </main>
+    // </LocomotiveScrollProvider>
   );
 }
 

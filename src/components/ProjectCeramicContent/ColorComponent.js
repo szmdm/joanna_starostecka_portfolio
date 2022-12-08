@@ -1,6 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
-import { mediaSize, mobileLMediaSize } from '../../variables/Mixins';
+import { mediaSize } from '../../variables/Mixins';
 
 const ColorComponent = ({ ...props }) => {
     return (

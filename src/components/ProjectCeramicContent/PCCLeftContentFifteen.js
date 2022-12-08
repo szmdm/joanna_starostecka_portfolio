@@ -2,8 +2,6 @@ import React from 'react'
 
 import {
     PCCLeft,
-    PCCLeftOne,
-    PCCLeftTwo,
 } from './PCCLeftContentFifteenStyle'
 
 

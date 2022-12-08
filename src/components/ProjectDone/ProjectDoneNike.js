@@ -18,17 +18,10 @@ import {
     OneSectionHero2Nike,
     TwoSectionHero2Nike,
     ThirdContainerNike,
-    Head3Nike,
     Hero3Nike,
-    OneSectionHero3Nike,
     TwoSectionHero3Nike,
-    TreeSectionHero3Nike,
     Footer3Nike,
-    Nike3Img01,
-    Nike3Img02,
-    Nike3Img03,
     FourthContainerNike,
-    Head4Nike,
     Hero4Nike,
     OneSectionHero4Nike,
     TwoSectionHero4Nike,
@@ -64,110 +57,122 @@ import img_25 from '../../assets/projects/nike/nike-txt13.png'
 import img_26 from '../../assets/projects/nike/nike-txt14.png'
 import img_27 from '../../assets/projects/nike/nike-pan4mobile.png'
 
+// import { LocomotiveScrollProvider } from "react-locomotive-scroll";
+
 const ProjectDoneNike = () => {
+
+    // const ref = useRef(null);
+
+    // const options = {
+    //   smooth: true,
+    // } 
 
     return (
         <>
-            <ScrollToTop />
-            <MainContainerNike>
-                <FirstContainerNike>
-                    <HeadNike>
-                        <NikeImg01>
-                            <img src={img_01} alt="/" />
-                        </NikeImg01>
-                        <NikeImg02>
-                            <img src={img_02} alt="/" />
-                        </NikeImg02>
-                        <NikeImg03>
-                            <img src={img_03} alt="/" />
-                        </NikeImg03>
-                    </HeadNike>
-                    <HeroNike>
-                        {/* <img className='shoe01' src={img_07} alt="/" /> */}
-                        <OneSectionHeroNike>
-                            <img src={img_04} alt="/" />
-                        </OneSectionHeroNike>
-                        <TwoSectionHeroNike backgroundImage={img_08}>
-                            <img className='airmax' src={img_05} alt="/" />
-                            <img className='terrascape' src={img_06} alt="/" />
-                            <img className='shoe01' src={img_07} alt="/" />
-                        </TwoSectionHeroNike>
-                        <TreeSectionHeroNike>
-                        </TreeSectionHeroNike>
-                    </HeroNike>
-                    <FooterNike>
-                        <img src={img_11} alt="/" />
-                    </FooterNike>
-                </FirstContainerNike>
-            </MainContainerNike>
-            <MainContainerNike>
-                <SecondContainerNike>
-                    <img className='nike-pany' src={img_12} alt="/" />
-                    <Head2Nike>
-                        <img src={img_09} alt="/" />
-                    </Head2Nike>
-                    <Hero2Nike>
-                        <OneSectionHero2Nike>
-                        </OneSectionHero2Nike>
-                        <TwoSectionHero2Nike backgroundImage={img_10}>
-                            <img className='shoe02' src={img_16} alt="/" />
-                            <div className='textContainer'>
-                                <div className='left'>
-                                    <img src={img_14} alt="/" />
-                                </div>
-                                <div className='right'>
-                                    <img className='right__1' src={img_13} alt="/" />
-                                    <img className='right__2' src={img_15} alt="/" />
-                                </div>
-                            </div>
-                        </TwoSectionHero2Nike>
-                    </Hero2Nike>
-                </SecondContainerNike>
-            </MainContainerNike>
-            <MainContainerNike>
-                <ThirdContainerNike>
-                    <Hero3Nike>
-                        <TwoSectionHero3Nike backgroundImage={img_08}>
-                            <img className='pan' src={img_18} alt="/" />
-                            <img className='ramp' src={img_17} alt="/" />
-                            <img className='comfort' src={img_19} alt="/" />
-                            <img className='shoe03' src={img_20} alt="/" />
-                        </TwoSectionHero3Nike>
-                    </Hero3Nike>
-                    <Footer3Nike>
-                        <img src={img_11} alt="/" />
-                    </Footer3Nike>
-                </ThirdContainerNike>
-            </MainContainerNike>
-            <MainContainerNike>
-                <FourthContainerNike>
-                    <img className='nike-pan3' src={img_21} alt="/" />
-                    <img className='nike-pan3mobile' src={img_27} alt="/" />
-                    <Hero4Nike>
-                        <OneSectionHero4Nike />
-                        <TwoSectionHero4Nike backgroundImage={img_10}>
-                            <img className='shoe04' src={img_22} alt="/" />
-                            <div className='textContainer'>
-                                <div className='left'>
-                                    <img src={img_24} alt="/" />
-                                </div>
-                                <div className='right'>
-                                    <img className='right__1' src={img_25} alt="/" />
-                                </div>
-                                <div className='rightness'>
-                                    <img className='right__2' src={img_26} alt="/" />
-                                </div>
-                            </div>
-                        </TwoSectionHero4Nike>
-                        <TreeSectionHero4Nike>
-                            <img src={img_23} alt="/" />
-                        </TreeSectionHero4Nike>
-                    </Hero4Nike>
-                </FourthContainerNike>
-                <HiddenFooter4>
-                    <img className='right__2' src={img_26} alt="/" />
-                </HiddenFooter4>
-            </MainContainerNike>
+            {/* <LocomotiveScrollProvider options={options} containerRef={ref}>
+                <main data-scroll-container ref={ref}> */}
+                    <ScrollToTop />
+                    <MainContainerNike>
+                        <FirstContainerNike>
+                            <HeadNike>
+                                <NikeImg01>
+                                    <img src={img_01} alt="/" />
+                                </NikeImg01>
+                                <NikeImg02>
+                                    <img src={img_02} alt="/" />
+                                </NikeImg02>
+                                <NikeImg03>
+                                    <img src={img_03} alt="/" />
+                                </NikeImg03>
+                            </HeadNike>
+                            <HeroNike>
+                                {/* <img className='shoe01' src={img_07} alt="/" /> */}
+                                <OneSectionHeroNike>
+                                    <img src={img_04} alt="/" />
+                                </OneSectionHeroNike>
+                                <TwoSectionHeroNike backgroundImage={img_08}>
+                                    <img className='airmax' src={img_05} alt="/" />
+                                    <img className='terrascape' src={img_06} alt="/" />
+                                    <img className='shoe01' src={img_07} alt="/" />
+                                </TwoSectionHeroNike>
+                                <TreeSectionHeroNike>
+                                </TreeSectionHeroNike>
+                            </HeroNike>
+                            <FooterNike>
+                                <img src={img_11} alt="/" />
+                            </FooterNike>
+                        </FirstContainerNike>
+                    </MainContainerNike>
+                    <MainContainerNike>
+                        <SecondContainerNike>
+                            <img className='nike-pany' src={img_12} alt="/" />
+                            <Head2Nike>
+                                <img src={img_09} alt="/" />
+                            </Head2Nike>
+                            <Hero2Nike>
+                                <OneSectionHero2Nike>
+                                </OneSectionHero2Nike>
+                                <TwoSectionHero2Nike backgroundImage={img_10}>
+                                    <img className='shoe02' src={img_16} alt="/" />
+                                    <div className='textContainer'>
+                                        <div className='left'>
+                                            <img src={img_14} alt="/" />
+                                        </div>
+                                        <div className='right'>
+                                            <img className='right__1' src={img_13} alt="/" />
+                                            <img className='right__2' src={img_15} alt="/" />
+                                        </div>
+                                    </div>
+                                </TwoSectionHero2Nike>
+                            </Hero2Nike>
+                        </SecondContainerNike>
+                    </MainContainerNike>
+                    <MainContainerNike>
+                        <ThirdContainerNike>
+                            <Hero3Nike>
+                                <TwoSectionHero3Nike backgroundImage={img_08}>
+                                    <img className='pan' src={img_18} alt="/" />
+                                    <img className='ramp' src={img_17} alt="/" />
+                                    <img className='comfort' src={img_19} alt="/" />
+                                    <img className='shoe03' src={img_20} alt="/" />
+                                </TwoSectionHero3Nike>
+                            </Hero3Nike>
+                            <Footer3Nike>
+                                <img src={img_11} alt="/" />
+                            </Footer3Nike>
+                        </ThirdContainerNike>
+                    </MainContainerNike>
+                    <MainContainerNike>
+                        <FourthContainerNike>
+                            <img className='nike-pan3' src={img_21} alt="/" />
+                            <img className='nike-pan3mobile' src={img_27} alt="/" />
+                            <Hero4Nike>
+                                <OneSectionHero4Nike />
+                                <TwoSectionHero4Nike backgroundImage={img_10}>
+                                    <img className='shoe04' src={img_22} alt="/" />
+                                    <div className='textContainer'>
+                                        <div className='left'>
+                                            <img src={img_24} alt="/" />
+                                        </div>
+                                        <div className='right'>
+                                            <img className='right__1' src={img_25} alt="/" />
+                                        </div>
+                                        <div className='rightness'>
+                                            <img className='right__2' src={img_26} alt="/" />
+                                        </div>
+                                    </div>
+                                </TwoSectionHero4Nike>
+                                <TreeSectionHero4Nike>
+                                    <img src={img_23} alt="/" />
+                                </TreeSectionHero4Nike>
+                            </Hero4Nike>
+                        </FourthContainerNike>
+                        <HiddenFooter4>
+                            <img className='right__2' src={img_26} alt="/" />
+                        </HiddenFooter4>
+                    </MainContainerNike>
+                {/* </main> */}
+            {/* </LocomotiveScrollProvider> */}
         </>
     )
 }

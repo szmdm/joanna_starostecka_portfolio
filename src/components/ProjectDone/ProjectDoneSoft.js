@@ -49,7 +49,6 @@ import PDSoftImg_14 from "../../assets/projectsDone/pDSoft/Image_Module_03_view_
 import PDSoftImg_15 from "../../assets/projectsDone/pDSoft/color_module03_01.png"
 import PDSoftImg_16 from "../../assets/projectsDone/pDSoft/color_module03_02.png"
 import PDSoftImg_17 from "../../assets/projectsDone/pDSoft/color_module03_03.png"
-import PDSoftImg_18 from "../../assets/projectsDone/pDSoft/Image_Module_03_view_05.png"
 import PDSoftImg_19 from "../../assets/projectsDone/pDSoft/Mastercard.png"
 import PDSoftImg_20 from "../../assets/projectsDone/pDSoft/paypall.png"
 import PDSoftImg_21 from "../../assets/projectsDone/pDSoft/visa.png"

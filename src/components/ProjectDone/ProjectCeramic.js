@@ -3,7 +3,6 @@ import PCCLeftContentOne from '../ProjectCeramicContent/PCCLeftContentOne';
 import PCCLeftContentTwo from '../ProjectCeramicContent/PCCLeftContentTwo';
 import PCCRightContentOne from '../ProjectCeramicContent/PCCRightContentOne';
 import PCCRightContentTwo from '../ProjectCeramicContent/PCCRightContentTwo';
-import PCCLeftContentTree from '../ProjectCeramicContent/PCCLeftContentTree';
 import PCCLeftContentFour from '../ProjectCeramicContent/PCCLeftContentFour';
 import PCCLeftContentTen from '../ProjectCeramicContent/PCCLeftContentTen';
 import PCCLeftContentEleven from '../ProjectCeramicContent/PCCLeftContentEleven';

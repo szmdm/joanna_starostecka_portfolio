@@ -8,7 +8,6 @@ import {
   SmallerContainerGilette,
   SCGOne,
   SCGTwo,
-  SCGThree,
   BGHead,
   BGHeadDescription1,
   BGHeadDescription2,
@@ -50,7 +49,6 @@ import GilletteImg_03 from "../../assets/projectsDone/pDGillette/Gillette_04_bac
 import GilletteImg_04 from "../../assets/projectsDone/pDGillette/Gillette_03_background_2.png";
 
 import ScrollToTop from "../ScrollToTop";
-import ToTopButton from '../../components/MoveToTopButton/ToTopButton';
 
 
 export const ProjectDoneGilette = () => {

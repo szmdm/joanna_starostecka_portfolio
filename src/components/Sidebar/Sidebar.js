@@ -19,11 +19,11 @@ const Sidebar = forwardRef((props, ref) => {
         </Icon>
         <SidebarMenu>
           <SimpleLink to="/#" style={{marginBottom: "40px"}}>HOME</SimpleLink>
-          <SimpleLink to="/#gillette">Gillette</SimpleLink>
-          <SimpleLink to="/#cocacola">Coca Cola</SimpleLink>
-          <SimpleLink to="/#schwartz">Ceramic Studio</SimpleLink>
-          <SimpleLink to="/#soft">Soft</SimpleLink>
-          <SimpleLink to="/#nike">Nike</SimpleLink>
+          <SimpleLink to="/project/Gillette">Gillette</SimpleLink>
+          <SimpleLink to="/project/CocaCola">Coca Cola</SimpleLink>
+          <SimpleLink to="/project/CeramicStudio">Ceramic Studio</SimpleLink>
+          <SimpleLink to="/project/Soft">Soft</SimpleLink>
+          <SimpleLink to="/project/Nike">Nike</SimpleLink>
         </SidebarMenu>
       </SidebarWrapper>
     </SidebarContainer>

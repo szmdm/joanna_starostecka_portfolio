@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { laptop, mediaSize, ceramicBasis } from "../../variables/Mixins";
+import { mediaSize, ceramicBasis } from "../../variables/Mixins";
 
 export const PCCLeft = styled.div`
 position: relative;

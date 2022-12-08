@@ -147,23 +147,4 @@ const FifthContentBox = styled.div`
         }
     }
 `
-
-const RowFirstColumnOneText = styled.div`
-    display: ${(props) => props.rowFirstColumnOneTextDisplay};
-    font-family: "Calibri";
-    font-weight: 400;
-    font-size: 1.06rem;
-    font-size: clamp(0.6rem, 0.94rem, 3vw);
-    color: #7E7367;
-`
-
-const RowSecondColumnOneText = styled.div`
-    display: ${(props) => props.rowSecondColumnOneTextDisplay};
-    font-family: "Calibri";
-    font-weight: 400;
-    font-size: 1.06rem;
-    font-size: clamp(0.6rem, 0.94rem, 3vw);
-    color: #7E7367;
-`
-
 export default FifthContent
